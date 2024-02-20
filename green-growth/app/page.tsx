@@ -6,7 +6,7 @@ import { karla, karlaBold } from "./components/fonts";
 
 export default function Home() {
   return (
-    <main className="min-h-screen items-center bg-black pt-24 lg:pt-3 bg-blend-hard-light	" style={{
+    <main className="min-h-screen items-center bg-black pt-28 lg:pt-1 bg-blend-hard-light	" style={{
       backgroundImage:
       "url('/images/GGS-landing page.png')",
       backgroundRepeat: 'no-repeat',
@@ -14,7 +14,7 @@ export default function Home() {
       backgroundPosition: 'center',
   }}>
       <div className="flex flex-col items-center">
-        <div className="flex flex-row justify-center lg:justify-between p-3 md:p-14 w-full">
+        <div className="flex flex-row justify-center lg:justify-between p-3 lg:p-12 w-full">
           <div className="hidden lg:block">
             <p className={`${karla.className} text-white pb-3`}>Core Sponsors</p>
             <div className="flex gap-7">
@@ -64,7 +64,7 @@ export default function Home() {
           <h1 className= {`${karla.className} pt-5 text-1xl uppercase text-white md:text-3xl lg:text-5xl dark:text-white tracking-widest`}>stay tuned</h1>
         </div>
       </div>
-      <div className="hidden lg:flex flex-col justify-center items-start pt-20 z-50">
+      <div className="hidden lg:flex flex-col justify-center items-start pl-12 py-3 pt-16 z-50">
         <p className={`${karla.className} text-white p-3`}>With Support from</p>
         <div className="flex justify-center items-center gap-7 pr-10 p-3 ">
               <img 
