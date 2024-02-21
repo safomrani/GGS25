@@ -21,12 +21,7 @@ export default function Home() {
               <img 
                 src='/logos/Hivos.png'
                 className="h-[70px]"
-                alt="FMO logo"
-              />
-              <img 
-                src='/logos/FMO.png'
-                className="h-[70px]"
-                alt="FMO logo"
+                alt="Hivos logo"
               />
             </div>
           </div>
