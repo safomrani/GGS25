@@ -57,6 +57,10 @@ const config = {
         },
         red:{
           300:'#d73732'
+        },
+        green:{
+          200:'#e2f4ef',
+          300: '#01a98f'
         }
       },
       borderRadius: {
