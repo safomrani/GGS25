@@ -27,7 +27,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row justify-center items-center lg:justify-between pt-5 p-3 lg:p-12">
+      <div className="flex flex-col lg:flex-row justify-center items-center lg:justify-between pt-20 lg:pt-12 p-3 lg:p-12">
         {/**Sponsor & implementation partners */}
         <div className="flex flex-wrap lg:flex-row gap-5 lg:gap-10 items-center justify-center"> 
           <div className="">
