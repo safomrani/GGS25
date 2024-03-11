@@ -28,7 +28,7 @@ export default function Hero() {
               src={"/logos/GGS-Logo.png"}
             />
             <div>
-                <h1 className="text-[16px] text-green-300"><span className={`${karlaBold.className}`}>#GGSummit24</span></h1>
+                <h1 className="text-[15px] text-green-300"><span className={`${karlaBold.className}`}>#GGSummit24</span></h1>
             </div>
         </div>
         {/**Desktop view */}
@@ -118,10 +118,10 @@ export default function Hero() {
         {/**Mobile view */}
         <div>
         <div className="flex md:hidden flex-col bg-green-200">
-            <div className="flex flex-col justify-center items-center pt-10 px-3 text-justify">
-                <div className=" justify-center px-3">
-                    <h1 className="text-center text-[22px] sm:text-2xl text-green-300"><span className={`${karlaExtraBold.className}`}>Green Growth Summit 2024</span></h1>
-                    <h1 className={`${karla.className}pt-3 text-[14px] text-black text-justify`}>Under the regional Green Growth Summit initiative, Hivos convenes two flagship summit events to invigorate local green ecosystems to North Africa to advance their green transition strategies, facilitate meaningful partnerships between stakeholders, and to synergize around actionable commitments to take the green ecosystem forward.</h1>
+            <div className="flex flex-col justify-center items-center pt-10 text-justify">
+                <div className=" justify-center px-3 sm:w-[90%]">
+                    <h1 className="py-1 text-center text-[22px] sm:text-2xl text-green-300"><span className={`${karlaExtraBold.className}`}>Green Growth Summit 2024</span></h1>
+                    <h1 className={`${karla.className} px-3 pt-3 text-[14px] text-black text-justify`}>Under the regional Green Growth Summit initiative, Hivos convenes two flagship summit events to invigorate local green ecosystems to North Africa to advance their green transition strategies, facilitate meaningful partnerships between stakeholders, and to synergize around actionable commitments to take the green ecosystem forward.</h1>
                 </div>
             </div>
             {/**Event details */}
