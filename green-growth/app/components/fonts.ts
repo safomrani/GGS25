@@ -18,4 +18,6 @@ export const freehand = Freehand({weight:['400'], subsets: ['latin'],  style: ['
 
 import {Karla} from 'next/font/google';
 export const karla = Karla({weight:['400'], subsets: ['latin'],  style: ['normal']})
-export const karlaBold = Poppins({weight: ['700'], subsets: ['latin'],  style: ['normal', 'italic']})
+export const karlaBold = Karla({weight: ['700'], subsets: ['latin'],  style: ['normal', 'italic']})
+export const karlaExtraBold = Karla({weight: ['800'], subsets: ['latin'],  style: ['normal', 'italic']})
+
