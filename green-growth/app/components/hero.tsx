@@ -42,7 +42,7 @@ export default function Hero() {
         }}>
             <div className="pt-10 px-3 md:px-24 w-[90%] md:w-3/4">
                 <h1 className="text-center md:text-left text-3xl sm:text-3xl md:text-5xl lg:text-5xl text-green-300"><span className={`${karlaExtraBold.className}`}>Green Growth Summit 2024</span></h1>
-                <div className=" justify-center md:w-3/5">
+                <div className=" justify-center md:w-3/5 md:pb-5">
                     <h1 className={`${karla.className}pt-3 text-1xl text-black text-justify`}>Under the regional Green Growth Summit initiative, Hivos convenes two flagship summit events to invigorate local green ecosystems to North Africa to advance their green transition strategies, facilitate meaningful partnerships between stakeholders, and to synergize around actionable commitments to take the green ecosystem forward.</h1>
                 </div>
             </div>
@@ -73,11 +73,13 @@ export default function Hero() {
                         Mövenpick Gammarth - Tunis
                     </div>
                     <div className="pt-2 flex flex-col">
+                        {/*
                         <button className= {`${karla.className} bg-red-300 uppercase 
                         text-white px-3 py-2 rounded-md w-[180px] text-[18px]`}>
                             <a href='https://form.typeform.com/to/OgeyBBu3' target="_blank">Register Now*</a>
                         </button>
                         <div className={`${karla.className} px-3 text-[13px]`}>*invitations are limited</div>
+                        */}
                     </div>
                 </div>
                 <div className="flex flex-col gap-3">
@@ -105,11 +107,13 @@ export default function Hero() {
                         Conrad Hotel - Cairo
                     </div>
                     <div className="pt-2 flex flex-col">
+                        {/*
                         <button className= {`${karla.className} bg-red-300 uppercase 
                         text-white px-3 py-2 rounded-md w-[180px] text-[18px]`}>
                             <a href='https://form.typeform.com/to/wHZL1GST' target="_blank">Register Now*</a>
                         </button>
                         <div className={`${karla.className} px-3 text-[13px]`}>*invitations are limited</div>
+                        */}
                     </div>
                 </div>
             </div>
@@ -152,11 +156,13 @@ export default function Hero() {
                         Mövenpick Gammarth - Tunis
                     </div>
                     <div className="pt-2 flex flex-col">
+                        {/*
                         <button className= {`${karla.className} bg-red-300 uppercase 
                             text-white px-3 py-2 rounded-md w-[180px] text-[18px]`}>
-                            <a href='https://form.typeform.com/to/OgeyBBu3' target="_blank">Register Now*</a>
+                            <a href='https://form.typeform.com/to/OgeyBBu3' target="_blank">Register *</a>
                         </button>
                         <div className={`${karla.className} px-3 text-[13px]`}>*invitations are limited</div>
+                        */}
                     </div>
                 </div>
                 <Separator className='bg-red-300 w-3/4'/>
@@ -187,11 +193,13 @@ export default function Hero() {
                         Conrad Hotel - Cairo
                     </div>
                     <div className="pt-2 flex flex-col">
+                        {/*
                         <button className= {`${karla.className} bg-red-300 uppercase 
                             text-white px-3 py-2 rounded-md w-[180px] text-[18px]`}>
                             <a href='https://form.typeform.com/to/wHZL1GST' target="_blank">Register Now*</a>
                         </button>
                         <div className={`${karla.className} px-3 text-[13px]`}>*invitations are limited</div>
+                        */}
                     </div>
                 </div>
             </div>
