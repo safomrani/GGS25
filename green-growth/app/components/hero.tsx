@@ -75,7 +75,7 @@ export default function Hero() {
                     <div className="pt-2 flex flex-col">
                         <button className= {`${karla.className} bg-red-300 uppercase 
                         text-white px-3 py-2 rounded-md w-[180px] text-[18px]`}>
-                        Register Now*
+                            <a href='https://form.typeform.com/to/OgeyBBu3' target="_blank">Register Now*</a>
                         </button>
                         <div className={`${karla.className} px-3 text-[13px]`}>*invitations are limited</div>
                     </div>
@@ -107,7 +107,7 @@ export default function Hero() {
                     <div className="pt-2 flex flex-col">
                         <button className= {`${karla.className} bg-red-300 uppercase 
                         text-white px-3 py-2 rounded-md w-[180px] text-[18px]`}>
-                            Register Now*
+                            <a href='https://form.typeform.com/to/wHZL1GST' target="_blank">Register Now*</a>
                         </button>
                         <div className={`${karla.className} px-3 text-[13px]`}>*invitations are limited</div>
                     </div>
@@ -153,8 +153,8 @@ export default function Hero() {
                     </div>
                     <div className="pt-2 flex flex-col">
                         <button className= {`${karla.className} bg-red-300 uppercase 
-                        text-white px-3 py-2 rounded-md w-[180px] text-[18px]`}>
-                        Register Now*
+                            text-white px-3 py-2 rounded-md w-[180px] text-[18px]`}>
+                            <a href='https://form.typeform.com/to/OgeyBBu3' target="_blank">Register Now*</a>
                         </button>
                         <div className={`${karla.className} px-3 text-[13px]`}>*invitations are limited</div>
                     </div>
@@ -188,8 +188,8 @@ export default function Hero() {
                     </div>
                     <div className="pt-2 flex flex-col">
                         <button className= {`${karla.className} bg-red-300 uppercase 
-                        text-white px-3 py-2 rounded-md w-[180px] text-[18px]`}>
-                            Register Now*
+                            text-white px-3 py-2 rounded-md w-[180px] text-[18px]`}>
+                            <a href='https://form.typeform.com/to/wHZL1GST' target="_blank">Register Now*</a>
                         </button>
                         <div className={`${karla.className} px-3 text-[13px]`}>*invitations are limited</div>
                     </div>
