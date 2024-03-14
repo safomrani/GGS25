@@ -8,17 +8,23 @@ export default function Hero() {
   return (
     <main className="min-h-screen items-center pt-1">
         {/**Navbar*/}
-        <div className="hidden md:flex items-center justify-between bg-white px-3 sm:px-12 md:px-20 py-1">
+        <div className="hidden md:flex items-center justify-between bg-white px-3 sm:px-12 lg:px-20 py-1">
             <Image 
-              width={250}
-              height={120}
+              width={180}
+              height={160}
               alt="GGS Logo"
               src={"/logos/GGS-Logo.png"}
             />
-            <div>
-                <h1 className="p-3 text-2xl text-green-300"><span className={`${karlaBold.className}`}>#GGSummit24</span></h1>
+            <div className="mx-auto">
+                <h1 className="text-2xl text-green-300"><span className={`${karlaBold.className}`}>#GGSummit24</span></h1>
             </div>
+            <img 
+                className="h-[30px] lg:h-[40px]"
+                alt="Hivos Logo"
+                src={"/logos/Hivos.png"}            
+            />
         </div>
+
         {/**Navbar mobile*/}
         <div className="flex md:hidden items-center justify-between bg-white px-3 py-1">
             <Image 
@@ -27,9 +33,16 @@ export default function Hero() {
               alt="GGS Logo"
               src={"/logos/GGS-Logo.png"}
             />
+            <img 
+                className="h-[30px] lg:h-[40px]"
+                alt="Hivos Logo"
+                src={"/logos/Hivos.png"}            
+            />
+            {/** 
             <div>
                 <h1 className="text-[15px] text-green-300"><span className={`${karlaBold.className}`}>#GGSummit24</span></h1>
             </div>
+            */}
         </div>
         {/**Desktop view */}
         <div>
@@ -232,7 +245,7 @@ export default function Hero() {
                 />
                 <img 
                     src='/logos/expertise france.png'
-                    className="h-[30px] lg:h-[40px]"
+                    className="h-[30px] lg:h-[30px]"
                     alt="Expertise france logo"
                 />
             </div>
