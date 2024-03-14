@@ -245,7 +245,7 @@ export default function Hero() {
                 />
                 <img 
                     src='/logos/expertise france.png'
-                    className="h-[30px] lg:h-[30px]"
+                    className="h-[33px] lg:h-[33px]"
                     alt="Expertise france logo"
                 />
             </div>
