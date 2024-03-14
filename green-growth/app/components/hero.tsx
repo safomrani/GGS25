@@ -10,7 +10,7 @@ export default function Hero() {
         {/**Navbar*/}
         <div className="hidden md:flex items-center justify-between bg-white px-3 sm:px-12 lg:px-20 py-1">
             <Image 
-              width={180}
+              width={250}
               height={160}
               alt="GGS Logo"
               src={"/logos/GGS-Logo.png"}
