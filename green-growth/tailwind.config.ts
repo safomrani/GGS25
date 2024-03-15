@@ -60,7 +60,8 @@ const config = {
         },
         green:{
           200:'#e2f4ef',
-          300: '#01a98f'
+          300: '#01a98f',
+          400: '#0ca591',
         }
       },
       borderRadius: {

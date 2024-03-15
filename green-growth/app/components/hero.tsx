@@ -71,7 +71,7 @@ export default function Hero() {
                         <Image
                             width={25}
                             height={25}
-                            src="/images/Calendar.png"
+                            src="/icons/Calendar.png"
                             alt="calendar"
                         />
                         April 30th, 2024
@@ -80,7 +80,7 @@ export default function Hero() {
                         <Image
                             width={25}
                             height={25}
-                            src="/images/Location.png"
+                            src="/icons/Location.png"
                             alt="location"
                         />
                         Mövenpick Gammarth - Tunis
@@ -103,7 +103,7 @@ export default function Hero() {
                         <Image
                             width={25}
                             height={25}
-                            src="/images/Calendar.png"
+                            src="/icons/Calendar.png"
                             alt="calendar"
                         />
                         May 14th, 2024
@@ -112,7 +112,7 @@ export default function Hero() {
                         <Image
                             width={25}
                             height={25}
-                            src="/images/Location.png"
+                            src="/icons/Location.png"
                             alt="location"
                         />
                         Conrad Hotel - Cairo
@@ -137,14 +137,14 @@ export default function Hero() {
             backgroundPosition: 'right bottom',
             backgroundSize: 'fit'
         }}>
-            <div className="flex flex-col justify-center items-center pt-10 text-justify">
-                <div className=" justify-center px-3 sm:w-[90%]">
-                    <h1 className="py-1 text-center text-[22px] sm:text-2xl text-green-300"><span className={`${karlaExtraBold.className}`}>Green Growth Summit 2024</span></h1>
-                    <h1 className={`${karla.className} px-3 pt-3 text-[14px] text-black text-justify`}>Join us to accelerate a just green transition! Hivos is convening two flagship Green Growth Summits to invigorate local green ecosystems in the Middle East and North Africa. Interested in forming meaningful partnerships? Have ideas for how to take green transition strategies to the next level? Register your interest in attending at the links below.</h1>
+            <div className="flex flex-col justify-start items-center pt-10 text-justify">
+                <div className="px-5">
+                    <h1 className="py-1 text-left text-[22px] text-green-300"><span className={`${karlaExtraBold.className}`}>Green Growth Summit 2024</span></h1>
+                    <h1 className={`${karla.className} w-[90%] pt-3 text-[14px] text-black text-justify`}>Join us to accelerate a just green transition! Hivos is convening two flagship Green Growth Summits to invigorate local green ecosystems in the Middle East and North Africa. Interested in forming meaningful partnerships? Have ideas for how to take green transition strategies to the next level? Register your interest in attending at the links below.</h1>
                 </div>
             </div>
             {/**Event details */}
-            <div className="pl-10 flex flex-col gap-6 pt-10 pb-10">
+            <div className="pl-5 flex flex-col gap-6 pt-10 pb-10">
                 {/*Tunis**/}
                 <div className="flex flex-col gap-3">
                     <div className="pb-2">
@@ -264,7 +264,7 @@ export default function Hero() {
               />
               <img 
                 src='/logos/changelabs.png'
-                className="h-[30px] lg:h-[30px]"
+                className="h-[30px] lg:h-[40px]"
                 alt="Changelabs logo"
               />
             </div>
