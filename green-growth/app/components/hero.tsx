@@ -156,7 +156,7 @@ export default function Hero() {
                         <Image
                             width={25}
                             height={25}
-                            src="/images/Calendar.png"
+                            src="/icons/Calendar.png"
                             alt="calendar"
                         />
                         April 30th, 2024
@@ -165,7 +165,7 @@ export default function Hero() {
                         <Image
                             width={25}
                             height={25}
-                            src="/images/Location.png"
+                            src="/icons/Location.png"
                             alt="location"
                         />
                         Mövenpick Gammarth - Tunis
@@ -191,7 +191,7 @@ export default function Hero() {
                         <Image
                             width={25}
                             height={25}
-                            src="/images/Calendar.png"
+                            src="/icons/Calendar.png"
                             alt="calendar"
                         />
                         May 14th, 2024
@@ -200,7 +200,7 @@ export default function Hero() {
                         <Image
                             width={25}
                             height={25}
-                            src="/images/Location.png"
+                            src="/icons/Location.png"
                             alt="location"
                         />
                         Conrad Hotel - Cairo
