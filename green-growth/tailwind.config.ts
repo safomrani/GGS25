@@ -73,6 +73,7 @@ const config = {
         },
         olivegreen:'#255345',
         orange: '#e0593b',
+        gray: '#d3d3d3'
       },
       borderRadius: {
         lg: "var(--radius)",

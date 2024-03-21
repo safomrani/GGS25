@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { Separator } from '../components/ui/separator';
 import { freehand } from "./components/fonts";
-import { karla, karlaBold,karlaExtraBold } from "./components/fonts";
+import { karla, karlaBold,karlaExtraBold,RobotoCondensed } from "./components/fonts";
 import Hero from "./components/hero";
 import FooterBar from "./components/footer";
 import { TracksData } from '@/app/data/tracks'
@@ -25,8 +25,8 @@ export default function Home() {
       {/**Summit Tracks */}
       <div className="bg-green-200 py-10 sm:py-20">
         <div className="px-10 sm:px-20 text-3xl"> 
-          <span className={`${karlaExtraBold.className} text-green-300`}>Summit</span>
-          <span className={`${karlaExtraBold.className} text-red-300`}> Tracks</span>
+          <span className={`${RobotoCondensed.className} text-green-300`}>Summit</span>
+          <span className={`${RobotoCondensed.className} text-red-300`}> Tracks</span>
         </div>
         {/**Desktop view */}
         <div className="mx-auto px-20 py-10 hidden sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-5"
@@ -85,8 +85,8 @@ export default function Home() {
       {/**Event Supporters */}
       <div className="px-10 sm:px-20 py-10 ">
         <div className=" text-3xl py-3"> 
-            <span className={`${karlaExtraBold.className} text-green-300`}>Event</span>
-            <span className={`${karlaExtraBold.className} text-red-300`}> Supporters</span>
+            <span className={`${RobotoCondensed.className} text-green-300`}>Event</span>
+            <span className={`${RobotoCondensed.className} text-red-300`}> Supporters</span>
         </div>
         <Supporters/>
       </div>
@@ -94,8 +94,8 @@ export default function Home() {
       {/**News and articles */}
       <div className="bg-green-200 px-10 sm:px-20 py-10">
         <div className=" text-3xl py-3"> 
-            <span className={`${karlaExtraBold.className} text-green-300`}>Highlighted</span>
-            <span className={`${karlaExtraBold.className} text-red-300`}> Articles</span>
+            <span className={`${RobotoCondensed.className} text-green-300`}>Highlighted</span>
+            <span className={`${RobotoCondensed.className} text-red-300`}> Articles</span>
         </div>
         <NewsSection/>
       </div>

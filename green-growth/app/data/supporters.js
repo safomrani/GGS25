@@ -10,14 +10,9 @@ export const SupportedBy = [
         image : '/logos/CFFYE.png',
     },
     {
-        id: 4, 
-        name: 'Impact Europe', 
-        image : '/logos/Impact Europe.png',
-    },
-    {
-        id: 5, 
-        name: 'Challenge Fund for Youth Employmen', 
-        image : '/logos/CFFYE.png',
+        id: 3, 
+        name: 'Ministry of Affairs in Netherlands', 
+        image : '/logos/MFAN.png',
     },
   ];
 

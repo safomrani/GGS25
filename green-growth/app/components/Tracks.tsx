@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { karla, karlaBold, karlaExtraBold } from "./fonts";
+import { karla, karlaBold, karlaExtraBold, RobotoCondensed } from "./fonts";
 
 type Props = {
   index: number;
@@ -22,13 +22,13 @@ const TrackItem = ({
   return (
     <div className="h-full min-h-[330px] sm:min-h-[390px] w-[95%] p-7 flex flex-col sm:justify-between bg-[#FFFFFF] rounded-2xl shadow-lg">
       <div className={`mb-2 sm:mb-0 pb-3`}>
-        <p className={`${karlaExtraBold.className} text-xl`}
+        <p className={`${RobotoCondensed.className} text-2xl`}
             style={{
                 color: color,
             }}>
           {index}.
         </p>
-        <h1 className={`${karlaExtraBold.className} text-xl whitespace-pre-line`} style={{
+        <h1 className={`${RobotoCondensed.className} text-2xl whitespace-pre-line`} style={{
             color: color,
         }}>
           {title}

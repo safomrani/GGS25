@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { Separator } from '../../components/ui/separator';
 import { freehand } from "./fonts";
-import { karla, karlaBold, karlaExtraBold, RobotoCondensed } from "./fonts";
+import { karla, karlaBold, karlaExtraBold } from "./fonts";
 
 
 export default function Hero() {
   return (
-    <main className="min-h-[95%] items-center pt-1">
+    <main className="min-h-screen items-center pt-1">
         {/**Navbar*/}
         <div className="hidden md:flex items-center justify-between bg-white px-3 sm:px-12 lg:px-20 py-1">
             <Image 
@@ -54,7 +54,7 @@ export default function Hero() {
             backgroundSize: 'contain'
         }}>
             <div className="pt-10 px-3 md:px-12 lg:px-24  md:w-[680px] lg:w-[865px]">
-                <h1 className="text-center md:text-left text-3xl sm:text-3xl md:text-4xl lg:text-5xl text-green-300"><span className={`${RobotoCondensed.className}`}>Green Growth Summit 2024</span></h1>
+                <h1 className="text-center md:text-left text-3xl sm:text-3xl md:text-4xl lg:text-5xl text-green-300"><span className={`${karlaExtraBold.className}`}>Green Growth Summit 2024</span></h1>
                 <div className=" justify-center md:pb-5 md:w-[86%] lg:w-full">
                     <h1 className={`${karla.className}pt-3 md:text-[18px] lg:text-1xl text-black text-justify`}>Join us to accelerate a just green transition! Hivos is convening two flagship Green Growth Summits to invigorate local green ecosystems in the Middle East and North Africa. Interested in forming meaningful partnerships? Have ideas for how to take green transition strategies to the next level? Register your interest in attending at the links below.</h1>
                 </div>
@@ -139,7 +139,7 @@ export default function Hero() {
         }}>
             <div className="flex flex-col justify-start items-center pt-10 text-justify">
                 <div className="px-5">
-                    <h1 className="py-1 text-left text-[22px] text-green-300"><span className={`${RobotoCondensed.className}`}>Green Growth Summit 2024</span></h1>
+                    <h1 className="py-1 text-left text-[22px] text-green-300"><span className={`${karlaExtraBold.className}`}>Green Growth Summit 2024</span></h1>
                     <h1 className={`${karla.className} w-[90%] pt-3 text-[14px] text-black text-justify`}>Join us to accelerate a just green transition! Hivos is convening two flagship Green Growth Summits to invigorate local green ecosystems in the Middle East and North Africa. Interested in forming meaningful partnerships? Have ideas for how to take green transition strategies to the next level? Register your interest in attending at the links below.</h1>
                 </div>
             </div>
@@ -217,80 +217,80 @@ export default function Hero() {
         </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row justify-center items-center lg:justify-between lg:pt-6 py-5">
-            {/**Sponsor */}
-            <div className="flex flex-wrap lg:flex-row gap-5 lg:gap-10 items-center justify-center lg:pl-10 xl:pl-20"> 
-            <div className="">
-                <p className={`${karla.className} text-black pb-3 text-bold text-center lg:text-left`}>Core Sponsors</p>
-                <div className="flex flex-wrap gap-5 xl:gap-9 py-3 lg:py-0 justify-center lg:justify-start">
-                    <img 
-                        src='/logos/FMO.png'
-                        className="h-[30px] lg:h-[40px]"
-                        alt="FMO logo"
-                    />
-                    <img 
-                        src='/logos/greenovi.png'
-                        className="h-[30px] lg:h-[40px]"
-                        alt="Greenovi logo"
-                    />
-                    <img 
-                        src='/logos/UN.png'
-                        className="h-[30px] lg:h-[40px]"
-                        alt="Funded by EU logo"
-                    />
-                    <img 
-                        src='/logos/republique tunisenne.png'
-                        className="h-[30px] lg:h-[40px]"
-                        alt="Republique Tunisenne logo"
-                    />
-                    <img 
-                        src='/logos/expertise france.png'
-                        className="h-[33px] lg:h-[33px]"
-                        alt="Expertise france logo"
-                    />
-                </div>
+      <div className="flex flex-col lg:flex-row justify-center items-center lg:justify-between lg:pt-6 py-5">
+        {/**Sponsor */}
+        <div className="flex flex-wrap lg:flex-row gap-5 lg:gap-10 items-center justify-center lg:pl-10 xl:pl-20"> 
+          <div className="">
+            <p className={`${karla.className} text-black pb-3 text-bold text-center lg:text-left`}>Core Sponsors</p>
+            <div className="flex flex-wrap gap-5 xl:gap-9 py-3 lg:py-0 justify-center lg:justify-start">
+                <img 
+                    src='/logos/FMO.png'
+                    className="h-[30px] lg:h-[40px]"
+                    alt="FMO logo"
+                />
+                <img 
+                    src='/logos/greenovi.png'
+                    className="h-[30px] lg:h-[40px]"
+                    alt="Greenovi logo"
+                />
+                <img 
+                    src='/logos/UN.png'
+                    className="h-[30px] lg:h-[40px]"
+                    alt="Funded by EU logo"
+                />
+                <img 
+                    src='/logos/republique tunisenne.png'
+                    className="h-[30px] lg:h-[40px]"
+                    alt="Republique Tunisenne logo"
+                />
+                <img 
+                    src='/logos/expertise france.png'
+                    className="h-[33px] lg:h-[33px]"
+                    alt="Expertise france logo"
+                />
             </div>
-            </div>
-
-            {/**Implementation partners and Support from*/}
-            <div className="flex flex-wrap lg:flex-row gap-5 xl:gap-10 items-center justify-center xl:pr-20"> 
-                <div className="py-5 lg:py-0">
-                <p className={`${karla.className} text-black pb-3 text-bold text-center lg:text-left`}>Implementation Partners</p>
-                <div className="flex gap-3 xl:gap-7 py-3 lg:py-0">
-                <img 
-                    src='/logos/newsilk-logo.png'
-                    className="h-[30px] lg:h-[40px]"
-                    alt="newsilk logo"
-                />
-                <img 
-                    src='/logos/changelabs.png'
-                    className="h-[30px] lg:h-[40px]"
-                    alt="Changelabs logo"
-                />
-                </div>
-            </div>  
-            <div className="flex flex-col justify-center items-center lg:items-start">
-                <p className={`${karla.className} text-black pb-3 text-bold text-center lg:text-left`}>With Support From</p>
-                <div className="flex flex-wrap lg:flex justify-center items-center gap-7 py-3 lg:py-0">
-                <img 
-                    src='/logos/Impact Europe.png'
-                    className="h-[30px] lg:h-[40px]"
-                    alt="Impact EU logo"
-                />
-                <img 
-                    src='/logos/CFFYE.png'
-                    className="h-[30px] lg:h-[40px]"
-                    alt="Challengefund logo"
-                />
-                <img 
-                    src='/logos/MFAN.png'
-                    className="h-[30px] lg:h-[40px]"
-                    alt="MFAN logo"
-                />
-                </div>
-            </div>
-            </div>
+          </div>
         </div>
+
+        {/**Implementation partners and Support from*/}
+        <div className="flex flex-wrap lg:flex-row gap-5 xl:gap-10 items-center justify-center xl:pr-20"> 
+            <div className="py-5 lg:py-0">
+            <p className={`${karla.className} text-black pb-3 text-bold text-center lg:text-left`}>Implementation Partners</p>
+            <div className="flex gap-3 xl:gap-7 py-3 lg:py-0">
+              <img 
+                src='/logos/newsilk-logo.png'
+                className="h-[30px] lg:h-[40px]"
+                alt="newsilk logo"
+              />
+              <img 
+                src='/logos/changelabs.png'
+                className="h-[30px] lg:h-[40px]"
+                alt="Changelabs logo"
+              />
+            </div>
+          </div>  
+          <div className="flex flex-col justify-center items-center lg:items-start">
+            <p className={`${karla.className} text-black pb-3 text-bold text-center lg:text-left`}>With Support From</p>
+            <div className="flex flex-wrap lg:flex justify-center items-center gap-7 py-3 lg:py-0">
+              <img 
+                src='/logos/Impact Europe.png'
+                className="h-[30px] lg:h-[40px]"
+                alt="Impact EU logo"
+              />
+              <img 
+                src='/logos/CFFYE.png'
+                className="h-[30px] lg:h-[40px]"
+                alt="Challengefund logo"
+              />
+              <img 
+                src='/logos/MFAN.png'
+                className="h-[30px] lg:h-[40px]"
+                alt="MFAN logo"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
