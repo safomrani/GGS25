@@ -10,6 +10,12 @@ const config = {
 	],
   prefix: "",
   theme: {
+    backgroundSize:{
+      'auto': 'auto',
+      'cover': 'cover',
+      'contain': 'contain',
+      '50%': '50%',
+    },
     letterSpacing:{
       widest: '.25em',
     },
@@ -59,10 +65,14 @@ const config = {
           300:'#d73732'
         },
         green:{
+          100: '#e2f4ef',
           200:'#e2f4ef',
           300: '#01a98f',
           400: '#0ca591',
-        }
+          500: '#255345'
+        },
+        olivegreen:'#255345',
+        orange: '#e0593b',
       },
       borderRadius: {
         lg: "var(--radius)",

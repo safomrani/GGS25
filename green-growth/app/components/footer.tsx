@@ -4,7 +4,7 @@ import Image from "next/image";
 import { karla, karlaBold, karlaExtraBold } from "./fonts";
 
 
-export default function Footer() {
+export default function FooterBar() {
   return (
     <>
         <div className="bg-green-400 h-3/2 w-full flex sm:flex-row flex-col justify-center sm:justify-around items-center sm:items-start px-10 pt-12 pb-10">
