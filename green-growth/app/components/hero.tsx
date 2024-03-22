@@ -55,7 +55,7 @@ export default function Hero() {
         }}>
             <div className="pt-10 px-3 md:px-12 lg:px-24  md:w-[680px] lg:w-[865px]">
                 <h1 className="text-center md:text-left text-3xl sm:text-3xl md:text-4xl lg:text-5xl text-green-300"><span className={`${RobotoCondensed.className}`}>Green Growth Summit 2024</span></h1>
-                <div className=" justify-center md:pb-5 md:w-[86%] lg:w-full">
+                <div className=" justify-center md:pb-5 md:w-[86%] lg:w-[80%]">
                     <h1 className={`${karla.className}pt-3 md:text-[18px] lg:text-1xl text-black text-justify`}>Join us to accelerate a just green transition! Hivos is convening two flagship Green Growth Summits to invigorate local green ecosystems in the Middle East and North Africa. Interested in forming meaningful partnerships? Have ideas for how to take green transition strategies to the next level? Register your interest in attending at the links below.</h1>
                 </div>
             </div>
