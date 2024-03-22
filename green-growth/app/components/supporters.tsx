@@ -14,8 +14,8 @@ export default function Supporters() {
     return (
         <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-3 grid-flow-row gap-10 w-full md:w-[80%] md:mx-auto py-10">
             {SupportedBy?.map((company, idx) => (
-                <div className="min-h-[130px] w-full md:w-[80%]" key={idx}>
-                    <div className="shadow-xl shadow-gray p-7 md:p-10 md:m-5 rounded-2xl flex items-center justify-center h-full w-full">
+                <div className="min-h-[60px] w-full md:w-[80%]" key={idx}>
+                    <div className="shadow-xl shadow-gray p-7 rounded-2xl flex items-center justify-center h-full w-full">
                         <div className="w-[220px] h-[80px]">
                             <img
                                 src={company.image}
