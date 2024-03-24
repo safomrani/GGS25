@@ -152,7 +152,7 @@ export default function Hero() {
                             GGS Tunisia
                         </button>
                     </div> 
-                    <div className={`${karlaBold.className} text-[15px] flex flex-row gap-2 items-center justify-start pl-1`}>
+                    <div className={`${karlaBold.className}  text-[13px] sm:text-[15px]  flex flex-row gap-2 items-center justify-start pl-1`}>
                         <Image
                             width={25}
                             height={25}
@@ -161,7 +161,7 @@ export default function Hero() {
                         />
                         April 30th, 2024
                     </div>
-                    <div className={`${karlaBold.className} text-[15px] flex flex-row gap-2 items-center justify-start pl-1`}>
+                    <div className={`${karlaBold.className} text-[13px] sm:text-[15px] flex flex-row gap-2 items-center justify-start pl-1`}>
                         <Image
                             width={25}
                             height={25}
@@ -172,10 +172,10 @@ export default function Hero() {
                     </div>
                     <div className="pt-2 flex flex-col">
                         <button className= {`${karla.className} bg-red-300 uppercase 
-                            text-white px-3 py-2 rounded-md w-[180px] text-[18px]`}>
+                            text-white px-3 py-2 rounded-md w-[140px] md:w-[180px] text-[14px] md:text-[18px]`}>
                             <a href='https://docs.google.com/forms/d/e/1FAIpQLSdbn80m2mOZYvEIRqnbSzSKIf3nBeJGiSVOndUSYSfQuE70Ng/viewform' target="_blank">Register Now*</a>
                         </button>
-                        <div className={`${karla.className} px-3 text-[13px]`}>*invitations are limited</div>
+                        <div className={`${karla.className} px-3 text-[11px] md:text-[13px]`}>*invitations are limited</div>
                     </div>
                 </div>
                 <Separator className='bg-red-300 w-2/3'/>
@@ -187,7 +187,7 @@ export default function Hero() {
                             GGS Egypt
                         </button>
                     </div>                     
-                    <div className={`${karlaBold.className} text-[15px] flex flex-row gap-2 items-center justify-start pl-1`}>
+                    <div className={`${karlaBold.className}  text-[13px] sm:text-[15px]  flex flex-row gap-2 items-center justify-start pl-1`}>
                         <Image
                             width={25}
                             height={25}
@@ -196,7 +196,7 @@ export default function Hero() {
                         />
                         May 14th, 2024
                     </div>
-                    <div className={`${karlaBold.className} text-[15px] flex flex-row gap-2 items-center justify-start pl-1`}>
+                    <div className={`${karlaBold.className}  text-[13px] sm:text-[15px]  flex flex-row gap-2 items-center justify-start pl-1`}>
                         <Image
                             width={25}
                             height={25}
@@ -207,10 +207,10 @@ export default function Hero() {
                     </div>
                     <div className="pt-2 flex flex-col">
                         <button className= {`${karla.className} bg-red-300 uppercase 
-                            text-white px-3 py-2 rounded-md w-[180px] text-[18px]`}>
+                            text-white px-3 py-2 rounded-md w-[140px] md:w-[180px] text-[14px] md:text-[18px]`}>
                             <a href='https://docs.google.com/forms/d/e/1FAIpQLScv86Nlo6bfTL4Z0YozgeJWjgQ2tiK-mF9XppWS2a1qv4TB6Q/viewform' target="_blank">Register Now*</a>
                         </button>
-                        <div className={`${karla.className} px-3 text-[13px]`}>*invitations are limited</div>
+                        <div className={`${karla.className} px-3 text-[11px] md:text-[13px]`}>*invitations are limited</div>
                     </div>
                 </div>
             </div>
@@ -254,39 +254,39 @@ export default function Hero() {
 
             {/**Implementation partners and Support from*/}
             <div className="flex flex-wrap lg:flex-row gap-5 xl:gap-10 items-center justify-center xl:pr-20"> 
-                <div className="py-5 lg:py-0">
-                <p className={`${karla.className} text-black pb-3 text-bold text-center lg:text-left`}>Implementation Partners</p>
-                <div className="flex gap-3 xl:gap-7 py-3 lg:py-0">
-                <img 
-                    src='/logos/newsilk-logo.png'
-                    className="h-[30px] lg:h-[40px]"
-                    alt="newsilk logo"
-                />
-                <img 
-                    src='/logos/changelabs.png'
-                    className="h-[30px] lg:h-[40px]"
-                    alt="Changelabs logo"
-                />
-                </div>
-            </div>  
+                <div className="flex flex-col items-center justify-center py-5 lg:py-0">
+                    <p className={`${karla.className} text-black pb-3 text-bold text-center lg:text-left`}>Implementation Partners</p>
+                    <div className="flex gap-3 xl:gap-7 py-3 lg:py-0">
+                        <img 
+                            src='/logos/newsilk-logo.png'
+                            className="h-[30px] lg:h-[40px]"
+                            alt="newsilk logo"
+                        />
+                        <img 
+                            src='/logos/changelabs.png'
+                            className="h-[30px] lg:h-[40px]"
+                            alt="Changelabs logo"
+                        />
+                    </div>
+                </div>  
             <div className="flex flex-col justify-center items-center lg:items-start">
                 <p className={`${karla.className} text-black pb-3 text-bold text-center lg:text-left`}>With Support From</p>
-                <div className="flex flex-wrap lg:flex justify-center items-center gap-7 py-3 lg:py-0">
-                <img 
-                    src='/logos/Impact Europe.png'
-                    className="h-[30px] lg:h-[40px]"
-                    alt="Impact EU logo"
-                />
-                <img 
-                    src='/logos/CFFYE.png'
-                    className="h-[30px] lg:h-[40px]"
-                    alt="Challengefund logo"
-                />
-                <img 
-                    src='/logos/MFAN.png'
-                    className="h-[30px] lg:h-[40px]"
-                    alt="MFAN logo"
-                />
+                <div className="flex flex-wrap lg:flex justify-center items-center gap-5 sm:gap-7 py-3 lg:py-0">
+                    <img 
+                        src='/logos/Impact Europe.png'
+                        className="h-[30px] lg:h-[40px]"
+                        alt="Impact EU logo"
+                    />
+                    <img 
+                        src='/logos/CFFYE.png'
+                        className="h-[30px] lg:h-[40px]"
+                        alt="Challengefund logo"
+                    />
+                    <img 
+                        src='/logos/MFAN.png'
+                        className="h-[30px] lg:h-[40px]"
+                        alt="MFAN logo"
+                    />
                 </div>
             </div>
             </div>

@@ -28,7 +28,7 @@ export const TracksData = [
         title : 'Cluster \n Champions',
         keynotes: 'Keynote:  Activating Green Value Chains',
         panel: 'Panel: Global & Portfolio Case Studies', 
-        track: 'Dealmaking/MOUs',
+        track: 'Dealmaking / MOUs',
         color: '#d73732',
     },
     {
@@ -36,7 +36,7 @@ export const TracksData = [
         title : '(Green) Impact \n Investing',
         keynotes: 'Keynote: Stimulation of II in Mena',
         panel: 'Investor Showcase: Funder presentations', 
-        track: 'Dealmaking/Policy Paper',
+        track: 'Dealmaking / Policy Paper',
         color: 'black',
     },
     
