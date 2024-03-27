@@ -3,7 +3,6 @@ import { Separator } from '../../components/ui/separator';
 import { freehand } from "./fonts";
 import { karla, karlaBold, karlaExtraBold, RobotoCondensed } from "./fonts";
 
-
 export default function Hero() {
   return (
     <main className="min-h-[95%] items-center pt-1">
@@ -19,7 +18,7 @@ export default function Hero() {
                 <h1 className="text-2xl text-green-300"><span className={`${karlaBold.className}`}>#GGSummit24</span></h1>
             </div>
             <img 
-                className="h-[30px] lg:h-[40px]"
+                className="h-[50px] lg:h-[60px]"
                 alt="Hivos Logo"
                 src={"/logos/Hivos.png"}            
             />
@@ -34,7 +33,7 @@ export default function Hero() {
               src={"/logos/GGS-Logo.png"}
             />
             <img 
-                className="h-[30px] lg:h-[40px]"
+                className="h-[40px]"
                 alt="Hivos Logo"
                 src={"/logos/Hivos.png"}            
             />

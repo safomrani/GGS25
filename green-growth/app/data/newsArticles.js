@@ -9,18 +9,18 @@ export const newsArticles = [
     },
     {
         id: 2, 
-        title : 'Greening youth employment in North Africa',
-        description: 'For decades in North Africa, high youth unemployment and lack of financing for small and medium enterprises have been preventing young people from developing their full potential. At the same time, the increasingly tangible effects of climate change are having a devastating impact on the region’s economic development..', 
-        date: 'February 9, 2023', 
-        link: 'https://hivos.org/greening-youth-employment-in-north-africa/',
+        title : 'Hivos opens doors for collaboration at Egypt’s Venture Capital Summit',
+        description: 'Last November, Cairo hosted the second edition of the Venture Capital Summit, a pivotal event in Egypt. The summit’s goal is to enhance Egypt’s standing as a regional hub for venture capital and a gateway for investments into Africa and the Middle East, fostering collaboration between foreign investors and regional VC funds..', 
+        date: 'December 6, 2023', 
+        link: 'https://hivos.org/hivos-opens-doors-for-collaboration-at-egypts-venture-capital-summit/',
         image: '/images/article2.jpg'
     },
     {
         id: 3, 
-        title : 'Futures Lab in Sinai: What if climate adaptation were local?',
-        description: 'Immediately following the COP 27, Hivos and the Challenge Fund for Youth Employment will collaborate with New Silk Roads and ElRehla to organize a Futures Lab in Sinai – Egypt, to explore the future of just green transitions in Africa..', 
-        date: 'November 10, 2022', 
-        link: 'https://hivos.org/futures-lab-in-sinai-what-if-climate-adaptation-were-local/',
+        title : 'Hivos will host the Green Growth Summit',
+        description: 'Hivos is excited to announce the Green Growth Summit, a regional event organized in Tunis and Cairo that will build partnerships for climate change mitigation and open green economic pathways in North Africa.',
+        date: 'March 18, 2024', 
+        link: 'https://hivos.org/hivos-will-host-the-green-growth-summit/',
         image: '/images/article3.jpg'
     }
 ]
