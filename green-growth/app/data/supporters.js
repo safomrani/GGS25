@@ -1,5 +1,15 @@
 export const SupportedBy = [ 
     {
+        id: 4, 
+        name: 'FMO', 
+        image : '/logos/FMO.png',
+    },
+    {
+        id: 5, 
+        name: 'Expertise France', 
+        image : '/logos/expertise france.png',
+    },
+    {
         id: 1, 
         name: 'Impact Europe', 
         image : '/logos/Impact Europe.png',

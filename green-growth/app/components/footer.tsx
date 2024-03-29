@@ -59,11 +59,18 @@ export default function FooterBar() {
         </div>
         <div className=" bg-green-400 flex flex-col justify-center items-center text-center px-5 pb-5">
             <h1 className={`${karla.className} text-white font-semibold`}>
-                © 2024 Green Growth Summit. All rights reserved. Organized by Hivos, implemented by{" "}
+                © 2024 Green Growth Summit. All rights reserved. Organized by{" "}
                 <span className= {`${karla.className} hover:text-black font-semibold cursor-pointer`}>
-                    <a href="https://changelabs.me/" target="_blank">Changelabs.{" "}</a>
+                    <a href="https://hivos.org/" target="_blank">Hivos</a>
                 </span>
-                and New Silk Roads.
+                , implemented by{" "}
+                <span className= {`${karla.className} hover:text-black font-semibold cursor-pointer`}>
+                    <a href="https://changelabs.me/" target="_blank">Changelabs{" "}</a>
+                </span>
+                and{" "}
+                <span className= {`${karla.className} hover:text-black font-semibold cursor-pointer`}>
+                    <a href="https://www.newsilkroads.com/" target="_blank">New Silk Roads.{" "}</a>
+                </span>
             </h1>
         </div>
     </>

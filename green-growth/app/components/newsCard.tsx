@@ -12,9 +12,9 @@ type Props = {
 
 const NewsCard = ({ image_file, title, date, description, link }: Props) => {
   return (
-    <div className="relative flex flex-col h-full w-full items-center justify-end mb-10">
+    <div className=" relative flex flex-col h-full w-full items-center justify-end mb-10">
       <div className="h-10 w-11/12 blur-md absolute lg:shadow-lg lg:shadow-[rgba(0,0,0,0.3)]" />
-      <div className="h-full xl:min-h-[480px] flex flex-col z-10 rounded-[24px] bg-white pb-5">
+      <div className="h-full xl:min-h-[480px] flex flex-col z-10 rounded-[24px] bg-white pb-5 shadow-md shadow-gray">
         <img
           src={image_file}
           className="w-full rounded-t-[24px] h-[40%] lg:h-[180px] 2xl:h-[40%] object-cover"

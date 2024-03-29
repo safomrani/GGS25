@@ -108,7 +108,8 @@ export default function Home() {
       </div>
 
 
-      {/**Event Supporters */}
+      {/**Event Supporters 
+
       <div className="px-10 sm:px-20 py-10 ">
         <div className=" text-3xl py-3"> 
             <span className={`${RobotoCondensed.className} text-green-300`}>Event</span>
@@ -116,11 +117,12 @@ export default function Home() {
         </div>
         <Supporters/>
       </div>
-
+      
+      */}
      
 
       {/**News and articles */}
-      <div className="bg-green-200 px-10 sm:px-20 py-10">
+      <div className="px-10 sm:px-20 py-10">
         <div className=" text-3xl py-3"> 
             <span className={`${RobotoCondensed.className} text-green-300`}>Highlighted</span>
             <span className={`${RobotoCondensed.className} text-red-300`}> Articles</span>
