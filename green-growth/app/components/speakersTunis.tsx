@@ -3,7 +3,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import SpeakerCard from './speakerCard';
 import Image from 'next/image';
-import { faker } from "@faker-js/faker";
 import { karla, karlaBold,karlaExtraBold,RobotoCondensed } from "./fonts";
 import { speakersTunis } from '../data/speakersTunis';
 import { motion } from "framer-motion"
@@ -53,16 +52,7 @@ export default function SpeakersTunis(){
 
     //fake content
     const [data, setData] = useState<{ image: string }[]>([]);
-    const generateFakeData = () =>{
-        const newImage = faker.image.urlPicsumPhotos();
-        return {image: newImage};
-    }
-
-    //resset local data
-    const resetLocalStorage = () => {
-        localStorage.removeItem("fakerData");
-        setData([]); // Reset the data state in the component
-      };
+ 
 
     //determine lastiem index
     const lastPostIndex = currentPage * postsPerPage;
@@ -70,25 +60,9 @@ export default function SpeakersTunis(){
     const currentPosts = speakersTunis.slice(firstPostIndex, lastPostIndex);
 
 
-    useEffect(() => {
-        // Check if data is already present in localStorage
-        const storedData = localStorage.getItem("fakerData");
-
-        if (storedData) {
-          setData(JSON.parse(storedData));
-          setIsClient(true);
-        } else {
-          // If data is not present, generate new data and store it in localStorage
-          const newData = Array.from({ length: 15 }, generateFakeData);
-          setData(newData);
-          localStorage.setItem("fakerData", JSON.stringify(newData));
-          setIsClient(true);
-        }
-      }, [generateFakeData]);
 
     return (
         <>
-            {isClient ? (
             <>
                 <motion.div 
                     variants={variants}
@@ -119,10 +93,7 @@ export default function SpeakersTunis(){
                     setCurrentPage={setCurrentPage}
                 />
 
-            </>) : (
-                <span>Loading</span>
-            )}
-            
+            </>
         </>
     )
 }

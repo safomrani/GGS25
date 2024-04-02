@@ -86,6 +86,7 @@ export default function VenueSection() {
                             {VenueData[selectedIndex].details.map((venue, index) => {
                                 return(
                                     <Venue
+                                        key={index}
                                         locationTitle = {venue.locationTitle}
                                         eventDate={venue.eventDate}
                                         location={venue.location}
