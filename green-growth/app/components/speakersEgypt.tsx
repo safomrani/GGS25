@@ -73,6 +73,7 @@ export default function Speakers(){
                         return(
                             <motion.div
                                 variants={imgs}
+                                key={idx}
                             >
                                 <SpeakerCard
                                     key={idx}
