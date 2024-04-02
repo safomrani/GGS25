@@ -90,6 +90,7 @@ export default function Hero() {
                             <a href='https://docs.google.com/forms/d/e/1FAIpQLSdbn80m2mOZYvEIRqnbSzSKIf3nBeJGiSVOndUSYSfQuE70Ng/viewform' target="_blank">Register Now*</a>
                         </button>
                         <div className={`${karla.className} px-3 text-[13px]`}>*invitations are limited</div>
+                        <div className={`${karla.className} px-3 text-[11px] md:text-[13px]`}>*registeration closes April 8th</div>
                     </div>
                 </div>
                 <div className="flex flex-col gap-3">
@@ -122,6 +123,7 @@ export default function Hero() {
                             <a href='https://docs.google.com/forms/d/e/1FAIpQLScv86Nlo6bfTL4Z0YozgeJWjgQ2tiK-mF9XppWS2a1qv4TB6Q/viewform' target="_blank">Register Now*</a>
                         </button>
                         <div className={`${karla.className} px-3 text-[13px]`}>*invitations are limited</div>
+                        <div className={`${karla.className} px-3 text-[1px] md:text-[13px]`}>*registeration closes April 8th</div>
                     </div>
                 </div>
             </div>
@@ -175,6 +177,8 @@ export default function Hero() {
                             <a href='https://docs.google.com/forms/d/e/1FAIpQLSdbn80m2mOZYvEIRqnbSzSKIf3nBeJGiSVOndUSYSfQuE70Ng/viewform' target="_blank">Register Now*</a>
                         </button>
                         <div className={`${karla.className} px-3 text-[11px] md:text-[13px]`}>*invitations are limited</div>
+                        <div className={`${karla.className} px-3 text-[11px] md:text-[13px]`}>*registeration closes April 8th</div>
+
                     </div>
                 </div>
                 <Separator className='bg-red-300 w-2/3'/>
@@ -210,6 +214,7 @@ export default function Hero() {
                             <a href='https://docs.google.com/forms/d/e/1FAIpQLScv86Nlo6bfTL4Z0YozgeJWjgQ2tiK-mF9XppWS2a1qv4TB6Q/viewform' target="_blank">Register Now*</a>
                         </button>
                         <div className={`${karla.className} px-3 text-[11px] md:text-[13px]`}>*invitations are limited</div>
+                        <div className={`${karla.className} px-3 text-[11px] md:text-[13px]`}>*registeration closes April 8th</div>
                     </div>
                 </div>
             </div>
