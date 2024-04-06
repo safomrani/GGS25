@@ -17,7 +17,7 @@ const Agenda = ({
 }: Props
 ) => {
   return (
-    <div className='lg:px-10 pt-10'>
+    <div className='lg:px-10 pt-5'>
         {
           /**conditional rendereing for each country */
           country === "Tunisia" 

@@ -7,7 +7,7 @@ import { karla, karlaBold,karlaExtraBold,RobotoCondensed } from "./components/fo
 import Hero from "./components/hero";
 import FooterBar from "./components/footer";
 import { TracksData } from '@/app/data/tracks'
-import Speakers from "./components/speakersEgypt";
+import SpeakersEgypt from "./components/speakersEgypt";
 import SpeakersTunis from "./components/speakersTunis";
 import Supporters from "./components/supporters";
 import Venue from "./components/venue";
@@ -32,8 +32,8 @@ export default function Home() {
   const [egyptColor, changeColor] = useState("bg-transparent text-green-300");
   const [tunisColor, changeTunisColor] = useState("bg-green-300 text-white");
   const [venueColor, changeVenueColor] = useState("text-red-300");
-  const [venueBackground, changeBackground] = useState("bg-[url(/images/venue-tunis.jpg)]");
-  const [venueBackgroundMobile, changeBackgroundMobile] = useState("bg-[url(/images/venue-tunis-mob.jpg)]");
+  const [venueBackground, changeBackground] = useState("/images/venue-tunis.jpg");
+  const [venueBackgroundMobile, changeBackgroundMobile] = useState("/images/venue-tunis-mob.jpg");
 
 
   {/**Animation */}
@@ -53,8 +53,8 @@ export default function Home() {
       <Hero/>
 
       {/**Summit Tracks */}
-      <div className="bg-green-200 py-10 sm:py-20">
-        <div className="px-10 sm:px-20 text-3xl"> 
+      <div className="bg-green-200 py-10 ">
+        <div className="px-10 sm:px-20 text-xl md:text-2xl lg:text-3xl"> 
           <span className={`${RobotoCondensed.className} text-green-300`}>Summit</span>
           <span className={`${RobotoCondensed.className} text-red-300`}> Tracks</span>
         </div>
@@ -118,10 +118,38 @@ export default function Home() {
       {/**Venue Desktop view */}
       {/**Venue tabs & toggling each tab */}
       <div className="min-h-[500px]">
-        <div className = {`md:${venueBackground} ${venueBackgroundMobile} relative bg-none min-h-[600px] h-full md:h-[90%] bg-no-repeat bg-cover bg-center md:bg-right-top`}>
-          <div className="px-10 sm:px-20 pt-10 pb-5 text-3xl"> 
+        <div className = {`relative min-h-[570px] h-full`}>
+          {/**Desktop background */}
+          <div className="hidden md:block">
+            <Image 
+              alt="background"
+              src={venueBackground}
+              fill
+              sizes="100vw"
+              style={{
+                objectFit: 'cover',
+                zIndex: -1
+              }}
+            />
+          </div>
+          {/**Mobile background */}
+          <div className="md:hidden">
+            <Image 
+              alt="background"
+              src={venueBackgroundMobile}
+              fill
+              sizes="100vw"
+              style={{
+                objectFit: 'cover',
+                zIndex: -1,
+              }}
+            />
+          </div>
+
+          <div className="px-10 sm:px-20 pt-10 pb-3 sm:py-10 text-xl md:text-2xl lg:text-3xl"> 
               <span className={`${RobotoCondensed.className} text-green-300`}>Event</span>
               <span className={`${RobotoCondensed.className} ${venueColor}`}> Venue</span>
+
               <div className="pt-3 sm:pt-10 flex items-center gap-3 text-center">
                   <button
                       className={`${RobotoCondensed.className} border-2 border-green-300 
@@ -129,8 +157,8 @@ export default function Home() {
                       hover:bg-transparent hover:text-green-300 
                       transition-colors duration-150 ease-in-out} ${tunisColor}
                       transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110`} 
-                      onClick={()=>{setToggleEgypt(false); setToggleTunis(true); changeVenueColor("text-red-300"); changeBackgroundMobile("bg-[url(/images/venue-tunis-mob.jpg)]");
-                        changeTunisColor("bg-green-300 text-white"); changeBackground("bg-[url(/images/venue-tunis.jpg)]") ;changeColor("bg-transparent text-green-300")}}
+                      onClick={()=>{setToggleEgypt(false); setToggleTunis(true); changeVenueColor("text-red-300"); changeBackgroundMobile("/images/venue-tunis-mob.jpg");
+                        changeTunisColor("bg-green-300 text-white"); changeBackground("/images/venue-tunis.jpg") ;changeColor("bg-transparent text-green-300")}}
                   >
                       Tunisia
                   </button>
@@ -140,8 +168,8 @@ export default function Home() {
                       hover:bg-green-300 hover:text-white 
                       transition-colors duration-150 ease-in-out} ${egyptColor}
                       transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110`} 
-                      onClick={()=>{setToggleEgypt(true); setToggleTunis(false); changeVenueColor("text-white"); changeBackgroundMobile("bg-[url(/images/venue-egypt-mob.jpg)]");
-                      changeColor("bg-green-300 text-white"); changeBackground("bg-[url(/images/venue-egypt.jpg)]") ;changeTunisColor("bg-transparent text-green-300")}}
+                      onClick={()=>{setToggleEgypt(true); setToggleTunis(false); changeVenueColor("text-white"); changeBackgroundMobile("/images/venue-egypt-mob.jpg");
+                      changeColor("bg-green-300 text-white"); changeBackground("/images/venue-egypt.jpg") ;changeTunisColor("bg-transparent text-green-300")}}
                   >
                       Egypt
                   </button>
@@ -179,7 +207,7 @@ export default function Home() {
       {/**Speakers Desktop */}
 
       <div className="bg-green-200 px-10 sm:px-20 py-10">
-        <div className=" text-3xl py-3"> 
+        <div className="text-xl md:text-2xl lg:text-3xl"> 
             <span id='speakers' className={`${RobotoCondensed.className} text-green-300`}>Highlighted</span>
             <span className={`${RobotoCondensed.className} text-red-300`}> Speakers</span>
             <div className="pt-3 sm:pt-10 flex gap-3">
@@ -206,20 +234,19 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="">
-        {toggleTunis &&(
-          <SpeakersTunis/>
-        )}
-        {toggleEgypt &&(
-         <Speakers/>
-        )}
-        
+        <div className="pt-5">
+          {toggleTunis &&(
+            <SpeakersTunis/>
+          )}
+          {toggleEgypt &&(
+          <SpeakersEgypt/>
+          )}
         </div>
       </div>
 
       {/**Agenda section */}
       <div className="py-10 sm:py-20">
-        <div className="px-10 sm:px-20 text-3xl"> 
+        <div className="px-10 sm:px-20 text-xl md:text-2xl lg:text-3xl"> 
             <span className={`${RobotoCondensed.className} text-green-300`}>Tentative</span>
             <span className={`${RobotoCondensed.className} text-red-300`}> Agenda</span>
             {/**Toggle tabs */}
@@ -293,7 +320,7 @@ export default function Home() {
 
       {/**FAQs section */}
       <div className="bg-green-200 px-10 sm:px-20 py-10">
-        <div className=" text-3xl py-10"> 
+        <div className="text-xl md:text-2xl lg:text-3xl"> 
             <span className={`${RobotoCondensed.className} text-green-300`}>FAQs</span>
         </div>
         <FAQ/>
@@ -303,7 +330,7 @@ export default function Home() {
       {/**Event Supporters */}
 
       <div className=" px-10 sm:px-20 py-10 ">
-        <div className=" text-3xl py-3"> 
+        <div className="text-xl md:text-2xl lg:text-3xl py-3"> 
             <span className={`${RobotoCondensed.className} text-green-300`}>Event</span>
             <span className={`${RobotoCondensed.className} text-red-300`}> Supporters</span>
         </div>
@@ -312,7 +339,7 @@ export default function Home() {
       
       {/**News and articles */}
       <div className="bg-green-200 px-10 sm:px-20 py-10">
-        <div className=" text-3xl py-3"> 
+        <div className="text-xl md:text-2xl lg:text-3xl py-3"> 
             <span className={`${RobotoCondensed.className} text-green-300`}>Highlighted</span>
             <span className={`${RobotoCondensed.className} text-red-300`}> Articles</span>
         </div>

@@ -18,9 +18,9 @@ const SpeakerCard = ({
   link,
 }: Props) => {
   return (
-    <div className = 'relative z-10 flex flex-col items-center justify-end w-full'>
+    <div className = 'relative z-10 flex flex-col items-center justify-end w-[90%] sm:w-full'>
       <div className="h-10 w-3/4 blur-md absolute shadow-lg shadow-[rgba(0,0,0,0.3)]" />
-      <div className='z-10 rounded-[24px] bg-[#F4F4F4] w-full h-[370px] md:h-[355px] lg:h-[345px]'>
+      <div className='z-10 rounded-[24px] bg-[#F4F4F4] w-full sm:h-[370px] md:h-[355px] lg:h-[345px]'>
         <div className='w-full rounded-t-[24px]'>
           <img
             src={image_file}
