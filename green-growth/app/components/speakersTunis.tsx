@@ -152,8 +152,6 @@ export default function SpeakersTunis(){
                     onClick={() => {
                         setNext(false);
                         swiperRef.current?.slidePrev();
-                        swiperRef.current?.slidePrev();
-                        swiperRef.current?.slidePrev();
                     }}
                     />
                     <div
@@ -166,8 +164,6 @@ export default function SpeakersTunis(){
                     )}
                     onClick={() => {
                         setNext(true);
-                        swiperRef.current?.slideNext();
-                        swiperRef.current?.slideNext();
                         swiperRef.current?.slideNext();
                     }}
                     />
