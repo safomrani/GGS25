@@ -8,46 +8,35 @@ export default function Hero() {
     <main className="min-h-[95%] items-center pt-1">
         {/**Navbar*/}
         <div className="hidden md:flex items-center justify-between bg-white px-3 sm:px-12 lg:px-20 py-1">
-            <a href="https://www.ggsummit.me">
-                <Image 
-                width={250}
-                height={160}
-                alt="GGS Logo"
-                src={"/logos/GGS-Logo.png"}
-                />
-            </a>
-            
+            <Image 
+              width={250}
+              height={160}
+              alt="GGS Logo"
+              src={"/logos/GGS-Logo.png"}
+            />
             <div className="mx-auto">
                 <h1 className="text-2xl text-green-300"><span className={`${karlaBold.className}`}>#GGSummit24</span></h1>
             </div>
-            <a href="https://hivos.org/" target="_blank">
-                <img 
-                    className="h-[50px] lg:h-[60px]"
-                    alt="Hivos Logo"
-                    src={"/logos/Hivos.png"}            
-                />
-            </a>
-            
+            <img 
+                className="h-[50px] lg:h-[60px]"
+                alt="Hivos Logo"
+                src={"/logos/Hivos.png"}            
+            />
         </div>
 
         {/**Navbar mobile*/}
         <div className="flex md:hidden items-center justify-between bg-white px-3 py-1">
-            <a href="https://www.ggsummit.me">
-                <Image 
-                width={180}
-                height={120}
-                alt="GGS Logo"
-                src={"/logos/GGS-Logo.png"}
-                />
-            </a>
-            
-            <a href="https://hivos.org/" target="_blank">
-                <img 
-                    className="h-[40px]"
-                    alt="Hivos Logo"
-                    src={"/logos/Hivos.png"}            
-                />
-            </a>
+            <Image 
+              width={180}
+              height={120}
+              alt="GGS Logo"
+              src={"/logos/GGS-Logo.png"}
+            />
+            <img 
+                className="h-[40px]"
+                alt="Hivos Logo"
+                src={"/logos/Hivos.png"}            
+            />
             {/** 
             <div>
                 <h1 className="text-[15px] text-green-300"><span className={`${karlaBold.className}`}>#GGSummit24</span></h1>
