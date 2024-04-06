@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { karla, karlaBold,karlaExtraBold,RobotoCondensed } from "./fonts";
 import { speakersTunis } from '../data/speakersTunis';
 import { motion } from "framer-motion"
+import Link from "next/link";
 
 {/**Pagination imports */}
 
@@ -63,12 +64,12 @@ export default function SpeakersTunis(){
 
     return (
         <>
-            <>
+            <div className="hidden sm:block">
                 <motion.div 
                     variants={variants}
                     initial="hidden"
                     animate="show"
-                    className="mx-auto grid xs: grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 w-[90%] px-10 py-10">
+                    className="mx-auto grid xs: grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 w-full md:w-[82%] lg:w-[90%] px-10 py-10">
                     {currentPosts.map((item,idx) =>{
                         return(
                             <motion.div
@@ -86,7 +87,6 @@ export default function SpeakersTunis(){
                         )}
                     )}
                 </motion.div>
-
                 <PaginationSection
                     totalPosts={speakersTunis.length}
                     postsPerPage={postsPerPage}
@@ -94,7 +94,9 @@ export default function SpeakersTunis(){
                     setCurrentPage={setCurrentPage}
                 />
 
-            </>
+            </div>
+            <div>
+            </div>
         </>
     )
 }

@@ -68,7 +68,7 @@ export default function Speakers(){
                     variants={variants}
                     initial="hidden"
                     animate="show"
-                    className="mx-auto grid xs: grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 w-[90%] px-10 py-10">
+                    className="mx-auto grid xs: grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 w-full md:w-[82%] lg:w-[90%] px-10 py-10">
                     {currentPosts.map((item,idx) =>{
                         return(
                             <motion.div
