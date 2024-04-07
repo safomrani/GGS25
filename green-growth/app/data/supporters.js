@@ -24,5 +24,20 @@ export const SupportedBy = [
         name: 'Ministry of Affairs in Netherlands', 
         image : '/logos/MFAN.png',
     },
+    {
+        id: 4, 
+        name: 'Greenovi', 
+        image : '/logos/greenovi.png',
+    },
+    {
+        id: 5, 
+        name: 'EU', 
+        image : '/logos/UN.png',
+    },
+    {
+        id: 6, 
+        name: 'Tunis', 
+        image : '/logos/republique tunisenne.png',
+    },
   ];
 
