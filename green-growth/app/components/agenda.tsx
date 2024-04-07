@@ -40,9 +40,9 @@ const Agenda = ({
                             <div className= {`${karlaExtraBold.className} font-bold lg:w-3/4 text-[15px] text-green-600`}>{item.title}</div>
                         </div>
                         {item.event?.map((i, index) => (
-                            <div className='flex gap-2 p-1 items-center' key={index} >
+                            <div className='flex gap-2 p-1 items-start' key={index} >
                                 {/**<a href='/sessions' target=""><p className={`${karla.className} hover:text-blue-500 text-blue-400 `}>Book your sessions here</p></a>**/}
-                                <div className='w-[8px] h-[8px] rounded-full bg-red-300'></div>
+                                <div className='w-[8px] h-[8px] rounded-full bg-red-300 mt-2'></div>
                                 <p className={`${karla.className}  w-full text-[14px]`}> {i.details}</p>
                             </div>
                         ))}

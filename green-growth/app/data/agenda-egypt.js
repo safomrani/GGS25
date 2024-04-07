@@ -12,7 +12,7 @@ export const agendaEgypt = [
             },
             {
                 from: '10:30',
-                title: 'he Green Economy Unlocked: The Business Case for Green',
+                title: 'The Green Economy Unlocked: The Business Case for Green',
                 
             },
             {
@@ -47,13 +47,16 @@ export const agendaEgypt = [
                 event: 
                 [
                     {   
-                        details: 'Education and Green Economy : Accelerating Skills Development for Green Jobs'
+                        details: 'Deal Room 1'
                     },
                     {
-                        details: 'Shared Economy for Green Jobs and Urban Resilience'
+                        details: 'Deal Room 2'
                     },
                     {
-                        details: 'Green Impact Investing in Tunisia'
+                        details: 'Deal Room 3'
+                    },
+                    {
+                        details: 'Your Gateway to Investing in Upper Egypt'
                     }
                 ]
             },

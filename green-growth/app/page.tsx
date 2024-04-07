@@ -318,15 +318,16 @@ export default function Home() {
         </div>
       </div>
 
-      {/**FAQs section */}
+      
+      
+      {/**News and articles */}
       <div className="bg-green-200 px-10 sm:px-20 py-10">
-        <div className="text-xl md:text-2xl lg:text-3xl"> 
-            <span className={`${RobotoCondensed.className} text-green-300`}>FAQs</span>
+        <div className="text-xl md:text-2xl lg:text-3xl py-3"> 
+            <span className={`${RobotoCondensed.className} text-green-300`}>Highlighted</span>
+            <span className={`${RobotoCondensed.className} text-red-300`}> Articles</span>
         </div>
-        <FAQ/>
-      </div>     
-
-
+        <NewsSection/>
+      </div>
       {/**Event Supporters */}
 
       <div className=" px-10 sm:px-20 py-10 ">
@@ -337,15 +338,6 @@ export default function Home() {
         <Supporters/>
       </div>
       
-      {/**News and articles */}
-      <div className="bg-green-200 px-10 sm:px-20 py-10">
-        <div className="text-xl md:text-2xl lg:text-3xl py-3"> 
-            <span className={`${RobotoCondensed.className} text-green-300`}>Highlighted</span>
-            <span className={`${RobotoCondensed.className} text-red-300`}> Articles</span>
-        </div>
-        <NewsSection/>
-      </div>
-
       <FooterBar/>
     </>
   );

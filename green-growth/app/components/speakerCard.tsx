@@ -30,8 +30,8 @@ const SpeakerCard = ({
         <div className='p-5'>
           <div className="flex items-start justify-between mb-1">
             <div className="flex flex-col gap-1 lg:w-[87%]">
-              <div className= {`${karlaExtraBold.className} text-xl lg:text-[20px] 2xl:text-[22px] text-green-300 font-bold`}>{name}</div>  
-              <div className= {`${karla.className} text-[14px] text-[#454545]`}>{company}</div>
+              <div className= {`${karlaExtraBold.className} text-xl lg:text-[20px] text-green-300 font-bold`}>{name}</div>  
+              <div className= {`${karla.className} text-[13px] text-[#454545]`}>{company}</div>
             </div>
             <div>
             <Link target="_blank" rel="noopener noreferrer" href={`${link}`}>
