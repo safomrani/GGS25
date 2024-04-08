@@ -31,7 +31,7 @@ const Agenda = ({
                     <div className={`${karlaBold.className} pt-5 text-green-600`}>{item.from}</div>
                     <div className='w-[35%] lg:w-[40%] rounded-full h-[2px] bg-red-300'></div>
                 </div>
-                <div className="w-full md:w-[60%] lg:w-full relative flex items-center justify-start">
+                <div className="w-full md:w-[60%] lg:w-full relative flex  justify-start">
                     <div className='h-10 w-full md:w-full xl:w-[70%] 2xl:w-[90%] blur-md absolute shadow-lg shadow-blue-400	'></div>
                     <div className="z-10 bg-white rounded-[16px] p-5 border-2 w-full md:w-full xl:w-[70%] 2xl:w-[90%]">
                         {/* event details. map  */}

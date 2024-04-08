@@ -96,12 +96,12 @@ export default function Hero() {
                         Mövenpick Gammarth - Tunis
                     </div>
                     <div className="pt-2 flex flex-col">
-                        <button className= {`${karla.className} bg-red-300 uppercase 
+                        {/**<button className= {`${karla.className} bg-red-300 uppercase 
                         text-white px-3 py-2 rounded-md w-[180px] text-[18px]`}>
                             <a href='https://docs.google.com/forms/d/e/1FAIpQLSdbn80m2mOZYvEIRqnbSzSKIf3nBeJGiSVOndUSYSfQuE70Ng/viewform' target="_blank">Register Now*</a>
                         </button>
-                        <div className={`${karla.className} px-3 text-[13px]`}>*invitations are limited</div>
-                        <div className={`${karla.className} px-3 text-[11px] md:text-[13px]`}>*registration closes April 8th</div>
+                        <div className={`${karla.className} px-3 text-[13px]`}>*invitations are limited</div>**/}
+                        <div className={`${karla.className} px-3 text-[11px] md:text-[13px]`}>*Registration is now closed</div>
                     </div>
                 </div>
                 <div className="flex flex-col gap-3">
@@ -129,12 +129,12 @@ export default function Hero() {
                         Conrad Hotel - Cairo
                     </div>
                     <div className="pt-2 flex flex-col">
-                        <button className= {`${karla.className} bg-red-300 uppercase 
+                       {/**  <button className= {`${karla.className} bg-red-300 uppercase 
                         text-white px-3 py-2 rounded-md w-[180px] text-[18px]`}>
                             <a href='https://docs.google.com/forms/d/e/1FAIpQLScv86Nlo6bfTL4Z0YozgeJWjgQ2tiK-mF9XppWS2a1qv4TB6Q/viewform' target="_blank">Register Now*</a>
                         </button>
-                        <div className={`${karla.className} px-3 text-[13px]`}>*invitations are limited</div>
-                        <div className={`${karla.className} px-3 text-[1px] md:text-[13px]`}>*registration closes April 8th</div>
+                        <div className={`${karla.className} px-3 text-[13px]`}>*invitations are limited</div> */}
+                        <div className={`${karla.className} px-3 text-[1px] md:text-[13px]`}>*Registration is now closed</div>
                     </div>
                 </div>
             </div>
@@ -183,12 +183,12 @@ export default function Hero() {
                         Mövenpick Gammarth - Tunis
                     </div>
                     <div className="pt-2 flex flex-col">
-                        <button className= {`${karla.className} bg-red-300 uppercase 
+                        {/** <button className= {`${karla.className} bg-red-300 uppercase 
                             text-white px-3 py-2 rounded-md w-[140px] md:w-[180px] text-[14px] md:text-[18px]`}>
                             <a href='https://docs.google.com/forms/d/e/1FAIpQLSdbn80m2mOZYvEIRqnbSzSKIf3nBeJGiSVOndUSYSfQuE70Ng/viewform' target="_blank">Register Now*</a>
                         </button>
-                        <div className={`${karla.className} px-3 text-[11px] md:text-[13px]`}>*invitations are limited</div>
-                        <div className={`${karla.className} px-3 text-[11px] md:text-[13px]`}>*registration closes April 8th</div>
+                        <div className={`${karla.className} px-3 text-[11px] md:text-[13px]`}>*invitations are limited</div>*/}
+                        <div className={`${karla.className} px-3 text-[11px] md:text-[13px]`}>**Registration is now closed</div>
 
                     </div>
                 </div>
@@ -220,12 +220,12 @@ export default function Hero() {
                         Conrad Hotel - Cairo
                     </div>
                     <div className="pt-2 flex flex-col">
-                        <button className= {`${karla.className} bg-red-300 uppercase 
+                        {/**<button className= {`${karla.className} bg-red-300 uppercase 
                             text-white px-3 py-2 rounded-md w-[140px] md:w-[180px] text-[14px] md:text-[18px]`}>
                             <a href='https://docs.google.com/forms/d/e/1FAIpQLScv86Nlo6bfTL4Z0YozgeJWjgQ2tiK-mF9XppWS2a1qv4TB6Q/viewform' target="_blank">Register Now*</a>
                         </button>
-                        <div className={`${karla.className} px-3 text-[11px] md:text-[13px]`}>*invitations are limited</div>
-                        <div className={`${karla.className} px-3 text-[11px] md:text-[13px]`}>*registration closes April 8th</div>
+                        <div className={`${karla.className} px-3 text-[11px] md:text-[13px]`}>*invitations are limited</div>*/}
+                        <div className={`${karla.className} px-3 text-[11px] md:text-[13px]`}>*Registration is now closed</div>
                     </div>
                 </div>
             </div>

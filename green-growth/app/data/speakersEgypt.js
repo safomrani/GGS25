@@ -2,7 +2,7 @@ export const speakersEgypt = [
     {
         id: 1, 
         name: 'Ahmed Sameh', 
-        image : '/images/speakers/Ahmed Sameh.jpg',
+        image : '/images/speakers/Ahmed Sameh2.jpg',
         company: 'IKEA Foundation',
         link: 'https://www.linkedin.com/in/ahmedsamehhussein/',
     },

@@ -191,7 +191,7 @@ export default function Home() {
             {toggleEgypt &&(
               <div className='z-10'>
                 <Venue
-                  locationTitle = 'The Egypt Green Growth Summit will be hosted at the newly reonvated, 5-star Conrad Hotel'
+                  locationTitle = 'The Egypt Green Growth Summit will be hosted at the newly renovated, 5-star Conrad Hotel'
                   eventDate= 'May 14th, 2024'
                   location='Conrad Hotel - Cairo, Egypt'
                   reservation= 'https://www.hilton.com/en/hotels/caicici-conrad-cairo/rooms/'
