@@ -56,7 +56,7 @@ const NewsSection = () => {
                   className={clsx(
                     'h-[5px] rounded-full cursor-pointer duration-500',
                     {
-                      'w-3 bg-secondary': next,
+                      'w-3 bg-offwhite': next,
                       'w-7 bg-green-400': !next,
                     }
                   )}
@@ -71,7 +71,7 @@ const NewsSection = () => {
                   className={clsx(
                     'h-[5px] rounded-full cursor-pointer duration-500',
                     {
-                      'w-3 bg-secondary': !next,
+                      'w-3 bg-offwhite': !next,
                       'w-7 bg-green-400': next,
                     }
                   )}

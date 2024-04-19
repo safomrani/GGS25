@@ -74,7 +74,8 @@ const config = {
         },
         olivegreen:'#255345',
         orange: '#e0593b',
-        gray: '#d3d3d3'
+        gray: '#d3d3d3',
+        offwhite: '#a0d2c8'
       },
       borderRadius: {
         lg: "var(--radius)",
