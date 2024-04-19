@@ -5,11 +5,6 @@ export const SupportedBy = [
         image : '/logos/FMO.png',
     },
     {
-        id: 5, 
-        name: 'Expertise France', 
-        image : '/logos/expertise france.png',
-    },
-    {
         id: 1, 
         name: 'Impact Europe', 
         image : '/logos/Impact Europe.png',
@@ -39,5 +34,10 @@ export const SupportedBy = [
         name: 'Tunis', 
         image : '/logos/republique tunisenne.png',
     },
+    {
+        id: 5, 
+        name: 'Expertise France', 
+        image : '/logos/expertise france.png',
+    }
   ];
 

@@ -23,7 +23,7 @@ const Agenda = ({
           /**conditional rendereing for each country */
           country === "Tunisia" 
           ?         
-          <div className="flex flex-col md:h-[980px]  xl:h-[750px] max-h-full md:flex-wrap lg:gap-x-5 2xl:gap-x-16 w-full md:w-[420px] xl:w-[600px] 2xl:w-[700px] ">
+          <div className="flex flex-col md:h-[1000px]  xl:h-[860px] max-h-full md:flex-wrap lg:gap-x-5 2xl:gap-x-16 w-full md:w-[420px] xl:w-[600px] 2xl:w-[700px] ">
           {agendaTunis[0].events.map((item, index) => {
             return(
               <div  className="flex flex-row items-start mb-5" key={index}>
@@ -76,7 +76,7 @@ const Agenda = ({
         </div>
         /** if country is egypt return agenda mapped in egypt */
           : 
-          <div className="flex flex-col md:h-[980px]  xl:h-[860px] max-h-full md:flex-wrap lg:gap-x-5 2xl:gap-x-16 w-full md:w-[420px] xl:w-[600px] 2xl:w-[700px] ">
+          <div className="flex flex-col md:h-[1000px]  xl:h-[860px] max-h-full md:flex-wrap lg:gap-x-5 2xl:gap-x-16 w-full md:w-[420px] xl:w-[600px] 2xl:w-[700px] ">
           {agendaEgypt[0].events.map((item, index) => {
             return(
               <div  className="flex flex-row items-start mb-5" key={index}>

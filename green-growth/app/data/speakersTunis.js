@@ -98,13 +98,6 @@ export const speakersTunis = [
         link: 'https://www.linkedin.com/in/dhekrakhelifi/',
     },
     {
-        id: 15, 
-        name: 'Mohamed Salah Frad', 
-        image : '/images/speakers/Mohamed Salah Frad.jpg',
-        company: 'UGFS-NA',
-        link: 'https://www.linkedin.com/in/mohamed-salah-frad-b38a7a24/'
-    },
-    {
         id: 16, 
         name: 'Syrine Chaalala', 
         image : '/images/speakers/Syrine Chaalala.jpg',
@@ -112,11 +105,18 @@ export const speakersTunis = [
         link: 'https://www.linkedin.com/in/syrinechaalala/'
     },
     {
-        id: 12, 
+        id: 17, 
         name: 'Nabil Ben Khatra', 
         image : '/images/speakers/Nabil Ben Khatra.jpg',
         company: 'Observatoire du Sahara et du Sahel (OSS)',
         link: 'https://www.linkedin.com/in/nabil-ben-khatra-30b6211a/'
+    },
+    {
+        id: 17, 
+        name: 'Amir Ben-Gacem', 
+        image : '/images/speakers/Amir Ben-Gacem.jpg',
+        company: 'ARCH Emerging Markets Partner',
+        link: 'https://www.linkedin.com/in/amir-ben-gacem'
     },
    
   ];

@@ -212,7 +212,7 @@ function PaginationSection({
                     key={idx}
                     className={currentPage === page? "": ""}
                 >
-                    <PaginationLink onClick={() => setCurrentPage(page)}  className={currentPage === page? "h-[5px] cursor-pointer duration-500 bg-green-300 w-7 rounded-md": "w-3 cursor-pointer duration-500 bg-secondary"}>
+                    <PaginationLink onClick={() => setCurrentPage(page)}  className={currentPage === page? "h-[5px] cursor-pointer duration-500 bg-green-300 w-7 rounded-md": "w-3 cursor-pointer duration-500 bg-offwhite"}>
                     </PaginationLink>
                 </PaginationItem>
             ))}
