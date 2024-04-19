@@ -101,7 +101,7 @@ export const speakersEgypt = [
 		id: 15, 
         name: 'Annachiara Scandone', 
         image : '/images/speakers/Annachiara Scandone.jpg',
-        company: 'United Nations Industrial Development Organization',
+        company: 'UNIDO',
         link: 'https://www.linkedin.com/in/annachiara-scandone-58107566/',
     },
     {        
