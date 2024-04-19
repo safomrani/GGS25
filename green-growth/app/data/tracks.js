@@ -13,7 +13,7 @@ export const TracksData = [
         keynotes: '',
         panel: 'Partnerships models and real opportunities for how investors, donors, and more can work together to reduce the risk of green investments', 
         track: '',
-        color: '#e0593b',
+        color: '#ef6a3c',
     },
     {
         id: 3, 

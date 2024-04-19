@@ -83,5 +83,40 @@ export const speakersTunis = [
         company: 'Soul & Planet',
         link: 'https://www.linkedin.com/in/fatma-midani-318288175?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
     },
+    {
+        id: 13, 
+        name: 'Asma Bouzaidi', 
+        image : '/images/speakers/Asma Bouzaidi.jpg',
+        company: 'Flat6Labs',
+        link: 'https://www.linkedin.com/in/asma-bouzaidi-67254814b/?originalSubdomain=tn',
+    },
+    {
+        id: 14, 
+        name: 'Dhekra Khelifi', 
+        image : '/images/speakers/Dhekra Khelifi.jpg',
+        company: '216 Capital Ventures',
+        link: 'https://www.linkedin.com/in/dhekrakhelifi/',
+    },
+    {
+        id: 15, 
+        name: 'Mohamed Salah Frad', 
+        image : '/images/speakers/Mohamed Salah Frad.jpg',
+        company: 'UGFS-NA',
+        link: 'https://www.linkedin.com/in/mohamed-salah-frad-b38a7a24/'
+    },
+    {
+        id: 16, 
+        name: 'Syrine Chaalala', 
+        image : '/images/speakers/Syrine Chaalala.jpg',
+        company: 'nextProtein',
+        link: 'https://www.linkedin.com/in/syrinechaalala/'
+    },
+    {
+        id: 12, 
+        name: 'Nabil Ben Khatra', 
+        image : '/images/speakers/Nabil Ben Khatra.jpg',
+        company: 'Observatoire du Sahara et du Sahel (OSS)',
+        link: 'https://www.linkedin.com/in/nabil-ben-khatra-30b6211a/'
+    },
    
   ];

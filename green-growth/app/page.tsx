@@ -179,7 +179,7 @@ export default function Home() {
             {toggleTunis &&(
               <div className=''>
                 <Venue
-                  locationTitle = 'The Tunis Green Growth Summit will be hosted at the Mövenpick Gammarth Hotel'
+                  locationTitle = 'The Tunisia Green Growth Summit will be hosted at the Mövenpick Gammarth Hotel'
                   eventDate= 'April 30th, 2024'
                   location='Mövenpick Gammarth - Tunis, Tunisia'
                   reservation= 'https://movenpick.accor.com/en/africa/tunisia/tunis/hotel-tunis-gammarth.html'

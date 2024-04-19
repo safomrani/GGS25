@@ -62,6 +62,60 @@ export const speakersEgypt = [
         company: 'Changelabs',
         link: 'https://www.linkedin.com/in/karimsamra/',
     },
-   
-   
+    {        
+        id: 10, 
+        name: 'Mohamed Okasha', 
+        image : '/images/speakers/Mohamed Okasha.jpg',
+        company: 'DisrupTech Ventures',
+        link: 'https://www.linkedin.com/in/mohamed-el-sayed-okasha-056b87a2/',
+    },
+    {        
+		id: 11, 
+        name: 'Shenouda Bissada', 
+        image : '/images/speakers/Shenouda Bissada.jpg',
+        company: 'Alfanar',
+        link: 'https://www.linkedin.com/in/shenouda-bissada-1275a628/',
+    },
+    {        
+		id: 12, 
+        name: 'Ayman Ismail', 
+        image : '/images/speakers/Ayman Ismail.jpg',
+        company: 'AUC Venture Lab',
+        link: 'https://www.linkedin.com/in/aymanism/',
+    },
+    {        
+		id: 13, 
+        name: 'Ahmed Huzayyin', 
+        image : '/images/speakers/Ahmed_huzzayin_photo.jpg',
+        company: 'Chemonics Egypt Consultants',
+        link: 'https://www.linkedin.com/in/ahmed-huzayyin-8876ba30/',
+    },
+    {        
+		id: 14, 
+        name: 'Ahmed Fathy', 
+        image : '/images/speakers/Ahmed Fathy.jpg',
+        company: 'MEDEX',
+        link: 'https://www.linkedin.com/in/dr-ahmed-fathy-33357939/',
+    },
+    {        
+		id: 15, 
+        name: 'Annachiara Scandone', 
+        image : '/images/speakers/Annachiara Scandone.jpg',
+        company: 'United Nations Industrial Development Organization',
+        link: 'https://www.linkedin.com/in/annachiara-scandone-58107566/',
+    },
+    {        
+		id: 16, 
+        name: 'Maya Boghdady', 
+        image : '/images/speakers/maya.boghdady.jpg',
+        company: 'Nahdet El Mahrousa',
+        link: 'https://www.linkedin.com/in/maya-boghdady-693b3a1a/',
+    },
+    {        
+		id: 17, 
+        name: 'Manuel Bueno', 
+        image : '/images/speakers/Manuel.jpg',
+        company: 'DAI / USAID Business Egypt',
+        link: 'https://www.linkedin.com/in/manuelbueno1/',
+    },
   ];
