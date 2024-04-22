@@ -118,5 +118,12 @@ export const speakersTunis = [
         company: 'ARCH Emerging Markets Partner',
         link: 'https://www.linkedin.com/in/amir-ben-gacem'
     },
+    {
+        id: 18, 
+        name: 'Aslan Berjeb', 
+        image : '/images/speakers/aslan berjeb bw.jpg',
+        company: 'CONECT',
+        link: 'https://www.linkedin.com/in/aslan-berjeb-96836a11a'
+    },
    
   ];
