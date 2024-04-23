@@ -247,8 +247,8 @@ export default function Home() {
       {/**Agenda section */}
       <div className="py-10 sm:py-20">
         <div className="px-10 sm:px-20 text-xl md:text-2xl lg:text-3xl"> 
-            <span className={`${RobotoCondensed.className} text-green-300`}>Tentative</span>
-            <span className={`${RobotoCondensed.className} text-red-300`}> Agenda</span>
+            <span className={`${RobotoCondensed.className} text-green-300`}>Agenda</span>
+            <span className={`${RobotoCondensed.className} text-red-300`}> </span>
             {/**Toggle tabs */}
             <div className="pt-3 sm:pt-10 flex gap-3">
                 <button
