@@ -66,15 +66,15 @@ export const agendaEgypt = [
                 event: 
                 [
                     {   
-                        details: 'Deal Room 1: KarmSolar',
+                        details: 'Deal Room 1: Hydrofarms',
                         color: '#ef6a3c'
                     },
                     {
-                        details: 'Deal Room 2: Hydrofarms',
+                        details: 'Deal Room 2',
                         color: '#ef6a3c'
                     },
                     {
-                        details: 'Deal Room 3',
+                        details: 'Deal Room 3: KarmSolar',
                         color: '#ef6a3c'
                     },
                     {

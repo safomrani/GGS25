@@ -125,5 +125,5 @@ export const speakersTunis = [
         company: 'CONECT',
         link: 'https://www.linkedin.com/in/aslan-berjeb-96836a11a'
     },
-   
+
   ];
