@@ -125,5 +125,18 @@ export const speakersTunis = [
         company: 'CONECT',
         link: 'https://www.linkedin.com/in/aslan-berjeb-96836a11a'
     },
-
+    {
+        id: 19, 
+        name: 'Mohamed Ali Abid', 
+        image : '/images/speakers/Mohamed Ali Abid.jpg',
+        company: 'Kumulus',
+        link: 'https://www.linkedin.com/in/mohamed-ali-abid-10487556/'
+    },    
+    {
+        id: 18, 
+        name: 'Ouael Chouchene', 
+        image : '/images/speakers/Ouael Chouchene.jpg',
+        company: 'Government of Tunisia',
+        link: 'https://www.linkedin.com/in/ouaelchouchene/'
+    },   
   ];
