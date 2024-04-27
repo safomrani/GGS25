@@ -75,10 +75,10 @@ export const agendaTunis = [
             {
                 from: '16:00',
                 title: 'Donor Task Force for a Green Transition [Invitation Only]',
-                panelcolor: ''
+                panelcolor: '#d73732'
             },
             {
-                from: '17:00',
+                from: '16:00',
                 title: 'Networking Reception',
                 panelcolor: ''
             }

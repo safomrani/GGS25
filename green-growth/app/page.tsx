@@ -29,6 +29,10 @@ export default function Home() {
   
   const[toggleTunis, setToggleTunis] = useState(true);
   const[toggleEgypt, setToggleEgypt] = useState(false);
+  const[toggleTunisVenue, setToggleTunisVenue] = useState(true);
+  const[toggleEgyptVenue, setToggleEgyptVenue] = useState(false);
+  const [egyptColorVenue, changeColorVenue] = useState("bg-transparent text-green-300");
+  const [tunisColorVenue, changeTunisColorVenue] = useState("bg-green-300 text-white");
   const [egyptColor, changeColor] = useState("bg-transparent text-green-300");
   const [tunisColor, changeTunisColor] = useState("bg-green-300 text-white");
   const [venueColor, changeVenueColor] = useState("text-red-300");
@@ -155,10 +159,10 @@ export default function Home() {
                       className={`${RobotoCondensed.className} border-2 border-green-300 
                       rounded-md w-[65px] sm:w-[80px] text-[16px] sm:text-[20px] sm:text-[22px] text-center
                       hover:bg-transparent hover:text-green-300 
-                      transition-colors duration-150 ease-in-out} ${tunisColor}
+                      transition-colors duration-150 ease-in-out} ${tunisColorVenue}
                       transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110`} 
-                      onClick={()=>{setToggleEgypt(false); setToggleTunis(true); changeVenueColor("text-red-300"); changeBackgroundMobile("/images/venue-tunis-mob.jpg");
-                        changeTunisColor("bg-green-300 text-white"); changeBackground("/images/venue-tunis.jpg") ;changeColor("bg-transparent text-green-300")}}
+                      onClick={()=>{setToggleEgyptVenue(false); setToggleTunisVenue(true); changeVenueColor("text-red-300"); changeBackgroundMobile("/images/venue-tunis-mob.jpg");
+                        changeTunisColorVenue("bg-green-300 text-white"); changeBackground("/images/venue-tunis.jpg") ;changeColorVenue("bg-transparent text-green-300")}}
                   >
                       Tunisia
                   </button>
@@ -166,17 +170,17 @@ export default function Home() {
                       className={`${RobotoCondensed.className} border-2 border-green-300 
                       text-green-300 rounded-md w-[65px] sm:w-[80px] text-[16px] sm:text-[20px] sm:text-[22px]
                       hover:bg-green-300 hover:text-white 
-                      transition-colors duration-150 ease-in-out} ${egyptColor}
+                      transition-colors duration-150 ease-in-out} ${egyptColorVenue}
                       transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110`} 
-                      onClick={()=>{setToggleEgypt(true); setToggleTunis(false); changeVenueColor("text-white"); changeBackgroundMobile("/images/venue-egypt-mob.jpg");
-                      changeColor("bg-green-300 text-white"); changeBackground("/images/venue-egypt.jpg") ;changeTunisColor("bg-transparent text-green-300")}}
+                      onClick={()=>{setToggleEgyptVenue(true); setToggleTunisVenue(false); changeVenueColor("text-white"); changeBackgroundMobile("/images/venue-egypt-mob.jpg");
+                      changeColorVenue("bg-green-300 text-white"); changeBackground("/images/venue-egypt.jpg") ;changeTunisColorVenue("bg-transparent text-green-300")}}
                   >
                       Egypt
                   </button>
               </div>
           </div>
           <div className="h-full">
-            {toggleTunis &&(
+            {toggleTunisVenue &&(
               <div className=''>
                 <Venue
                   locationTitle = 'The Tunisia Green Growth Summit will be hosted at the Mövenpick Gammarth Hotel'
@@ -184,11 +188,11 @@ export default function Home() {
                   location='Mövenpick Gammarth - Tunis, Tunisia'
                   reservation= 'https://movenpick.accor.com/en/africa/tunisia/tunis/hotel-tunis-gammarth.html'
                   directions= 'https://maps.app.goo.gl/1brroPnZT4hN5QoV8'
-                  country={toggleEgypt}
+                  country={toggleEgyptVenue}
                   />
               </div>
             )}
-            {toggleEgypt &&(
+            {toggleEgyptVenue &&(
               <div className='z-10'>
                 <Venue
                   locationTitle = 'The Egypt Green Growth Summit will be hosted at the newly renovated, 5-star Conrad Hotel'
@@ -196,7 +200,7 @@ export default function Home() {
                   location='Conrad Hotel - Cairo, Egypt'
                   reservation= 'https://www.hilton.com/en/hotels/caicici-conrad-cairo/rooms/'
                   directions= 'https://maps.app.goo.gl/CEd63MRVWoEkee8E8'
-                  country={toggleEgypt}
+                  country={toggleEgyptVenue}
                 />
               </div>
             )}  
@@ -247,8 +251,8 @@ export default function Home() {
       {/**Agenda section */}
       <div className="py-10 sm:py-20">
         <div className="px-10 sm:px-20 text-xl md:text-2xl lg:text-3xl"> 
-            <span className={`${RobotoCondensed.className} text-green-300`}>Tentative</span>
-            <span className={`${RobotoCondensed.className} text-red-300`}> Agenda</span>
+            <span className={`${RobotoCondensed.className} text-green-300`}>Agenda</span>
+            <span className={`${RobotoCondensed.className} text-red-300`}> </span>
             {/**Toggle tabs */}
             <div className="pt-3 sm:pt-10 flex gap-3">
                 <button

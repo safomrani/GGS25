@@ -60,25 +60,25 @@ export const agendaEgypt = [
                 panelcolor: ''
             },
             {
-                from: '14:15',
+                from: '15:00',
                 title: 'Afternoon Breakout Sessions',
                 panelcolor: '',
                 event: 
                 [
                     {   
-                        details: 'Deal Room 1: KarmSolar',
+                        details: 'Deal Room 1: Hydrofarms',
                         color: '#ef6a3c'
                     },
                     {
-                        details: 'Deal Room 2: Hydrofarms',
+                        details: 'Deal Room 2',
                         color: '#ef6a3c'
                     },
                     {
-                        details: 'Deal Room 3',
+                        details: 'Deal Room 3: KarmSolar',
                         color: '#ef6a3c'
                     },
                     {
-                        details: 'Deal Room 4: Sand Tech',
+                        details: 'Deal Room 4',
                         color: '#ef6a3c'
                     },
                     {
@@ -88,12 +88,12 @@ export const agendaEgypt = [
                 ]
             },
             {
-                from: '16:30',
+                from: '17:00',
                 title: 'Donor Task Force for a Green Transition [Invitation Only]',
-                panelcolor: '',
+                panelcolor: '#d73732'
             },
             {
-                from: '17:30',
+                from: '17:00',
                 title: 'Networking Reception & Cocktail',
                 panelcolor: '',
             },
