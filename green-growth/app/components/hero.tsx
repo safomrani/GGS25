@@ -5,7 +5,7 @@ import { karla, karlaBold, karlaExtraBold, RobotoCondensed } from "./fonts";
 
 export default function Hero() {
   return (
-    <main className="min-h-[95%] items-center pt-1">
+    <main className="min-h-[90%] items-center pt-1">
         {/**Navbar*/}
         <div className="hidden md:flex items-center justify-between bg-white px-3 sm:px-12 lg:px-20 py-1">
             <a href="https://www.ggsummit.me">
@@ -234,33 +234,43 @@ export default function Hero() {
 
         <div className="flex flex-col lg:flex-row justify-center items-center lg:justify-between lg:pt-6 py-5">
             {/**Sponsor */}
-            <div className="flex flex-wrap lg:flex-row gap-5 lg:gap-10 items-center justify-center lg:pl-10 xl:pl-20"> 
+            <div className="flex flex-wrap lg:flex-row gap-5 lg:gap-7 items-center justify-center lg:pl-10 xl:pl-10"> 
             <div className="">
                 <p className={`${karla.className} text-black pb-3 text-bold text-center lg:text-left`}>Core Sponsors</p>
                 <div className="flex flex-wrap gap-5 xl:gap-9 py-3 lg:py-0 justify-center lg:justify-start">
                     <img 
                         src='/logos/FMO.png'
-                        className="h-[30px] lg:h-[40px]"
+                        className="h-[20px] lg:h-[35px]"
                         alt="FMO logo"
+                    />
+                     <img 
+                        src='/logos/USAID.png'
+                        className="h-[20px] lg:h-[45px]"
+                        alt="USAID logo"
+                    />
+                     <img 
+                        src='/logos/Pathfinder.png'
+                        className="h-[20px] lg:h-[45px]"
+                        alt="Pathfinder logo"
                     />
                     <img 
                         src='/logos/greenovi.png'
-                        className="h-[30px] lg:h-[40px]"
+                        className="h-[20px] lg:h-[35px]"
                         alt="Greenovi logo"
                     />
                     <img 
                         src='/logos/UN.png'
-                        className="h-[30px] lg:h-[40px]"
+                        className="h-[20px] lg:h-[35px]"
                         alt="Funded by EU logo"
                     />
                     <img 
                         src='/logos/republique tunisenne.png'
-                        className="h-[30px] lg:h-[40px]"
+                        className="h-[20px] lg:h-[35px]"
                         alt="Republique Tunisenne logo"
                     />
                     <img 
                         src='/logos/expertise france.png'
-                        className="h-[33px] lg:h-[33px]"
+                        className="h-[20px] lg:h-[33px]"
                         alt="Expertise france logo"
                     />
                 </div>
@@ -274,12 +284,12 @@ export default function Hero() {
                     <div className="flex gap-3 xl:gap-7 py-3 lg:py-0">
                         <img 
                             src='/logos/newsilk-logo.png'
-                            className="h-[30px] lg:h-[40px]"
+                            className="h-[30px] lg:h-[35px]"
                             alt="newsilk logo"
                         />
                         <img 
                             src='/logos/changelabs.png'
-                            className="h-[30px] lg:h-[40px]"
+                            className="h-[30px] lg:h-[35px]"
                             alt="Changelabs logo"
                         />
                     </div>
@@ -289,17 +299,17 @@ export default function Hero() {
                 <div className="flex flex-wrap lg:flex justify-center items-center gap-5 sm:gap-7 py-3 lg:py-0">
                     <img 
                         src='/logos/Impact Europe.png'
-                        className="h-[30px] lg:h-[40px]"
+                        className="h-[30px] lg:h-[35px]"
                         alt="Impact EU logo"
                     />
                     <img 
                         src='/logos/CFFYE.png'
-                        className="h-[30px] lg:h-[40px]"
+                        className="h-[30px] lg:h-[35px]"
                         alt="Challengefund logo"
                     />
                     <img 
                         src='/logos/MFAN.png'
-                        className="h-[30px] lg:h-[40px]"
+                        className="h-[30px] lg:h-[35px]"
                         alt="MFAN logo"
                     />
                 </div>
