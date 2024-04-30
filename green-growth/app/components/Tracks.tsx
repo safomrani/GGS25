@@ -37,7 +37,7 @@ const TrackItem = ({
       <div className={`${karla.className} text-[16px] lg:text-[18px] whitespace-pre-line`} dangerouslySetInnerHTML={{ __html: keynotes }} />
       <div className={`${karla.className} text-[16px] lg:text-[18px] whitespace-pre-line`} dangerouslySetInnerHTML={{ __html: panel }} />
 
-      <div className= {`${karlaExtraBold.className} whitespace-pre-line text-[18px] min-[390px]:text-xl mt-2 sm:mt-0 pt-3`}  style={{
+      <div className= {`${karlaExtraBold.className} whitespace-pre-line text-[14px] min-[390px]:text-[16px] mt-2 sm:mt-0 pt-3`}  style={{
         color: color,
         }}>
         {track}
