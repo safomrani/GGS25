@@ -4,7 +4,7 @@ export const TracksData = [
         title : 'Green \n Exports',
         keynotes: '', 
         panel: 'Opportunities to leverage the region`s competitive advantage to drive green exports and present the strong business case for green',
-        track: '',
+        track: '\n \n \n',
         color: '#255345',
     },
     {
@@ -12,7 +12,7 @@ export const TracksData = [
         title : 'De-risking Green \n Investment',
         keynotes: '',
         panel: 'Partnerships models and real opportunities for how investors, donors, and more can work together to reduce the risk of green investments', 
-        track: '',
+        track: '\n \n \n',
         color: '#ef6a3c',
     },
     {
@@ -20,7 +20,7 @@ export const TracksData = [
         title : 'Green \n Jobs',
         keynotes: '', 
         panel: 'Best practices and case studies around technical training & capacity building for green skills and jobs, especially for young people',
-        track: '',
+        track: '\n \n \n',
         color: '#01a98f',
     },
     {
@@ -28,7 +28,7 @@ export const TracksData = [
         title : 'Cluster \n Champions',
         keynotes: '',
         panel: 'Developing and promoting green clusters to mainstream green value chains and develop green solutions', 
-        track: '',
+        track: '\n \n \n',
         color: '#d73732',
     },
     {
@@ -36,7 +36,7 @@ export const TracksData = [
         title : '(Green) Impact \n Investing',
         keynotes: '',
         panel: 'Exit strategies for donors and on ramps for investors for green and impact investing, including blended finance and fund management', 
-        track: '',
+        track: 'Sponsor: USAID`s Business Egypt Program',
         color: 'black',
     },
     
