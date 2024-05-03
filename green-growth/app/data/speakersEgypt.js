@@ -27,6 +27,27 @@ export const speakersEgypt = [
         company: 'Athar Accelerator',
         link: 'https://www.linkedin.com/in/shoaibelqady/',
     },
+    {        
+		id: 19, 
+        name: 'Muhammad EL Demerdash', 
+        image : '/images/speakers/muhammad el demerdash.jpg',
+        company: 'engazaat',
+        link: 'https://www.linkedin.com/in/muhammad-el-demerdash-02824a118?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+    },
+    {        
+		id: 18, 
+        name: 'Mostafa Abdelfattah', 
+        image : '/images/speakers/mustafa abdelfattah2.jpg',
+        company: 'Pathfinder International/ USAID WESEP',
+        link: 'https://www.linkedin.com/in/mostafa-abdelfattah-42052221/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BK3w4P2HuQ1%2Bjp1Ha%2BeCG6A%3D%3D',
+    },
+    {        
+		id: 20, 
+        name: 'Mohamed Shalaby', 
+        image : '/images/speakers/muhaamed owais bw.jpg',
+        company: 'Pathfinder International/ USAID WESEP',
+        link: 'https://www.linkedin.com/in/mohamed-owais-shalaby-cpm-mba-fmva-b5416b42',
+    },
     {
         id: 5, 
         name: 'Mariam AbdelKarim', 
@@ -118,25 +139,5 @@ export const speakersEgypt = [
         company: 'DAI / USAID Business Egypt',
         link: 'https://www.linkedin.com/in/manuelbueno1/',
     },
-    {        
-		id: 18, 
-        name: 'Mostafa Abdelfattah', 
-        image : '/images/speakers/mustafa abdelfattah.jpg',
-        company: 'Pathfinder International',
-        link: 'https://www.linkedin.com/in/mostafa-abdelfattah-42052221/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BK3w4P2HuQ1%2Bjp1Ha%2BeCG6A%3D%3D',
-    },
-    {        
-		id: 19, 
-        name: 'Muhammad EL Demerdash', 
-        image : '/images/speakers/muhammad el demerdash.jpg',
-        company: 'engazaat',
-        link: 'https://www.linkedin.com/in/muhammad-el-demerdash-02824a118?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
-    },
-    {        
-		id: 20, 
-        name: 'Mohamed Shalaby', 
-        image : '/images/speakers/muhaamed owais bw.jpg',
-        company: 'Pathfinder',
-        link: 'https://www.linkedin.com/in/mohamed-owais-shalaby-cpm-mba-fmva-b5416b42',
-    },
+
   ];

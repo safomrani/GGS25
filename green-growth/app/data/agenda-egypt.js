@@ -19,7 +19,7 @@ export const agendaEgypt = [
                 info: 
                 [
                     {   
-                        info:'Hivos \n FMO \n Pathfinder',
+                        info:'Hivos \n Pathfinder International/ USAID WESEP \n FMO',
                     },
                 ]
             },
@@ -31,6 +31,11 @@ export const agendaEgypt = [
             {
                 from: '11:15',
                 title: 'Greening the Workforce: Supporting the Next Generation of Green Companies and Green Jobs',
+                info: [
+                    {
+                        info: 'sponsored by Pathfinder International/ USAID WESEP'
+                    }
+                ],
                 panelcolor: '#01a98f'
             },
             {
@@ -70,26 +75,34 @@ export const agendaEgypt = [
                         color: '#ef6a3c'
                     },
                     {
-                        details: 'Deal Room 2',
+                        details: 'Deal Room 2: KarmSolar',
                         color: '#ef6a3c'
                     },
                     {
-                        details: 'Deal Room 3: KarmSolar',
+                        details: 'Deal Room 3',
                         color: '#ef6a3c'
                     },
                     {
-                        details: 'Deal Room 4',
-                        color: '#ef6a3c'
+                        details: 'Fostering the Green Agenda in Egypt: Roundtable on Startup & Corporate Collaboration',
+                        color: '#d73732'
                     },
                     {
-                        details: 'Your Gateway to Investing in Upper Egypt',
+                        details: 'Boosting Green Impact in Upper Egypt: Insights from Pioneering Green Accelerations',
+                        color: '#d73732'
+                    },
+                    {
+                        details: 'Develop Green Certification Standards for SMEs',
+                        color: '#d73732'
+                    },
+                    {
+                        details: 'Building Sustainable and Green Supply Chains',
                         color: '#d73732'
                     }
                 ]
             },
             {
                 from: '17:00',
-                title: 'Donor Task Force for a Green Transition [Invitation Only]',
+                title: 'Donor Task Force for a Green Transition: Next Steps [Invitation Only]',
                 panelcolor: '#d73732'
             },
             {

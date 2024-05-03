@@ -244,13 +244,13 @@ export default function Hero() {
                         alt="FMO logo"
                     />
                      <img 
-                        src='/logos/USAID.png'
-                        className="h-[20px] lg:h-[45px]"
+                        src='/logos/USAID2.png'
+                        className="h-[20px] lg:h-[40px]"
                         alt="USAID logo"
                     />
                      <img 
-                        src='/logos/Pathfinder.png'
-                        className="h-[20px] lg:h-[45px]"
+                        src='/logos/Pathfinder2.png'
+                        className="h-[20px] lg:h-[28px]"
                         alt="Pathfinder logo"
                     />
                     <img 
