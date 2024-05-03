@@ -76,7 +76,7 @@ const Agenda = ({
         </div>
         /** if country is egypt return agenda mapped in egypt */
           : 
-          <div className="flex flex-col md:h-[990px] lg:h-[1000px] xl:h-[895px] max-h-full md:flex-wrap lg:gap-x-5 2xl:gap-x-16 w-full md:w-[420px] xl:w-[600px] 2xl:w-[700px] ">
+          <div className="flex flex-col md:h-[990px] lg:h-[1090px] xl:h-[995px] max-h-full md:flex-wrap lg:gap-x-5 2xl:gap-x-16 w-full md:w-[420px] xl:w-[600px] 2xl:w-[700px] ">
           {agendaEgypt[0].events.map((item, index) => {
             return(
               <div  className="flex flex-row items-start mb-5" key={index}>
