@@ -156,9 +156,8 @@ export const speakersEgypt = [
     {        
 		id: 19, 
         name: 'Sarah Saleh', 
-        image : '/images/speakers/Sarah Saleh.jpg',
+        image : '/images/speakers/sarah saleh.jpg',
         company: 'Hivos',
         link: 'https://www.linkedin.com/in/sarah-s-616baa13b/',
-    },
-
+    }
   ];
