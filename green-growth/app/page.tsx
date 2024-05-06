@@ -27,17 +27,17 @@ import 'swiper/css/scrollbar';
 
 export default function Home() {
   
-  const[toggleTunis, setToggleTunis] = useState(true);
-  const[toggleEgypt, setToggleEgypt] = useState(false);
-  const[toggleTunisVenue, setToggleTunisVenue] = useState(true);
-  const[toggleEgyptVenue, setToggleEgyptVenue] = useState(false);
-  const [egyptColorVenue, changeColorVenue] = useState("bg-transparent text-green-300");
-  const [tunisColorVenue, changeTunisColorVenue] = useState("bg-green-300 text-white");
-  const [egyptColor, changeColor] = useState("bg-transparent text-green-300");
-  const [tunisColor, changeTunisColor] = useState("bg-green-300 text-white");
+  const[toggleTunis, setToggleTunis] = useState(false);
+  const[toggleEgypt, setToggleEgypt] = useState(true);
+  const[toggleTunisVenue, setToggleTunisVenue] = useState(false);
+  const[toggleEgyptVenue, setToggleEgyptVenue] = useState(true);
+  const [egyptColorVenue, changeColorVenue] = useState("bg-green-300 text-white");
+  const [tunisColorVenue, changeTunisColorVenue] = useState("bg-transparent text-green-300");
+  const [egyptColor, changeColor] = useState("bg-green-300 text-white");
+  const [tunisColor, changeTunisColor] = useState("bg-transparent text-green-300");
   const [venueColor, changeVenueColor] = useState("text-red-300");
-  const [venueBackground, changeBackground] = useState("/images/venue-tunis.jpg");
-  const [venueBackgroundMobile, changeBackgroundMobile] = useState("/images/venue-tunis-mob.jpg");
+  const [venueBackground, changeBackground] = useState("/images/venue-egypt.jpg");
+  const [venueBackgroundMobile, changeBackgroundMobile] = useState("/images/venue-egypt-mob.jpg");
 
 
   {/**Animation */}
@@ -156,6 +156,17 @@ export default function Home() {
 
               <div className="pt-3 sm:pt-10 flex items-center gap-3 text-center">
                   <button
+                        className={`${RobotoCondensed.className} border-2 border-green-300 
+                        text-green-300 rounded-md w-[65px] sm:w-[80px] text-[16px] sm:text-[20px] sm:text-[22px]
+                        hover:bg-green-300 hover:text-white 
+                        transition-colors duration-150 ease-in-out} ${egyptColorVenue}
+                        transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110`} 
+                        onClick={()=>{setToggleEgyptVenue(true); setToggleTunisVenue(false); changeVenueColor("text-white"); changeBackgroundMobile("/images/venue-egypt-mob.jpg");
+                        changeColorVenue("bg-green-300 text-white"); changeBackground("/images/venue-egypt.jpg") ;changeTunisColorVenue("bg-transparent text-green-300")}}
+                    >
+                      Egypt
+                  </button>
+                  <button
                       className={`${RobotoCondensed.className} border-2 border-green-300 
                       rounded-md w-[65px] sm:w-[80px] text-[16px] sm:text-[20px] sm:text-[22px] text-center
                       hover:bg-transparent hover:text-green-300 
@@ -165,17 +176,6 @@ export default function Home() {
                         changeTunisColorVenue("bg-green-300 text-white"); changeBackground("/images/venue-tunis.jpg") ;changeColorVenue("bg-transparent text-green-300")}}
                   >
                       Tunisia
-                  </button>
-                  <button
-                      className={`${RobotoCondensed.className} border-2 border-green-300 
-                      text-green-300 rounded-md w-[65px] sm:w-[80px] text-[16px] sm:text-[20px] sm:text-[22px]
-                      hover:bg-green-300 hover:text-white 
-                      transition-colors duration-150 ease-in-out} ${egyptColorVenue}
-                      transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110`} 
-                      onClick={()=>{setToggleEgyptVenue(true); setToggleTunisVenue(false); changeVenueColor("text-white"); changeBackgroundMobile("/images/venue-egypt-mob.jpg");
-                      changeColorVenue("bg-green-300 text-white"); changeBackground("/images/venue-egypt.jpg") ;changeTunisColorVenue("bg-transparent text-green-300")}}
-                  >
-                      Egypt
                   </button>
               </div>
           </div>
@@ -215,16 +215,7 @@ export default function Home() {
             <span id='speakers' className={`${RobotoCondensed.className} text-green-300`}>Highlighted</span>
             <span className={`${RobotoCondensed.className} text-red-300`}> Speakers</span>
             <div className="pt-3 sm:pt-10 flex gap-3">
-              <button
-                  className={`${RobotoCondensed.className} border-2 border-green-300 
-                  text-green-300 rounded-md w-[65px] sm:w-[80px] text-[16px] sm:text-[20px] sm:text-[22px]] text-center
-                  hover:bg-transparent	 hover:text-green-300 duration-150 ease-in-out} ${tunisColor}
-                  transition  duration-150 ease-in-out hover:-translate-y-1 hover:scale-110`} 
-                  onClick={()=>{setToggleEgypt(false); setToggleTunis(true);  changeTunisColor("bg-green-300 text-white"); changeColor("bg-transparent text-green-300")}}
-                  >
-                  Tunisia
-              </button>
-              <button
+            <button
                   className={`${RobotoCondensed.className} border-2 border-green-300 
                   text-green-300 rounded-md w-[65px] sm:w-[80px] text-[16px] sm:text-[20px] sm:text-[22px] text-center
                   hover:bg-green-300 hover:text-white 
@@ -235,6 +226,16 @@ export default function Home() {
                   >
                   Egypt
               </button>
+              <button
+                  className={`${RobotoCondensed.className} border-2 border-green-300 
+                  text-green-300 rounded-md w-[65px] sm:w-[80px] text-[16px] sm:text-[20px] sm:text-[22px]] text-center
+                  hover:bg-transparent	 hover:text-green-300 duration-150 ease-in-out} ${tunisColor}
+                  transition  duration-150 ease-in-out hover:-translate-y-1 hover:scale-110`} 
+                  onClick={()=>{setToggleEgypt(false); setToggleTunis(true);  changeTunisColor("bg-green-300 text-white"); changeColor("bg-transparent text-green-300")}}
+                  >
+                  Tunisia
+              </button>
+
           </div>
         </div>
 
@@ -255,6 +256,16 @@ export default function Home() {
             <span className={`${RobotoCondensed.className} text-red-300`}> </span>
             {/**Toggle tabs */}
             <div className="pt-3 sm:pt-10 flex gap-3">
+            <button
+                    className={`${RobotoCondensed.className} border-2 border-green-300 
+                    text-green-300 rounded-md w-[65px] sm:w-[80px] text-[16px] sm:text-[20px] sm:text-[22px] text-center
+                    hover:bg-green-300 hover:text-white 
+                    transition-colors duration-150 ease-in-out} ${egyptColor}
+                    transition  duration-150 ease-in-out hover:-translate-y-1 hover:scale-110`} 
+                    onClick={()=>{setToggleEgypt(true); setToggleTunis(false); changeColor("bg-green-300 text-white"); changeTunisColor("bg-transparent text-green-300")}}
+                    >
+                    Egypt
+                </button>
                 <button
                     className={`${RobotoCondensed.className} border-2 border-green-300 
                     text-green-300 rounded-md w-[65px] sm:w-[80px] text-[16px] sm:text-[20px] sm:text-[22px] text-center
@@ -264,16 +275,6 @@ export default function Home() {
                     onClick={()=>{setToggleEgypt(false); setToggleTunis(true); changeTunisColor("bg-green-300 text-white"); changeColor("bg-transparent text-green-300")}}
                     >
                     Tunisia
-                </button>
-                <button
-                    className={`${RobotoCondensed.className} border-2 border-green-300 
-                    text-green-300 rounded-md w-[65px] sm:w-[80px] text-[16px] sm:text-[20px] sm:text-[22px] text-center
-                    hover:bg-green-300 hover:text-white 
-                    transition-colors duration-150 ease-in-out} ${egyptColor}
-                    transition  duration-150 ease-in-out hover:-translate-y-1 hover:scale-110`} 
-                    onClick={()=>{setToggleEgypt(true); setToggleTunis(false); changeColor("bg-green-300 text-white"); changeTunisColor("bg-transparent text-green-300")}}
-                    >
-                    Egypt
                 </button>
             </div>
         </div>

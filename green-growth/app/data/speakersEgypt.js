@@ -139,5 +139,26 @@ export const speakersEgypt = [
         company: 'DAI / USAID Business Egypt',
         link: 'https://www.linkedin.com/in/manuelbueno1/',
     },
+    {        
+		id: 18, 
+        name: 'Amr Usama', 
+        image : '/images/speakers/amr usama bw.jpg',
+        company: 'Infinity Power',
+        link: 'https://www.linkedin.com/in/amr-usama-36983077?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    },
+    {        
+		id: 19, 
+        name: 'Tarek Assaad', 
+        image : '/images/speakers/Tarek Assaad bw.jpg',
+        company: 'Algebra Ventures',
+        link: 'https://www.linkedin.com/in/tassaad/',
+    },
+    {        
+		id: 19, 
+        name: 'Sarah Saleh', 
+        image : '/images/speakers/Sarah Saleh.jpg',
+        company: 'Hivos',
+        link: 'https://www.linkedin.com/in/sarah-s-616baa13b/',
+    },
 
   ];
