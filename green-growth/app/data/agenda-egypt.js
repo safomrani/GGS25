@@ -79,7 +79,11 @@ export const agendaEgypt = [
                         color: '#ef6a3c'
                     },
                     {
-                        details: 'Deal Room 3',
+                        details: 'Deal Room 3: Sandbase',
+                        color: '#ef6a3c'
+                    },
+                    {
+                        details: 'Deal Room 4: Mozare3',
                         color: '#ef6a3c'
                     },
                     {
