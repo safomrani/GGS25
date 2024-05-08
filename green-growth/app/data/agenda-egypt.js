@@ -87,7 +87,7 @@ export const agendaEgypt = [
                         color: '#ef6a3c'
                     },
                     {
-                        details: 'Fostering the Green Agenda in Egypt: Roundtable on Startup & Corporate Collaboration',
+                        details: 'Fostering the Green Agenda in Egypt: Startup & Corporate Collaboration',
                         color: '#d73732'
                     },
                     {
@@ -95,7 +95,7 @@ export const agendaEgypt = [
                         color: '#d73732'
                     },
                     {
-                        details: 'Develop Green Certification Standards for SMEs',
+                        details: 'Developing Green Certification Standards for SMEs',
                         color: '#d73732'
                     },
                     {
@@ -118,4 +118,3 @@ export const agendaEgypt = [
         ]
     },
 ]
-
