@@ -96,10 +96,10 @@ export const agendaEgypt = [
                     },
                     {
                         details: 'Developing Green Certification Standards for SMEs',
-                        color: '#d73732'
+                        color: 'black'
                     },
                     {
-                        details: 'Building Sustainable and Green Supply Chains',
+                        details: 'Enabling Financial Models for Sustainable and Green Supply Chains',
                         color: '#d73732'
                     }
                 ]

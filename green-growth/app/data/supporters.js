@@ -7,12 +7,37 @@ export const SupportedBy = [
     {
         id: 8, 
         name: 'USAID', 
-        image : '/logos/USAID.png',
+        image : '/logos/USAID3.png',
     },
     {
         id: 9, 
         name: 'Pathfinder', 
-        image : '/logos/Pathfinder.png',
+        image : '/logos/Pathfinder3.png',
+    },
+    {
+        id: 1, 
+        name: 'Impact Europe', 
+        image : '/logos/Impact Europe.png',
+    },
+    {
+        id: 2, 
+        name: 'Challenge Fund for Youth Employment', 
+        image : '/logos/CFFYE.png',
+    },
+    {
+        id: 8, 
+        name: 'USAID', 
+        image : '/logos/USAID3.png',
+    },
+    {
+        id: 10, 
+        name: 'DAI', 
+        image : '/logos/DAI2.png',
+    },
+    {
+        id: 3, 
+        name: 'Ministry of Affairs in Netherlands', 
+        image : '/logos/MFAN.png',
     },
     {
         id: 4, 
@@ -34,30 +59,6 @@ export const SupportedBy = [
         name: 'Expertise France', 
         image : '/logos/expertise france.png',
     },
-    {
-        id: 8, 
-        name: 'USAID', 
-        image : '/logos/USAID.png',
-    },
-    {
-        id: 10, 
-        name: 'DAI', 
-        image : '/logos/DAI.png',
-    },
-    {
-        id: 3, 
-        name: 'Ministry of Affairs in Netherlands', 
-        image : '/logos/MFAN.png',
-    },
-    {
-        id: 2, 
-        name: 'Challenge Fund for Youth Employmen', 
-        image : '/logos/CFFYE.png',
-    },
-    {
-        id: 1, 
-        name: 'Impact Europe', 
-        image : '/logos/Impact Europe.png',
-    },
+   
   ];
 
