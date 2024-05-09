@@ -95,7 +95,7 @@ export const agendaEgypt = [
                         color: '#d73732'
                     },
                     {
-                        details: 'Developing Green Certification Standards for SMEs',
+                        details: 'Creating an Enabling Environment for Green SMEs',
                         color: 'black'
                     },
                     {
