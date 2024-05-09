@@ -7,7 +7,7 @@ export const SupportedBy = [
     {
         id: 8, 
         name: 'USAID', 
-        image : '/logos/USAID3.png',
+        image : '/logos/USAID6.png',
     },
     {
         id: 9, 
@@ -27,12 +27,12 @@ export const SupportedBy = [
     {
         id: 8, 
         name: 'USAID', 
-        image : '/logos/USAID3.png',
+        image : '/logos/USAID6.png',
     },
     {
         id: 10, 
         name: 'DAI', 
-        image : '/logos/DAI2.png',
+        image : '/logos/DAI6.png',
     },
     {
         id: 3, 
