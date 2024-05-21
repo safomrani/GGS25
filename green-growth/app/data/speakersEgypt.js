@@ -50,12 +50,12 @@ export const speakersEgypt = [
         link: 'https://www.linkedin.com/in/mohamed-owais-shalaby-cpm-mba-fmva-b5416b42',
     },
     {
-        id: 5, 
-        name: 'Mariam AbdelKarim', 
-        image : '/images/speakers/Mariam AbdelKarim.jpg',
-        company: 'Hivos',
-        link: 'https://www.linkedin.com/in/mariam-abdelkarim-338373204/',
-    }, 
+        id: 25, 
+        name: 'Jason Taylor', 
+        image : '/images/speakers/Jason Taylor.jpg',
+        company: 'Office Director for Democracy and Governance',
+        link: 'https://eg.linkedin.com/in/jason-taylor-4534505',
+    },
     {
         id: 6, 
         name: 'Tamer El-Raghy', 
@@ -135,10 +135,10 @@ export const speakersEgypt = [
     },
     {        
         id: 16, 
-        name: 'Maya Boghdady', 
-        image : '/images/speakers/maya.boghdady.jpg',
+        name: 'Moustafa Kharma', 
+        image : '/images/speakers/mostafa kharma.jpg',
         company: 'Nahdet El Mahrousa',
-        link: 'https://www.linkedin.com/in/maya-boghdady-693b3a1a/',
+        link: 'https://www.linkedin.com/in/moustafa-kharma?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
     },
     {        
         id: 17, 
@@ -168,6 +168,13 @@ export const speakersEgypt = [
         company: 'Hivos',
         link: 'https://www.linkedin.com/in/sarah-s-616baa13b/',
     },
+    {
+        id: 5, 
+        name: 'Mariam AbdelKarim', 
+        image : '/images/speakers/Mariam AbdelKarim.jpg',
+        company: 'Hivos',
+        link: 'https://www.linkedin.com/in/mariam-abdelkarim-338373204/',
+    }, 
     {
         id:21,
         name: 'Farah de Haan',
