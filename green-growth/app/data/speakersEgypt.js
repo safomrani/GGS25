@@ -174,6 +174,13 @@ export const speakersEgypt = [
         image: '/images/speakers/Farah de haan bw.jpg',
         company: 'Hivos',
         link: 'https://www.linkedin.com/in/farah-de-haan/'
+    },
+    {
+        id:21,
+        name: 'Tamer Taha',
+        image: '/images/speakers/Tamer Taha.jpg',
+        company: 'Ministry of International Cooperation ',
+        link: 'https://www.linkedin.com/in/tamertaha/ '
     }
   ];
 
