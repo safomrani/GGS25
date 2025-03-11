@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body>
-    <div className="fixed top-0 left-0 w-full bg-green-600 text-white text-center p-3 text-lg font-bold shadow-md z-50">
+      <div className="fixed top-0 left-0 w-full bg-[#d73732] text-white text-center p-3 text-lg font-bold shadow-md z-50">
         Green Growth Summit 2025 – Coming Soon!
     </div>
     <div className="mt-14"></div> {/* Prevents content overlap */}
