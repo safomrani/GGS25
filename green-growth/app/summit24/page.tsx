@@ -71,7 +71,7 @@ export default function Home() {
           backgroundPosition: 'right top',
           backgroundSize: 'contain'
         }}>
-          {TracksData.map((item,idx) =>{
+           {TracksData.slice(0,5).map((item: any, idx: number)  =>{
             return(
             <div key={idx} className="mb-2">
               <Track 
@@ -99,7 +99,7 @@ export default function Home() {
             slidesPerView={1.2}
             spaceBetween={15}
           >
-          {TracksData.map((item: any, idx: number) => (
+          {TracksData.slice(0,5).map((item: any, idx: number) => (
             <SwiperSlide key={idx}>
               <div className="">
                 <Track
