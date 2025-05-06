@@ -151,7 +151,7 @@ export default function Hero25() {
         }}>
             <div className="flex flex-col justify-start items-center pt-10 text-justify">
                 <div className="px-5">
-                    <h1 className="py-1 text-left text-2xl sm:text-3xl text-green-300"><span className={`${RobotoCondensed.className}`}>Green Growth Summit 2024</span></h1>
+                    <h1 className="py-1 text-left text-2xl sm:text-3xl text-green-300"><span className={`${RobotoCondensed.className}`}>Green Growth Summit 2025</span></h1>
                     <h1 className={`${karla.className} w-[80%] pt-3 text-[14px] text-black text-justify`}>Unlocking solutions and innovative finance for a just green transition! Hivos is convening the Green Growth Summit 2025 in Cairo, Egypt, to drive green innovation, unlock investment opportunities, and strengthen local green ecosystems across the Middle East and North Africa.</h1>
                 </div>
             </div>
