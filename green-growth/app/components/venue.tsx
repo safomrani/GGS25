@@ -9,7 +9,7 @@ type Props = {
   locationTitle: string;
   eventDate: string;
   location: string;
-  reservation: string;
+  reservation?: string;
   directions: string;
   country: boolean;
 };
@@ -65,11 +65,13 @@ const Venue = ({
             </div>
 
             <div className='flex gap-1 sm:gap-3 xl:gap-5 pt-3'>
-                <button className= {`${karlaBold.className}  text-center border-2 border-red-300 bg-red-300 uppercase 
-                    text-white px-2 py-1 rounded-md w-[92px] sm:w-[130px] lg:w-[180px] text-[10px] sm:text[13px] xl:text-[18px]
-                    hover:bg-white hover:text-red-300 transition delay-300 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110`}>
-                    <a href={reservation} target="_blank">Reservations</a>
-                </button>
+                {reservation && (
+                    <button className= {`${karlaBold.className}  text-center border-2 border-red-300 bg-red-300 uppercase 
+                        text-white px-2 py-1 rounded-md w-[92px] sm:w-[130px] lg:w-[180px] text-[10px] sm:text[13px] xl:text-[18px]
+                        hover:bg-white hover:text-red-300 transition delay-300 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110`}>
+                        <a href={reservation} target="_blank">Reservations</a>
+                    </button>
+                )}
                 <button className= {clsx(`${karlaBold.className} text-center border-2 border-red-300 uppercase 
                      px-2 py-1 rounded-md w-[92px] sm:w-[130px] lg:w-[180px] text-[10px] sm:text[13px] xl:text-[18px] hover:bg-red-300 hover:text-white transition delay-300 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110`,
                       {

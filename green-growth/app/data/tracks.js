@@ -39,5 +39,36 @@ export const TracksData = [
         track: 'Sponsor: USAID`s Business Egypt Program',
         color: 'black',
     },
-    
+    {
+        id: 1, 
+        title : 'Green Investments \n Management',
+        keynotes: '',
+        panel: 'Maximizing green portfolio returns through fund management strategies such as ESG and harnessing specific advantages for sustainable projects', 
+        track: '\n \n \n',
+        color: '#3e8914',
+    },
+    {
+        id: 2, 
+        title : 'Leveraging \n Blended Finance',
+        keynotes: '',
+        panel: 'Designing, deploying, and scaling innovative financial instruments and blended finance models to de-risk investment in green innovations to harness green transition business opportunities', 
+        track: '\n \n \n',
+        color: '#00a3e0',
+    },
+    {
+        id: 3, 
+        title : 'Green Value Chains & \n Future-Proof Employment',
+        keynotes: '',
+        panel: 'Catalyzing the power of industry clusters—from microbusinesses to SMEs to corporates—to scale sustainable production, support decent, sustainable jobs, and attract green sector investment', 
+        track: '\n \n \n',
+        color: '#7b9e89',
+    },
+    {
+        id: 4, 
+        title : 'Sector Spotlights: \n AgriTech, Health Care & AI',
+        keynotes: '',
+        panel: 'Exploring deep dives into transformative innovations and the rapidly evolving opportunities reshaping the green economy, from precision farming solutions that boost water efficiency to innovations to green the health care sector', 
+        track: '\n \n \n',
+        color: '#db7f2d',
+    },
   ];
