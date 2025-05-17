@@ -27,7 +27,7 @@ const sliderSettings = {
     slidesPerView: 6,  
     spaceBetween: 20,
   },
-  };
+};
   
 
 const NewsSection = () => {
@@ -35,12 +35,12 @@ const NewsSection = () => {
     const [next, setNext] = useState(false);
     const [first, setFirst] = useState(true);
     const [mid, setMid] = useState(false);
-    const [third, setThird] = useState(false);
-    const [fourth, setFourth] = useState(false);
-    const [fifth, setFifth] = useState(false);
-    const [six, setSix] = useState(false);
-
-
+    
+    // Calculate if we need navigation dots based on number of items
+    const totalItems = SupportedBy25.length;
+    const needsNavigation = totalItems > 6; // For desktop view (6 items per view)
+    const needsMobileNavigation = totalItems > 3; // For mobile view (3 items per view)
+    const needsSmallNavigation = totalItems > 1.5; // For small mobile view (1.5 items per view)
   
     return (
       <div className="py-10">
@@ -72,60 +72,11 @@ const NewsSection = () => {
                       </div>
                   </div>
               </SwiperSlide>
-          ))}
-          {/**Navigation */}
-          {/**Desktop navigation */}
-          <div className='hidden md:flex items-baseline justify-center gap-1 pt-5'>
-            <div
-              className={clsx(
-                'h-[5px] rounded-full cursor-pointer duration-500',
-                {
-                  'w-3 bg-offwhite': !first,
-                  'w-7 bg-green-400': first,
-                }
-              )}
-              onClick={() => {
-                setFirst(true);
-                setMid(false);
-                setThird(false);
-                swiperRef.current?.slideTo(0)
-              }}
-              />
-              <div
-                className={clsx(
-                  'h-[5px] rounded-full cursor-pointer duration-500',
-                  {
-                    'w-3 bg-offwhite': !mid,
-                    'w-7 bg-green-400': mid,
-                  }
-                )}
-                onClick={() => {
-                  //check if its 
-                  setFirst(false);
-                  setMid(true);
-                  setThird(false);
-                  swiperRef.current?.slideTo(5)
-                }}
-              />
-              <div
-                className={clsx(
-                  'h-[5px] rounded-full cursor-pointer duration-500',
-                  {
-                    'w-3 bg-offwhite': !third,
-                    'w-7 bg-green-400': third,
-                  }
-                )}
-                onClick={() => {
-
-                  setFirst(false);
-                  setMid(false);
-                  setThird(true);
-                  swiperRef.current?.slideTo(7)
-
-                }}
-              />
-              </div>
-              {/**Mobile Navigation */}
+            ))}
+            </Swiper>
+            
+            {/* Only show navigation dots on mobile if needed */}
+            {needsMobileNavigation && (
               <div className='hidden min-[320px]:flex items-baseline justify-center gap-1 pt-5 md:hidden'>
                 <div
                   className={clsx(
@@ -138,70 +89,28 @@ const NewsSection = () => {
                   onClick={() => {
                     setFirst(true);
                     setMid(false);
-                    setThird(false);
-                    setFourth(false);
-                    setFifth(false);
                     swiperRef.current?.slideTo(0)
                   }}
-                  />
-                  <div
-                    className={clsx(
-                      'h-[5px] rounded-full cursor-pointer duration-500',
-                      {
-                        'w-3 bg-offwhite': !mid,
-                        'w-7 bg-green-400': mid,
-                      }
-                    )}
-                    onClick={() => {
-                      //check if its 
-                      setFirst(false);
-                      setMid(true);
-                      setThird(false);
-                      setFourth(false);
-                      setFifth(false);
-                      swiperRef.current?.slideTo(3)
-                    }}
-                  />
-                  <div
-                    className={clsx(
-                      'h-[5px] rounded-full cursor-pointer duration-500',
-                      {
-                        'w-3 bg-offwhite': !third,
-                        'w-7 bg-green-400': third,
-                      }
-                    )}
-                    onClick={() => {
-
-                      setFirst(false);
-                      setMid(false);
-                      setThird(true);
-                      setFourth(false);
-                      setFifth(false);
-                      swiperRef.current?.slideTo(6)
-
-                    }}
-                  />
-                  <div
-                    className={clsx(
-                      'h-[5px] rounded-full cursor-pointer duration-500',
-                      {
-                        'w-3 bg-offwhite': !fourth,
-                        'w-7 bg-green-400': fourth,
-                      }
-                    )}
-                    onClick={() => {
-
-                      setFirst(false);
-                      setMid(false);
-                      setThird(false);
-                      setFourth(true);
-                      setFifth(false);
-                      swiperRef.current?.slideTo(9)
-
-                    }}
-                  />
+                />
+                <div
+                  className={clsx(
+                    'h-[5px] rounded-full cursor-pointer duration-500',
+                    {
+                      'w-3 bg-offwhite': !mid,
+                      'w-7 bg-green-400': mid,
+                    }
+                  )}
+                  onClick={() => {
+                    setFirst(false);
+                    setMid(true);
+                    swiperRef.current?.slideTo(3)
+                  }}
+                />
               </div>
-              {/**Small devices with 1.5 slides */}
+            )}
+            
+            {/* Only show small device navigation if needed */}
+            {needsSmallNavigation && (
               <div className="max-[320px]:flex items-baseline justify-center gap-1 hidden">
                 <div
                   className={clsx(
@@ -230,7 +139,7 @@ const NewsSection = () => {
                   }}
                 />
               </div>
-            </Swiper>
+            )}
           </div>
         </div>
       </div>

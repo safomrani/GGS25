@@ -1,13 +1,37 @@
+"use client";
+
 import Image from "next/image";
 import { Separator } from '../../components/ui/separator';
 import { freehand } from "./fonts";
 import { karla, karlaBold, karlaExtraBold, RobotoCondensed } from "./fonts";
+import { motion } from "framer-motion";
+
+// Animation variants
+const fadeIn = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 0.6 } }
+};
+
+const slideUp = {
+  hidden: { y: 20, opacity: 0 },
+  visible: { y: 0, opacity: 1, transition: { duration: 0.5, ease: "easeOut" } }
+};
+
+const staggerContainer = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2
+    }
+  }
+};
 
 export default function Hero25() {
   return (
     <main className="min-h-[90%] items-center pt-1">
         {/**Navbar*/}
-        <div className="hidden md:flex items-center justify-between bg-white px-3 sm:px-12 lg:px-20 py-1">
+        {/* <div className="hidden md:flex items-center justify-between bg-white px-3 sm:px-12 lg:px-20 py-1">
             <a href="https://www.ggsummit.me">
                 <Image 
                 width={250}
@@ -28,10 +52,10 @@ export default function Hero25() {
                 />
             </a>
             
-        </div>
+        </div> */}
 
         {/**Navbar mobile*/}
-        <div className="flex md:hidden items-center justify-between bg-white px-3 py-1">
+        {/* <div className="flex md:hidden items-center justify-between bg-white px-3 py-1">
             <a href="https://www.ggsummit.me">
                 <Image 
                 width={180}
@@ -47,331 +71,298 @@ export default function Hero25() {
                     alt="Hivos Logo"
                     src={"/logos/Hivos.png"}            
                 />
-            </a>
+            </a> */}
             {/** 
             <div>
                 <h1 className="text-[15px] text-green-300"><span className={`${karlaBold.className}`}>#GGSummit24</span></h1>
             </div>
             */}
-        </div>
+        {/* </div> */}
         {/**Desktop view */}
         <div>
-        <div className="hidden md:flex flex-col bg-green-200" style={{
-            backgroundImage:
-            "url('/images/Hero-BG.png')",
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'right top',
-            backgroundSize: 'contain'
-        }}>
-            <div className="pt-10 px-3 md:px-12 lg:px-24  md:w-[680px] lg:w-[865px]">
-                <h1 className="text-center md:text-left text-3xl sm:text-3xl md:text-[44px] lg:text-6xl text-green-300 mb-4"><span className={`${RobotoCondensed.className}`}>Green Growth Summit 2025</span></h1>
-                <div className=" justify-center md:pb-5 md:w-[86%] lg:w-full ">
-                    <h1 className={`${karla.className}pt-3 md:text-[18px] lg:text-1xl text-black text-justify `}>Unlocking solutions and innovative finance for a just green transition! Hivos is convening the Green Growth Summit 2025 in Cairo, Egypt, to drive green innovation, unlock investment opportunities, and strengthen local green ecosystems across the Middle East and North Africa.</h1>
-                </div>
-            </div>
-            {/**Event details */}
-            <div className="pl-16 md:pl-12 lg:pl-24 w-3/4 flex flex-row md:gap-20 lg:gap-48 pb-10">
-                <div className="flex flex-col gap-3">
-                    <div className="pb-2">
-                        <button className={`${karlaBold.className} text-[16px] text-white bg-green-300 px-1 rounded-md`}>
-                            GGS Egypt
-                        </button>
-                    </div>                     
-                    <div className={`${karlaBold.className} text-[15px] flex flex-row gap-2 items-center justify-start pl-1`}>
-                        <Image
-                            width={25}
-                            height={25}
-                            src="/icons/Calendar.png"
-                            alt="calendar"
-                        />
-                        June 16th, 2025
+        <motion.div 
+            initial="hidden"
+            animate="visible"
+            variants={fadeIn}
+            className="hidden md:block bg-[#E6F5F1] relative overflow-hidden py-10 pb-16"
+        >
+            <motion.div 
+              variants={staggerContainer}
+              initial="hidden"
+              animate="visible"
+              className="pt-10 px-20 max-w-[800px]"
+            >
+                {/* Title */}
+                <motion.h1 
+                  variants={slideUp}
+                  className="text-left text-6xl text-[#00A881] font-bold"
+                >
+                  <div className={`${RobotoCondensed.className}`}>Green Growth</div>
+                  <div className={`${RobotoCondensed.className} -mt-2`}>Summit <span className="text-[#E63946]">2025</span></div>
+                </motion.h1>
+                
+                {/* Description */}
+                <motion.div variants={slideUp} className="mt-8 mb-10">
+                  <p className={`${karla.className} text-lg text-black max-w-[650px] leading-relaxed`}>
+                    Unlocking solutions and innovative finance for a just green transition! 
+                    Hivos is convening the second edition of the Green Growth Summit to drive green 
+                    innovation, unlock investment opportunities, and strengthen local green 
+                    ecosystems across the Middle East and North Africa.
+                  </p>
+                </motion.div>
+
+                {/* Event Buttons - Full width */}
+                <motion.div variants={slideUp} className="mt-6 mb-8 space-y-4 max-w-[650px]">
+                  <div className="bg-[#0C5545] text-white py-3">
+                    <h3 className="text-center text-lg font-normal">GGS EGYPT</h3>
+                  </div>
+                  
+                  <div className="bg-[#0C5545] text-white py-3">
+                    <h3 className="text-center text-lg font-normal">GGS TUNIS</h3>
+                  </div>
+                </motion.div>
+
+                {/* Event Details - Simple text format */}
+                <motion.div variants={slideUp} className="space-y-6 mt-6">
+                  <div className="flex items-center gap-3">
+                    <svg className="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="16" height="16" x="2" y="2" stroke="#000" strokeWidth="1" rx="2"/>
+                      <path stroke="#000" strokeWidth="1" d="M2 7h16M6 2v4M14 2v4"/>
+                    </svg>
+                    <span>June 16th, 2025</span>
+                  </div>
+
+                  <div>
+                    <div className="flex items-start gap-3">
+                      <svg className="w-5 h-5 mt-1" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke="#000" strokeWidth="1" d="M10 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        <path stroke="#000" strokeWidth="1" d="M15 8c0 6-5 10-5 10s-5-4-5-10c0-3 2-5 5-5s5 2 5 5z"/>
+                      </svg>
+                      <span>Sofitel Cairo<br />Downtown Nile</span>
                     </div>
-                    <div className={`${karlaBold.className} text-[15px] flex flex-row gap-2 items-center justify-start pl-1`}>
-                        <Image
-                            width={25}
-                            height={25}
-                            src="/icons/Location.png"
-                            alt="location"
-                        />
-                        Sofitel Cairo Downtown Nile
-                    </div>
-                    <div className="pt-2 flex flex-col">
-                       {/**  <button className= {`${karla.className} bg-red-300 uppercase 
-                        text-white px-3 py-2 rounded-md w-[180px] text-[18px]`}>
-                            <a href='https://docs.google.com/forms/d/e/1FAIpQLScv86Nlo6bfTL4Z0YozgeJWjgQ2tiK-mF9XppWS2a1qv4TB6Q/viewform' target="_blank">Register Now*</a>
-                        </button>
-                        <div className={`${karla.className} px-3 text-[13px]`}>*invitations are limited</div> */}
-                        <div className={`${karla.className} px-3 text-[1px] md:text-[13px]`}>*By invitation only</div>
-                    </div>
-                </div>
-                <div className="flex flex-col gap-3">
-                    <div className="pb-2">
-                        <button className={`${karlaBold.className} text-[16px] text-white bg-green-300 px-1 rounded-md`}>
-                            GGS Tunisia
-                        </button>
-                    </div> 
-                    <div className={`${karlaBold.className} text-[15px] flex flex-row gap-2 items-center justify-start pl-1`}>
-                        {/* <Image
-                            width={25}
-                            height={25}
-                            src="/icons/Calendar.png"
-                            alt="calendar"
-                        /> */}
-                        Comming Soon!
-                    </div>
-                    {/* <div className={`${karlaBold.className} text-[15px] flex flex-row gap-2 items-center justify-start pl-1`}>
-                        <Image
-                            width={25}
-                            height={25}
-                            src="/icons/Location.png"
-                            alt="location"
-                        />
-                        Mövenpick Gammarth - Tunis
-                    </div> */}
-                    <div className="pt-2 flex flex-col">
-                        {/**<button className= {`${karla.className} bg-red-300 uppercase 
-                        text-white px-3 py-2 rounded-md w-[180px] text-[18px]`}>
-                            <a href='https://docs.google.com/forms/d/e/1FAIpQLSdbn80m2mOZYvEIRqnbSzSKIf3nBeJGiSVOndUSYSfQuE70Ng/viewform' target="_blank">Register Now*</a>
-                        </button>
-                        <div className={`${karla.className} px-3 text-[13px]`}>*invitations are limited</div>**/}
-                        {/* <div className={`${karla.className} px-3 text-[11px] md:text-[13px]`}>*Registration is now closed</div> */}
-                    </div>
-                </div>
-            </div>
-        </div>
+                  </div>
+
+                  <div className="flex items-center gap-3">
+                    <svg className="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="16" height="16" x="2" y="2" stroke="#000" strokeWidth="1" rx="2"/>
+                      <path stroke="#000" strokeWidth="1" d="M2 7h16M6 2v4M14 2v4"/>
+                    </svg>
+                    <span>Coming soon!</span>
+                  </div>
+                </motion.div>
+
+                {/* By invitation only */}
+                <motion.div variants={slideUp} className="mt-6 text-sm italic">
+                  *By invitation only
+                </motion.div>
+            </motion.div>
+            
+            {/* No visible Branding SVG in this version */}
+        </motion.div>
         </div>
         {/**Mobile view */}
         <div>
-        <div className="flex md:hidden flex-col bg-green-200"  style={{
-            backgroundImage:
-            "url('/images/Hero-mobile.png')",
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'right bottom',
-            backgroundSize: 'fit'
-        }}>
-            <div className="flex flex-col justify-start items-center pt-10 text-justify">
-                <div className="px-5">
-                    <h1 className="py-1 text-left text-2xl sm:text-3xl text-green-300"><span className={`${RobotoCondensed.className}`}>Green Growth Summit 2025</span></h1>
-                    <h1 className={`${karla.className} w-[80%] pt-3 text-[14px] text-black text-justify`}>Unlocking solutions and innovative finance for a just green transition! Hivos is convening the Green Growth Summit 2025 in Cairo, Egypt, to drive green innovation, unlock investment opportunities, and strengthen local green ecosystems across the Middle East and North Africa.</h1>
-                </div>
-            </div>
-            {/**Event details */}
-            <div className="pl-5 flex flex-col gap-6 pt-10 pb-10">
-       
-
-                {/*Egypt**/}
-                <div className="flex flex-col gap-3">
-                    <div className="pb-2">
-                        <button className={`${karlaBold.className} text-[16px] text-white bg-green-300 px-1 rounded-md`}>
-                            GGS Egypt
-                        </button>
-                    </div>                     
-                    <div className={`${karlaBold.className}  text-[13px] sm:text-[15px]  flex flex-row gap-2 items-center justify-start pl-1`}>
-                        <Image
-                            width={25}
-                            height={25}
-                            src="/icons/Calendar.png"
-                            alt="calendar"
-                        />
-                        June 16th, 2025
-                    </div>
-                    <div className={`${karlaBold.className}  text-[13px] sm:text-[15px]  flex flex-row gap-2 items-center justify-start pl-1`}>
-                        <Image
-                            width={25}
-                            height={25}
-                            src="/icons/Location.png"
-                            alt="location"
-                        />
-                        Sofitel Cairo Downtown Nile
-                    </div>
-                    <div className="pt-2 flex flex-col">
-                        {/**<button className= {`${karla.className} bg-red-300 uppercase 
-                            text-white px-3 py-2 rounded-md w-[140px] md:w-[180px] text-[14px] md:text-[18px]`}>
-                            <a href='https://docs.google.com/forms/d/e/1FAIpQLScv86Nlo6bfTL4Z0YozgeJWjgQ2tiK-mF9XppWS2a1qv4TB6Q/viewform' target="_blank">Register Now*</a>
-                        </button>
-                        <div className={`${karla.className} px-3 text-[11px] md:text-[13px]`}>*invitations are limited</div>*/}
-                        <div className={`${karla.className} px-3 text-[11px] md:text-[13px]`}>*By invitation only                        </div>
-                    </div>
-                </div>
-               
-                <Separator className='bg-red-300 w-2/3'/>
-                {/*Tunis**/}
-                <div className="flex flex-col gap-3">
-                    <div className="pb-2">
-                        <button className={`${karlaBold.className} text-[16px] text-white bg-green-300 px-1 rounded-md`}>
-                            GGS Tunisia
-                        </button>
-                    </div> 
-                    {/* <div className={`${karlaBold.className}  text-[13px] sm:text-[15px]  flex flex-row gap-2 items-center justify-start pl-1`}>
-                        <Image
-                            width={25}
-                            height={25}
-                            src="/icons/Calendar.png"
-                            alt="calendar"
-                        />
-                        April 30th, 2024
-                    </div>
-                    <div className={`${karlaBold.className} text-[13px] sm:text-[15px] flex flex-row gap-2 items-center justify-start pl-1`}>
-                        <Image
-                            width={25}
-                            height={25}
-                            src="/icons/Location.png"
-                            alt="location"
-                        />
-                        Mövenpick Gammarth - Tunis
-                    </div> */}
-                    <div className="pt-2 flex flex-col">
-                        {/** <button className= {`${karla.className} bg-red-300 uppercase 
-                            text-white px-3 py-2 rounded-md w-[140px] md:w-[180px] text-[14px] md:text-[18px]`}>
-                            <a href='https://docs.google.com/forms/d/e/1FAIpQLSdbn80m2mOZYvEIRqnbSzSKIf3nBeJGiSVOndUSYSfQuE70Ng/viewform' target="_blank">Register Now*</a>
-                        </button>
-                        <div className={`${karla.className} px-3 text-[11px] md:text-[13px]`}>*invitations are limited</div>*/}
-                        <div className={`${karla.className} px-3 text-[11px] md:text-[13px]`}>Comming Soon!</div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-
-        <div className="flex flex-col lg:flex-row justify-center items-center lg:justify-between lg:pt-6 py-5">
-            {/**Sponsor Section - Enhanced Layout */}
-            <div className="flex flex-col w-full px-5 gap-8 mt-6 py-10 rounded-xl shadow-sm">
-                {/* Section Title */}
-                <div className="text-center mb-6">
-                    <h2 className={`${RobotoCondensed.className} text-2xl text-green-300 font-bold`}>Our Supporters</h2>
-                    <div className="w-24 h-1 bg-red-300 mx-auto mt-2"></div>
-                </div>
+        <motion.div 
+            initial="hidden"
+            animate="visible"
+            variants={fadeIn}
+            className="flex md:hidden flex-col bg-[#E6F5F1] relative py-8 px-6"
+        >
+            <motion.div 
+                variants={staggerContainer}
+                initial="hidden"
+                animate="visible"
+                className="flex flex-col justify-start"
+            >
+                {/* Title */}
+                <motion.h1 
+                    variants={slideUp}
+                    className="text-5xl text-[#00A881] font-bold mb-6"
+                >
+                    <div className={`${RobotoCondensed.className}`}>Green Growth</div>
+                    <div className={`${RobotoCondensed.className} -mt-2`}>Summit <span className="text-[#E63946]">2025</span></div>
+                </motion.h1>
                 
-                {/* Top row with three columns */}
-                <div className="flex flex-wrap lg:flex-nowrap justify-between gap-8 px-4 md:px-10">
-                    {/* With support from */}
-                    <div className="flex flex-col w-full lg:w-1/3 bg-white p-6 rounded-lg shadow-sm transition-all duration-300 hover:shadow-md">
-                        <p className={`${karla.className} text-black pb-3 font-bold text-center border-b border-gray-100 mb-4`}>With support from</p>
-                        <div className="flex flex-wrap justify-center gap-6 items-center">
-                            <a href="https://www.challengefundyoungpeople.org/" target="_blank" rel="noopener noreferrer" className="transition transform hover:scale-105 duration-300">
-                                <img 
-                                    src='/logos/CFFYE.png'
-                                    className="h-[70px] lg:h-[75px]"
-                                    alt="CFYE logo"
-                                />
-                            </a>
-                            <a href="https://www.government.nl/ministries/ministry-of-foreign-affairs" target="_blank" rel="noopener noreferrer" className="transition transform hover:scale-105 duration-300">
-                                <img 
-                                    src='/logos/MFAN.png'
-                                    className="h-[75px] lg:h-[70px]"
-                                    alt="Minbuza logo"
-                                />
-                            </a>
-                        </div>
+                {/* Description */}
+                <motion.div variants={slideUp} className="mb-8">
+                    <p className={`${karla.className} text-base text-black`}>
+                        Unlocking solutions and innovative finance for a just green transition! 
+                        Hivos is convening the second edition of the Green Growth Summit to drive green 
+                        innovation, unlock investment opportunities, and strengthen local green 
+                        ecosystems across the Middle East and North Africa.
+                    </p>
+                </motion.div>
+
+                {/* Event Buttons */}
+                <motion.div variants={slideUp} className="space-y-4 mb-8">
+                    <div className="bg-[#0C5545] text-white py-3">
+                        <h3 className="text-center">GGS EGYPT</h3>
+                    </div>
+                    
+                    <div className="bg-[#0C5545] text-white py-3">
+                        <h3 className="text-center">GGS TUNIS</h3>
+                    </div>
+                </motion.div>
+
+                {/* Event Details */}
+                <motion.div variants={slideUp} className="space-y-4">
+                    <div className="flex items-center gap-3">
+                        <svg className="w-5 h-5" viewBox="0 0 20 20" fill="none">
+                            <rect width="16" height="16" x="2" y="2" stroke="#000" strokeWidth="1" rx="2"/>
+                            <path stroke="#000" strokeWidth="1" d="M2 7h16M6 2v4M14 2v4"/>
+                        </svg>
+                        <span>June 16th, 2025</span>
+                    </div>
+                    
+                    <div className="flex items-start gap-3">
+                        <svg className="w-5 h-5 mt-1" viewBox="0 0 20 20" fill="none">
+                            <path stroke="#000" strokeWidth="1" d="M10 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            <path stroke="#000" strokeWidth="1" d="M15 8c0 6-5 10-5 10s-5-4-5-10c0-3 2-5 5-5s5 2 5 5z"/>
+                        </svg>
+                        <span>Sofitel Cairo<br />Downtown Nile</span>
                     </div>
 
-                    {/* Sponsored by */}
-                    <div className="flex flex-col w-full lg:w-1/3 bg-white p-6 rounded-lg shadow-sm transition-all duration-300 hover:shadow-md">
-                        <p className={`${karla.className} text-black pb-3 font-bold text-center border-b border-gray-100 mb-4`}>Sponsored by</p>
-                        <div className="flex flex-wrap justify-center gap-6 items-center">
-                            <a href="https://www.spark-online.org/" target="_blank" rel="noopener noreferrer" className="transition transform hover:scale-105 duration-300">
-                                <img 
-                                    src='/logos/Spark.png'
-                                    className="h-[65px] lg:h-[70px]"
-                                    alt="Spark logo"
-                                />
-                            </a>
-                            <a href="https://european-union.europa.eu/" target="_blank" rel="noopener noreferrer" className="transition transform hover:scale-105 duration-300">
-                                <img 
-                                    src='/logos/euNew.png'
-                                    className="h-[45px] lg:h-[50px]"
-                                    alt="EU logo"
-                                />
-                            </a>
-                            {/* Placeholder for Finance in Motion */}
-                            <a href="https://www.finance-in-motion.com/" target="_blank" rel="noopener noreferrer" className="transition transform hover:scale-105 duration-300">
-                                <img 
-                                    src='/logos/placeholder.png'
-                                    className="h-[30px] lg:h-[35px]"
-                                    alt="Finance in Motion logo"
-                                />
-                            </a>
-                        </div>
+                    <div className="flex items-center gap-3">
+                        <svg className="w-5 h-5" viewBox="0 0 20 20" fill="none">
+                            <rect width="16" height="16" x="2" y="2" stroke="#000" strokeWidth="1" rx="2"/>
+                            <path stroke="#000" strokeWidth="1" d="M2 7h16M6 2v4M14 2v4"/>
+                        </svg>
+                        <span>Coming soon!</span>
                     </div>
+                </motion.div>
 
-                    {/* Implemented by */}
-                    <div className="flex flex-col w-full lg:w-1/3 bg-white p-6 rounded-lg shadow-sm transition-all duration-300 hover:shadow-md">
-                        <p className={`${karla.className} text-black pb-3 font-bold text-center border-b border-gray-100 mb-4`}>Implemented by</p>
-                        <div className="flex flex-wrap justify-center gap-6 items-center">
-                            <a href="https://newsilkroads.com/" target="_blank" rel="noopener noreferrer" className="transition transform hover:scale-105 duration-300">
-                                <img 
-                                    src='/logos/newSilkRoad.png'
-                                    className="h-[115px] lg:h-[120px]"
-                                    alt="NSR logo"
-                                />
-                            </a>
-                        </div>
+                {/* By invitation only */}
+                <motion.div variants={slideUp} className="mt-6 text-sm italic">
+                    *By invitation only
+                </motion.div>
+            </motion.div>
+        </motion.div>
+        </div>
+
+        {/* Sponsor Section - Enhanced with repositioned sections */}
+        <div className="flex flex-col lg:flex-row justify-center items-center lg:justify-between py-10 bg-white border-t border-gray-100">
+            {/* Sponsored by */}
+            <div className="flex flex-col w-full lg:w-auto px-6 lg:px-10 mb-8 lg:mb-0">
+                <p className={`${karla.className} text-green-300 font-bold text-lg pb-4 text-center lg:text-left`}>
+                    Sponsored by
+                    <span className="block h-[2px] w-16 mt-2 bg-red-300 mx-auto lg:mx-0"></span>
+                </p>
+                <div className="flex flex-wrap gap-4 lg:gap-10 py-2 justify-center lg:justify-start items-center">
+                    <motion.div 
+                        whileHover={{ scale: 1.05 }} 
+                        className="flex items-center shadow-sm p-2 rounded-md hover:shadow-md transition-shadow"
+                    >
+                        <Image 
+                            src="/logos/Spark.png"
+                            width={150}
+                            height={50}
+                            alt="Spark logo"
+                            style={{ height: '30px', width: 'auto', objectFit: "contain" }}
+                            className="h-[30px] lg:h-[40px]"
+                        />
+                    </motion.div>
+                    <motion.div 
+                        whileHover={{ scale: 1.05 }} 
+                        className="flex items-center shadow-sm p-2 rounded-md hover:shadow-md transition-shadow"
+                    >
+                        <Image 
+                            src="/logos/euNew.png"
+                            width={200}
+                            height={50}
+                            alt="EU logo"
+                            priority
+                            quality={100}
+                            style={{ height: '30px', width: 'auto', objectFit: "contain" }}
+                            className="h-[30px] lg:h-[40px]"
+                        />
+                    </motion.div>
+                    <motion.div 
+                        whileHover={{ scale: 1.05 }} 
+                        className="flex items-center shadow-sm p-2 rounded-md hover:shadow-md transition-shadow"
+                    >
+                        <Image 
+                            src="/icons/GGF_LONG.jpg"
+                            width={180}
+                            height={50}
+                            alt="GGF logo"
+                            style={{ height: '30px', width: 'auto', objectFit: "contain" }}
+                            className="h-[30px] lg:h-[40px]"
+                        />
+                    </motion.div>
+                    <motion.div 
+                        whileHover={{ scale: 1.05 }} 
+                        className="flex items-center shadow-sm p-2 rounded-md hover:shadow-md transition-shadow"
+                    >
+                        <Image 
+                            src="/icons/Green Academy.png"
+                            width={160}
+                            height={50}
+                            alt="Green Academy logo"
+                            style={{ height: '30px', width: 'auto', objectFit: "contain" }}
+                            className="h-[30px] lg:h-[40px]"
+                        />
+                    </motion.div>
+                </div>
+            </div>
+
+            {/* Implementation By and With Support From - Positions Swapped */}
+            <div className="flex flex-col lg:flex-row gap-8 px-6 lg:px-10">
+                {/* With support from - Always first in both mobile and desktop */}
+                <div className="flex flex-col items-center lg:items-start">
+                    <p className={`${karla.className} text-green-300 font-bold text-lg pb-4 text-center lg:text-left`}>
+                        With support from
+                        <span className="block h-[2px] w-16 mt-2 bg-red-300 mx-auto lg:mx-0"></span>
+                    </p>
+                    <div className="flex flex-row justify-center lg:justify-start gap-4 lg:gap-6">
+                        <motion.div 
+                            whileHover={{ scale: 1.05 }} 
+                            className="flex items-center shadow-sm p-2 rounded-md hover:shadow-md transition-shadow"
+                        >
+                            <Image 
+                                src="/logos/CFFYE.png"
+                                width={150}
+                                height={50}
+                                alt="CFYE logo"
+                                style={{ height: '35px', width: 'auto', objectFit: "contain" }}
+                                className="h-[35px] lg:h-[45px]"
+                            />
+                        </motion.div>
+                        <motion.div 
+                            whileHover={{ scale: 1.05 }} 
+                            className="flex items-center shadow-sm p-2 rounded-md hover:shadow-md transition-shadow"
+                        >
+                            <Image 
+                                src="/logos/MFAN.png"
+                                width={150}
+                                height={50}
+                                alt="Minbuza logo"
+                                style={{ height: '35px', width: 'auto', objectFit: "contain" }}
+                                className="h-[35px] lg:h-[45px]"
+                            />
+                        </motion.div>
                     </div>
                 </div>
 
-                {/* Partners row - all logos in one line */}
-                <div className="flex flex-col w-full mt-6 px-4 md:px-10">
-                    <div className="bg-white p-6 rounded-lg shadow-sm transition-all duration-300 hover:shadow-md">
-                        <p className={`${karla.className} text-black pb-3 font-bold text-center border-b border-gray-100 mb-6`}>Partners</p>
-                        <div className="flex flex-wrap justify-between w-full items-center">
-                            <a href="https://auc.eg/auc-venture-lab/" target="_blank" rel="noopener noreferrer" className="transition transform hover:scale-105 duration-300">
-                                <img 
-                                    src='/logos/aucVlab.png'
-                                    className="h-[75px] lg:h-[80px] mb-4"
-                                    alt="AUC Venture Lab logo"
-                                />
-                            </a>
-                            <a href="https://www.gov.uk/world/organisations/british-embassy-cairo" target="_blank" rel="noopener noreferrer" className="transition transform hover:scale-105 duration-300">
-                                <img 
-                                    src='/logos/britishe.png'
-                                    className="h-[75px] lg:h-[80px] mb-4"
-                                    alt="British Embassy Cairo logo"
-                                />
-                            </a>
-                            <a href="https://chemonics.com/" target="_blank" rel="noopener noreferrer" className="transition transform hover:scale-105 duration-300">
-                                <img 
-                                    src='/logos/Chemonics.png'
-                                    className="h-[55px] lg:h-[50px] mb-4"
-                                    alt="Chemonics logo"
-                                />
-                            </a>
-                            <a href="https://www.nlfoodpartnership.com/" target="_blank" rel="noopener noreferrer" className="transition transform hover:scale-105 duration-300">
-                                <img 
-                                    src='/logos/nfp.png'
-                                    className="h-[75px] lg:h-[80px] mb-4"
-                                    alt="Netherlands Food Partnership logo"
-                                />
-                            </a>
-                            <a href="https://www.pathfinder.org/" target="_blank" rel="noopener noreferrer" className="transition transform hover:scale-105 duration-300">
-                                <img 
-                                    src='/logos/pathFInderNew.png'
-                                    className="h-[75px] lg:h-[80px] mb-4"
-                                    alt="Pathfinder logo"
-                                />
-                            </a>
-                            <a href="https://rdna.com/" target="_blank" rel="noopener noreferrer" className="transition transform hover:scale-105 duration-300">
-                                <img 
-                                    src='/logos/RDNA.png'
-                                    className="h-[50px] lg:h-[55px] mb-4"
-                                    alt="RDNA logo"
-                                />
-                            </a>
-                            <a href="https://trueprice.org/" target="_blank" rel="noopener noreferrer" className="transition transform hover:scale-105 duration-300">
-                                <img 
-                                    src='/logos/TRUEPRICE.png'
-                                    className="h-[50px] lg:h-[55px] mb-4"
-                                    alt="True Price logo"
-                                />
-                            </a>
-                            <a href="https://www.unido.org/" target="_blank" rel="noopener noreferrer" className="transition transform hover:scale-105 duration-300">
-                                <img 
-                                    src='/logos/UNIDO.png'
-                                    className="h-[50px] lg:h-[55px] mb-4"
-                                    alt="UNIDO logo"
-                                />
-                            </a>
-                        </div>
+                {/* Implemented by - Always second in both mobile and desktop */}
+                <div className="flex flex-col items-center lg:items-start mt-6 lg:mt-0">
+                    <p className={`${karla.className} text-green-300 font-bold text-lg pb-4 text-center lg:text-left`}>
+                        Implemented by
+                        <span className="block h-[2px] w-16 mt-2 bg-red-300 mx-auto lg:mx-0"></span>
+                    </p>
+                    <div className="flex justify-center">
+                        <motion.div 
+                            whileHover={{ scale: 1.05 }} 
+                            className="flex items-center shadow-sm p-2 rounded-md hover:shadow-md transition-shadow"
+                        >
+                            <Image 
+                                src="/logos/NewSilkRoad.png"
+                                width={300}
+                                height={120}
+                                alt="NSR logo"
+                                style={{ height: '40px', width: 'auto', objectFit: "contain" }}
+                                className="h-[40px] lg:h-[60px]"
+                            />
+                        </motion.div>
                     </div>
                 </div>
             </div>

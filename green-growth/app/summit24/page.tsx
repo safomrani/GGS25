@@ -87,7 +87,7 @@ export default function Home() {
           )}
         </div>
         {/**Mobile view */}        
-        <div className="sm:hidden flex px-10 py-10" 
+        <div className="sm:hidden px-10 py-10" 
          style={{
           backgroundImage:
           "url('/images/tracks-bg-mobile.png')",
@@ -95,25 +95,20 @@ export default function Home() {
           backgroundPosition: 'right top',
           backgroundSize: 'contain'
         }}>
-          <Swiper
-            slidesPerView={1.2}
-            spaceBetween={15}
-          >
+          <div className="grid grid-cols-1 gap-4">
           {TracksData.slice(0,5).map((item: any, idx: number) => (
-            <SwiperSlide key={idx}>
-              <div className="">
-                <Track
-                  index={item.id}
-                  title={item.title}
-                  keynotes={item.keynotes}
-                  panel={item.panel}
-                  track={item.track}
-                  color={item.color}
-                />
-              </div>
-            </SwiperSlide>
+            <div key={idx} className="mb-3">
+              <Track
+                index={item.id}
+                title={item.title}
+                keynotes={item.keynotes}
+                panel={item.panel}
+                track={item.track}
+                color={item.color}
+              />
+            </div>
           ))}
-        </Swiper>
+          </div>
         </div>
       </div>
       {/** */}

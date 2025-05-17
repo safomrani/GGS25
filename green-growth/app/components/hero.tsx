@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <main className="min-h-[90%] items-center pt-1">
         {/**Navbar*/}
-        <div className="hidden md:flex items-center justify-between bg-white px-3 sm:px-12 lg:px-20 py-1">
+        {/* <div className="hidden md:flex items-center justify-between bg-white px-3 sm:px-12 lg:px-20 py-1">
             <a href="https://www.ggsummit.me">
                 <Image 
                 width={250}
@@ -28,10 +28,10 @@ export default function Hero() {
                 />
             </a>
             
-        </div>
+        </div> */}
 
         {/**Navbar mobile*/}
-        <div className="flex md:hidden items-center justify-between bg-white px-3 py-1">
+        {/* <div className="flex md:hidden items-center justify-between bg-white px-3 py-1">
             <a href="https://www.ggsummit.me">
                 <Image 
                 width={180}
@@ -47,13 +47,13 @@ export default function Hero() {
                     alt="Hivos Logo"
                     src={"/logos/Hivos.png"}            
                 />
-            </a>
+            </a> */}
             {/** 
             <div>
                 <h1 className="text-[15px] text-green-300"><span className={`${karlaBold.className}`}>#GGSummit24</span></h1>
             </div>
             */}
-        </div>
+        {/* </div> */}
         {/**Desktop view */}
         <div>
         <div className="hidden md:flex flex-col bg-green-200" style={{

@@ -48,7 +48,7 @@ export default function FooterBar2() {
                     <div className="flex flex-row gap-3 justify-start items-center">
                             <img
                                 className="h-[15px]"
-                                src="/icons/GGS-Facebook.png"
+                                src="/icons/GGS-Linkedin.png"
                                 alt="Email"
                             />
                             <p className={`${karla.className} hover:text-black`}><a target="_blank" href="https://www.linkedin.com/company/hivos/posts/?feedView=all">Hivos</a></p>
@@ -59,17 +59,12 @@ export default function FooterBar2() {
         </div>
         <div className=" bg-green-400 flex flex-col justify-center items-center text-center px-5 pb-5">
             <h1 className={`${karla.className} text-white font-semibold`}>
-            © 2025 Green Growth Summit. All rights reserved. Convened by Hivos, implemented by New Silk Roads.
-                <span className= {`${karla.className} hover:text-black font-semibold cursor-pointer`}>
+            © 2025 Green Growth Summit. All rights reserved. Convened by <span className= {`${karla.className} hover:text-black font-semibold cursor-pointer`}>
                     <a href="https://hivos.org/" target="_blank">Hivos</a>
                 </span>
                 , implemented by{" "}
                 <span className= {`${karla.className} hover:text-black font-semibold cursor-pointer`}>
-                    <a href="https://changelabs.me/" target="_blank">Changelabs{" "}</a>
-                </span>
-                and{" "}
-                <span className= {`${karla.className} hover:text-black font-semibold cursor-pointer`}>
-                    <a href="https://www.newsilkroads.com/" target="_blank">New Silk Roads.{" "}</a>
+                    <a href="https://www.newsilkroads.com/" target="_blank">New Silk Roads.</a>
                 </span>
             </h1>
         </div>

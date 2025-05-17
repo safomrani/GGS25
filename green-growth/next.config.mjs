@@ -1,10 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  distDir: 'out',
+  basePath: '',
+  images: {
+    unoptimized: true,
+  },
   async redirects() {
     return [
       {
         source: '/',
-        destination: '/summit24',
+        destination: '/summit',
         permanent: true,
       },
     ];

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0_1_2)">
+    <!-- Red Arcs -->
+    <path d="M450 150C450 232.843 382.843 300 300 300" stroke="#E63946" stroke-width="40"/>
+    <path d="M300 300C217.157 300 150 232.843 150 150" stroke="#E63946" stroke-width="40"/>
+    
+    <!-- Green Arcs -->
+    <path d="M300 300C382.843 300 450 367.157 450 450" stroke="#00A881" stroke-width="40"/>
+    <path d="M150 450C150 367.157 217.157 300 300 300" stroke="#00A881" stroke-width="40"/>
+    
+    <!-- Additional Decorative Elements -->
+    <circle cx="300" cy="300" r="20" fill="#1B4332"/>
+    <rect x="400" y="100" width="40" height="40" fill="#E63946"/>
+    <rect x="160" y="460" width="40" height="40" fill="#00A881"/>
+  </g>
+  <defs>
+    <clipPath id="clip0_1_2">
+      <rect width="600" height="600" fill="white"/>
+    </clipPath>
+  </defs>
+</svg> 

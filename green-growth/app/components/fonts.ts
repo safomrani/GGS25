@@ -14,3 +14,6 @@ export const karlaExtraBold = Karla({weight: ['800'], subsets: ['latin'],  style
 
 import{Roboto_Condensed} from 'next/font/google';
 export const RobotoCondensed = Roboto_Condensed({weight:['900'], subsets:['latin']})
+
+import{Roboto} from 'next/font/google';
+export const robotoBlack = Roboto({weight:['900'], subsets:['latin']})

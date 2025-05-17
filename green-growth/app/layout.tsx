@@ -24,13 +24,13 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body>
         <ClientAnnouncementBanner />
-        {/* <div className="fixed top-0 left-0 w-full bg-[#d73732] text-white text-center p-3 text-lg font-bold shadow-md z-50">
-          Green Growth Summit 2025 -  visit us at <a href="https://www.ggsummit.me/summit25" className="underline">www.ggsummit.me/summit25</a>
-      </div> */}
-      {/* <div className="mt-14"></div>  */}
-      {/* Prevents content overlap */}
-        {children}
-      </body>
+      {/* <div className="fixed top-0 left-0 w-full bg-[#d73732] text-white text-center p-3 text-lg font-bold shadow-md z-50">
+        Green Growth Summit 2025 -  visit us at <a href="https://www.ggsummit.me/summit25" className="underline">www.ggsummit.me/summit25</a>
+    </div> */}
+    {/* <div className="mt-14"></div>  */}
+    {/* Prevents content overlap */}
+    {children}
+</body>
     </html>
   );
 }
