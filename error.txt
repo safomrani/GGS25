@@ -1,178 +1,207 @@
-[22:32:46.584] Running build in Washington, D.C., USA (East) – iad1
-[22:32:46.585] Build machine configuration: 2 cores, 8 GB
-[22:32:46.603] Cloning github.com/safomrani/GGS25 (Branch: main, Commit: c635ec3)
-[22:32:46.781] Previous build caches not available
-[22:32:48.116] Cloning completed: 1.512s
-[22:32:48.495] Running "vercel build"
-[22:32:48.928] Vercel CLI 41.7.3
-[22:32:50.160] Running "install" command: cd green-growth && npm install...
-[22:33:06.634] 
-[22:33:06.634] added 397 packages, and audited 398 packages in 16s
-[22:33:06.635] 
-[22:33:06.635] 138 packages are looking for funding
-[22:33:06.635]   run npm fund for details
-[22:33:06.695] 
-[22:33:06.696] 6 vulnerabilities (3 moderate, 2 high, 1 critical)
-[22:33:06.696] 
-[22:33:06.696] To address all issues, run:
-[22:33:06.697]   npm audit fix
-[22:33:06.697] 
-[22:33:06.697] Run npm audit for details.
-[22:33:06.994] 
-[22:33:06.995] > green-growth@0.1.0 build
-[22:33:06.995] > next build
-[22:33:06.995] 
-[22:33:08.340] Attention: Next.js now collects completely anonymous telemetry regarding usage.
-[22:33:08.340] This information is used to shape Next.js' roadmap and prioritize features.
-[22:33:08.341] You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
-[22:33:08.341] https://nextjs.org/telemetry
-[22:33:08.341] 
-[22:33:08.425]    ▲ Next.js 14.1.4
-[22:33:08.426] 
-[22:33:08.494]    Creating an optimized production build ...
-[22:33:23.192] Browserslist: caniuse-lite is outdated. Please run:
-[22:33:23.192]   npx update-browserslist-db@latest
-[22:33:23.193]   Why you should do it regularly: https://github.com/browserslist/update-db#readme
-[22:33:28.574] Browserslist: caniuse-lite is outdated. Please run:
-[22:33:28.575]   npx update-browserslist-db@latest
-[22:33:28.575]   Why you should do it regularly: https://github.com/browserslist/update-db#readme
-[22:33:30.960]  ✓ Compiled successfully
-[22:33:30.962]    Linting and checking validity of types ...
-[22:33:37.218] 
-[22:33:37.219] Failed to compile.
-[22:33:37.219] 
-[22:33:37.219] ./app/components/component.tsx
-[22:33:37.219] 11:11  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.220] 88:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.225] 91:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.226] 94:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.226] 97:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.227] 107:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.227] 110:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.237] 120:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.238] 
-[22:33:37.238] ./app/components/footer.tsx
-[22:33:37.238] 24:29  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.238] 39:29  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.238] 49:29  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.239] 
-[22:33:37.239] ./app/components/footer2.tsx
-[22:33:37.245] 24:29  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.246] 39:29  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.246] 49:29  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.253] 
-[22:33:37.253] ./app/components/hero.tsx
-[22:33:37.254] 241:21  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.255] 246:22  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.256] 251:22  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.256] 256:21  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.256] 261:21  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.257] 266:21  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.257] 271:21  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.257] 285:25  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.257] 290:25  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.257] 300:21  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.257] 305:21  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.258] 310:21  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.258] 
-[22:33:37.258] ./app/components/newsCard.tsx
-[22:33:37.258] 18:9  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.258] 18:9  Warning: img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
-[22:33:37.258] 26:15  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.258] 26:15  Warning: img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
-[22:33:37.258] 
-[22:33:37.258] ./app/components/speakerCard.tsx
-[22:33:37.259] 25:11  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.269] 25:11  Warning: img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
-[22:33:37.269] 38:15  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.270] 38:15  Warning: img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
-[22:33:37.270] 
-[22:33:37.270] ./app/components/venue.tsx
-[22:33:37.270] 111:17  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.271] 124:17  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.271] 
-[22:33:37.271] ./app/summit/registration/page.tsx
-[22:33:37.271] 57:6  Warning: React Hook useEffect has a missing dependency: 'verifyEmailWithBackend'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
-[22:33:37.271] 215:18  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.271] 219:149  Error: " can be escaped with &quot;, &ldquo;, &#34;, &rdquo;.  react/no-unescaped-entities
-[22:33:37.271] 219:193  Error: " can be escaped with &quot;, &ldquo;, &#34;, &rdquo;.  react/no-unescaped-entities
-[22:33:37.272] 219:204  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.272] 465:113  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.272] 573:34  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.272] 573:87  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.272] 574:49  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.272] 592:36  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.273] 652:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.273] 655:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.273] 658:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.278] 661:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.278] 671:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.278] 674:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.278] 684:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.278] 
-[22:33:37.278] ./app/summit/speaker-registration/page.tsx
-[22:33:37.278] 60:6  Warning: React Hook useEffect has a missing dependency: 'verifyEmailWithBackend'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
-[22:33:37.280] 230:17  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.280] 234:148  Error: " can be escaped with &quot;, &ldquo;, &#34;, &rdquo;.  react/no-unescaped-entities
-[22:33:37.285] 234:192  Error: " can be escaped with &quot;, &ldquo;, &#34;, &rdquo;.  react/no-unescaped-entities
-[22:33:37.286] 234:203  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.286] 234:283  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.286] 521:113  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.288] 628:34  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.288] 628:87  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.288] 629:49  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.288] 647:36  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.288] 707:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.288] 710:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.289] 713:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.289] 716:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.289] 726:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.289] 729:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.289] 739:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.289] 
-[22:33:37.290] ./app/summit25/page.tsx
-[22:33:37.290] 362:41  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.290] 
-[22:33:37.290] ./app/summit25/registration/page.tsx
-[22:33:37.290] 57:6  Warning: React Hook useEffect has a missing dependency: 'verifyEmailWithBackend'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
-[22:33:37.290] 215:18  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.290] 219:149  Error: " can be escaped with &quot;, &ldquo;, &#34;, &rdquo;.  react/no-unescaped-entities
-[22:33:37.290] 219:193  Error: " can be escaped with &quot;, &ldquo;, &#34;, &rdquo;.  react/no-unescaped-entities
-[22:33:37.291] 219:204  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.291] 465:113  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.291] 573:34  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.291] 573:87  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.291] 574:49  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.292] 592:36  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.292] 652:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.292] 655:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.292] 658:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.293] 661:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.294] 671:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.294] 674:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.294] 684:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.294] 
-[22:33:37.294] ./app/summit25/speaker-registration/page.tsx
-[22:33:37.294] 60:6  Warning: React Hook useEffect has a missing dependency: 'verifyEmailWithBackend'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
-[22:33:37.294] 230:17  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.294] 234:148  Error: " can be escaped with &quot;, &ldquo;, &#34;, &rdquo;.  react/no-unescaped-entities
-[22:33:37.294] 234:192  Error: " can be escaped with &quot;, &ldquo;, &#34;, &rdquo;.  react/no-unescaped-entities
-[22:33:37.294] 234:203  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.294] 234:283  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.295] 521:113  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.295] 628:34  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.296] 628:87  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.297] 629:49  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.304] 647:36  Error: ' can be escaped with &apos;, &lsquo;, &#39;, &rsquo;.  react/no-unescaped-entities
-[22:33:37.304] 707:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.304] 710:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.304] 713:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.304] 716:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.305] 726:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.305] 729:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.305] 739:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
-[22:33:37.305] 
-[22:33:37.305] info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
-[22:33:37.318] Error: Command "cd green-growth && npm run build" exited with 1
-[22:33:37.775] 
-[22:33:41.207] Exiting build container
+[22:38:17.794] Running build in Washington, D.C., USA (East) – iad1
+[22:38:17.794] Build machine configuration: 2 cores, 8 GB
+[22:38:17.808] Cloning github.com/safomrani/GGS25 (Branch: main, Commit: 89c96cd)
+[22:38:17.990] Previous build caches not available
+[22:38:19.944] Cloning completed: 2.136s
+[22:38:20.394] Running "vercel build"
+[22:38:20.783] Vercel CLI 41.7.3
+[22:38:22.137] Running "install" command: cd green-growth && npm install...
+[22:38:37.445] 
+[22:38:37.446] added 397 packages, and audited 398 packages in 15s
+[22:38:37.446] 
+[22:38:37.451] 138 packages are looking for funding
+[22:38:37.452]   run npm fund for details
+[22:38:37.506] 
+[22:38:37.506] 6 vulnerabilities (3 moderate, 2 high, 1 critical)
+[22:38:37.506] 
+[22:38:37.506] To address all issues, run:
+[22:38:37.507]   npm audit fix
+[22:38:37.507] 
+[22:38:37.507] Run npm audit for details.
+[22:38:37.802] 
+[22:38:37.802] > green-growth@0.1.0 build
+[22:38:37.802] > next build
+[22:38:37.802] 
+[22:38:38.425] Attention: Next.js now collects completely anonymous telemetry regarding usage.
+[22:38:38.428] This information is used to shape Next.js' roadmap and prioritize features.
+[22:38:38.431] You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+[22:38:38.432] https://nextjs.org/telemetry
+[22:38:38.432] 
+[22:38:38.514]    ▲ Next.js 14.1.4
+[22:38:38.514] 
+[22:38:38.581]    Creating an optimized production build ...
+[22:38:51.022] Browserslist: caniuse-lite is outdated. Please run:
+[22:38:51.023]   npx update-browserslist-db@latest
+[22:38:51.024]   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+[22:38:56.075] Browserslist: caniuse-lite is outdated. Please run:
+[22:38:56.075]   npx update-browserslist-db@latest
+[22:38:56.076]   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+[22:38:58.498]  ✓ Compiled successfully
+[22:38:58.499]    Linting and checking validity of types ...
+[22:39:03.862] 
+[22:39:03.862] ./app/components/component.tsx
+[22:39:03.862] 11:11  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.862] 88:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.863] 91:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.863] 94:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.863] 97:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.863] 107:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.863] 110:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.864] 120:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.864] 
+[22:39:03.864] ./app/components/footer.tsx
+[22:39:03.864] 24:29  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.864] 39:29  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.864] 49:29  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.864] 
+[22:39:03.864] ./app/components/footer2.tsx
+[22:39:03.864] 24:29  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.864] 39:29  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.864] 49:29  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.865] 
+[22:39:03.865] ./app/components/hero.tsx
+[22:39:03.865] 241:21  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.865] 246:22  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.869] 251:22  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.869] 256:21  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.869] 261:21  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.869] 266:21  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.869] 271:21  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.869] 285:25  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.869] 290:25  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.869] 300:21  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.869] 305:21  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.869] 310:21  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.869] 
+[22:39:03.869] ./app/components/newsCard.tsx
+[22:39:03.870] 18:9  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.870] 18:9  Warning: img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+[22:39:03.870] 26:15  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.870] 26:15  Warning: img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+[22:39:03.870] 
+[22:39:03.870] ./app/components/speakerCard.tsx
+[22:39:03.870] 25:11  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.870] 25:11  Warning: img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+[22:39:03.870] 38:15  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.870] 38:15  Warning: img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+[22:39:03.870] 
+[22:39:03.870] ./app/components/venue.tsx
+[22:39:03.871] 111:17  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.871] 124:17  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.871] 
+[22:39:03.871] ./app/summit/registration/page.tsx
+[22:39:03.871] 57:6  Warning: React Hook useEffect has a missing dependency: 'verifyEmailWithBackend'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+[22:39:03.871] 652:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.871] 655:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.871] 658:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.871] 661:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.871] 671:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.871] 674:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.871] 684:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.871] 
+[22:39:03.871] ./app/summit/speaker-registration/page.tsx
+[22:39:03.871] 60:6  Warning: React Hook useEffect has a missing dependency: 'verifyEmailWithBackend'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+[22:39:03.871] 707:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.871] 710:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.871] 713:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.871] 716:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.871] 726:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.871] 729:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.871] 739:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.871] 
+[22:39:03.871] ./app/summit25/registration/page.tsx
+[22:39:03.871] 57:6  Warning: React Hook useEffect has a missing dependency: 'verifyEmailWithBackend'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+[22:39:03.871] 652:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.871] 655:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.874] 658:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.874] 661:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.874] 671:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.874] 674:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.874] 684:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.874] 
+[22:39:03.874] ./app/summit25/speaker-registration/page.tsx
+[22:39:03.874] 60:6  Warning: React Hook useEffect has a missing dependency: 'verifyEmailWithBackend'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+[22:39:03.874] 707:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.874] 710:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.874] 713:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.874] 716:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.874] 726:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.874] 729:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.874] 739:19  Warning: Using <img> could result in slower LCP and higher bandwidth. Consider using <Image /> from next/image to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[22:39:03.874] 
+[22:39:03.875] info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+[22:39:07.776]    Collecting page data ...
+[22:39:09.439]    Generating static pages (0/12) ...
+[22:39:09.747] 
+   Generating static pages (3/12) 
+[22:39:09.968] 
+   Generating static pages (6/12) 
+[22:39:10.090]  ⨯ useSearchParams() should be wrapped in a suspense boundary at page "/summit/registration". Read more: https://nextjs.org/docs/messages/missing-suspense-with-csr-bailout
+[22:39:10.091]     at o (/vercel/path0/green-growth/.next/server/chunks/839.js:1:10225)
+[22:39:10.091]     at y (/vercel/path0/green-growth/.next/server/chunks/839.js:1:21874)
+[22:39:10.091]     at u (/vercel/path0/green-growth/.next/server/app/summit/registration/page.js:1:3043)
+[22:39:10.091]     at nM (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47422)
+[22:39:10.092]     at nL (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64677)
+[22:39:10.092]     at nI (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:46809)
+[22:39:10.092]     at nM (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47573)
+[22:39:10.092]     at nM (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:61666)
+[22:39:10.092]     at nL (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64677)
+[22:39:10.092]     at nB (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:67660)
+[22:39:10.093] 
+[22:39:10.093] Error occurred prerendering page "/summit/registration". Read more: https://nextjs.org/docs/messages/prerender-error
+[22:39:10.093] 
+[22:39:10.118]  ⨯ useSearchParams() should be wrapped in a suspense boundary at page "/summit/speaker-registration". Read more: https://nextjs.org/docs/messages/missing-suspense-with-csr-bailout
+[22:39:10.119]     at o (/vercel/path0/green-growth/.next/server/chunks/839.js:1:10225)
+[22:39:10.119]     at y (/vercel/path0/green-growth/.next/server/chunks/839.js:1:21874)
+[22:39:10.119]     at u (/vercel/path0/green-growth/.next/server/app/summit/speaker-registration/page.js:1:3093)
+[22:39:10.119]     at nM (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47422)
+[22:39:10.119]     at nL (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64677)
+[22:39:10.119]     at nI (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:46809)
+[22:39:10.119]     at nM (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47573)
+[22:39:10.119]     at nM (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:61666)
+[22:39:10.120]     at nL (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64677)
+[22:39:10.120]     at nB (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:67660)
+[22:39:10.120] 
+[22:39:10.120] Error occurred prerendering page "/summit/speaker-registration". Read more: https://nextjs.org/docs/messages/prerender-error
+[22:39:10.120] 
+[22:39:10.282] 
+   Generating static pages (9/12) 
+[22:39:10.552]  ⨯ useSearchParams() should be wrapped in a suspense boundary at page "/summit25/registration". Read more: https://nextjs.org/docs/messages/missing-suspense-with-csr-bailout
+[22:39:10.553]     at o (/vercel/path0/green-growth/.next/server/chunks/839.js:1:10225)
+[22:39:10.553]     at y (/vercel/path0/green-growth/.next/server/chunks/839.js:1:21874)
+[22:39:10.553]     at u (/vercel/path0/green-growth/.next/server/app/summit25/registration/page.js:1:3057)
+[22:39:10.553]     at nM (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47422)
+[22:39:10.553]     at nL (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64677)
+[22:39:10.553]     at nI (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:46809)
+[22:39:10.553]     at nM (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47573)
+[22:39:10.553]     at nM (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:61666)
+[22:39:10.553]     at nL (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64677)
+[22:39:10.553]     at nB (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:67660)
+[22:39:10.553] 
+[22:39:10.553] Error occurred prerendering page "/summit25/registration". Read more: https://nextjs.org/docs/messages/prerender-error
+[22:39:10.553] 
+[22:39:10.607]  ⨯ useSearchParams() should be wrapped in a suspense boundary at page "/summit25/speaker-registration". Read more: https://nextjs.org/docs/messages/missing-suspense-with-csr-bailout
+[22:39:10.607]     at o (/vercel/path0/green-growth/.next/server/chunks/839.js:1:10225)
+[22:39:10.608]     at y (/vercel/path0/green-growth/.next/server/chunks/839.js:1:21874)
+[22:39:10.608]     at u (/vercel/path0/green-growth/.next/server/app/summit25/speaker-registration/page.js:1:3105)
+[22:39:10.608]     at nM (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47422)
+[22:39:10.608]     at nL (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64677)
+[22:39:10.608]     at nI (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:46809)
+[22:39:10.608]     at nM (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47573)
+[22:39:10.609]     at nM (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:61666)
+[22:39:10.609]     at nL (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64677)
+[22:39:10.609]     at nB (/vercel/path0/green-growth/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:67660)
+[22:39:10.609] 
+[22:39:10.609] Error occurred prerendering page "/summit25/speaker-registration". Read more: https://nextjs.org/docs/messages/prerender-error
+[22:39:10.609] 
+[22:39:10.610] 
+ ✓ Generating static pages (12/12) 
+[22:39:10.631] 
+[22:39:10.632] > Export encountered errors on following paths:
+[22:39:10.632] 	/summit/registration/page: /summit/registration
+[22:39:10.632] 	/summit/speaker-registration/page: /summit/speaker-registration
+[22:39:10.632] 	/summit25/registration/page: /summit25/registration
+[22:39:10.632] 	/summit25/speaker-registration/page: /summit25/speaker-registration
+[22:39:10.654] Error: Command "cd green-growth && npm run build" exited with 1
+[22:39:10.961] 
+[22:39:13.983] Exiting build container

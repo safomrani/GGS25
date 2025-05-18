@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import SummitNavbar from "@/app/components/SummitNavbar";
@@ -11,7 +11,17 @@ import { karla } from "@/app/components/fonts";
 // UI theme colors from environment config
 const colors = THEME.colors;
 
-export default function FreeRegistration() {
+// Loading component for Suspense
+function RegistrationLoading() {
+  return (
+    <div className="flex justify-center items-center min-h-screen">
+      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-green-500"></div>
+      <p className="ml-3 text-lg">Loading registration...</p>
+    </div>
+  );
+}
+
+function RegistrationContent() {
   const searchParams = useSearchParams();
   const emailParam = searchParams.get("email");
   const tenantIdParam = searchParams.get("tenant_id");
@@ -198,7 +208,7 @@ export default function FreeRegistration() {
   return (
     <div className="bg-white min-h-screen" style={{ fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" }}>
       {/* Header */}
-<SummitNavbar activeSummit="summit25" onToggle={() => {}} hideToggle={true} />
+      <SummitNavbar activeSummit="summit25" onToggle={() => {}} hideToggle={true} />
       
       {/* Form Section */}
       <div className="py-12 md:py-16 relative overflow-hidden" style={{ backgroundColor: colors.lightBg }}>
@@ -696,5 +706,13 @@ export default function FreeRegistration() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function FreeRegistration() {
+  return (
+    <Suspense fallback={<RegistrationLoading />}>
+      <RegistrationContent />
+    </Suspense>
   );
 } 
