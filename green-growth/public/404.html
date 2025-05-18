@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found - Green Growth Summit</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
+      background-color: #f0f7f5;
+    }
+    .container {
+      max-width: 600px;
+      padding: 2rem;
+      text-align: center;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #0A9B7F;
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+    .button {
+      display: inline-block;
+      background-color: #0A9B7F;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.2s;
+    }
+    .button:hover {
+      background-color: #088973;
+    }
+  </style>
+  <script>
+    // Check if there are query parameters to be preserved
+    document.addEventListener('DOMContentLoaded', function() {
+      const currentUrl = window.location.href;
+      const queryPart = currentUrl.indexOf('?');
+      let queryParams = '';
+      
+      if (queryPart > -1) {
+        queryParams = currentUrl.substring(queryPart);
+      }
+      
+      // Redirect after a short delay
+      setTimeout(function() {
+        const redirectPath = '/summit' + queryParams;
+        window.location.href = redirectPath;
+      }, 5000); // 5 second delay
+      
+      // Update the redirect link with the query parameters
+      const redirectLink = document.getElementById('redirectLink');
+      if (redirectLink) {
+        redirectLink.href = '/summit' + queryParams;
+      }
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Page Not Found</h1>
+    <p>We're sorry, but the page you're looking for doesn't exist or may have been moved.</p>
+    <p>You'll be automatically redirected to the Green Growth Summit homepage in a few seconds.</p>
+    <a id="redirectLink" href="/summit" class="button">Go to Homepage Now</a>
+  </div>
+</body>
+</html> 

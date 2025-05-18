@@ -3,7 +3,18 @@
   "outputDirectory": "green-growth/.next",
   "devCommand": "cd green-growth && npm run dev",
   "installCommand": "cd green-growth && npm install",
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+  "routes": [
+    { 
+      "src": "/summit/(.*)", 
+      "dest": "/summit/$1" 
+    },
+    { 
+      "src": "/summit25/(.*)", 
+      "dest": "/summit25/$1" 
+    },
+    { 
+      "src": "/(.*)", 
+      "dest": "/$1" 
+    }
   ]
 } 

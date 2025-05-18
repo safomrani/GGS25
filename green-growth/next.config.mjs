@@ -1,15 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // No basePath so URLs are direct
+  // Basic configuration
+  trailingSlash: false,
   images: {
     unoptimized: true,
   },
-  // Use appropriate setting for route generation
-  output: 'standalone',
-  // Remove excludeFiles as it might be causing issues
+  // Experimental features for optimization
   experimental: {
     optimizePackageImports: ['@headlessui/react', 'framer-motion'],
+    serverActions: true,
   },
+  // Redirect root to summit
   async redirects() {
     return [
       {
