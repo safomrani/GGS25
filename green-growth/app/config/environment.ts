@@ -12,13 +12,13 @@ export const API_CONFIG = {
  //BASE_URL: process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000",
   
   // Default tenant ID
-  DEFAULT_TENANT_ID: process.env.NEXT_PUBLIC_TENANT_ID || "ali",
+  DEFAULT_TENANT_ID: process.env.NEXT_PUBLIC_TENANT_ID || "GGS25",
   
   // Default venue ID for ticket registration
-  DEFAULT_VENUE_ID: process.env.NEXT_PUBLIC_VENUE_ID || "67f30f6f0fc474dfbe007460",
+  DEFAULT_VENUE_ID: process.env.NEXT_PUBLIC_VENUE_ID || "682a45147f1ef02c30d8d907",
   
   // Default ticket tier ID for registration
-  DEFAULT_TICKET_TIER_ID: process.env.NEXT_PUBLIC_TICKET_TIER_ID || "67f3113c0fc474dfbe007462",
+  DEFAULT_TICKET_TIER_ID: process.env.NEXT_PUBLIC_TICKET_TIER_ID || "682a45147f1ef02c30d8d908",
   
   // Email template IDs
   EMAIL_TEMPLATE_IDS: {
