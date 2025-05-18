@@ -715,8 +715,4 @@ export default function FreeRegistration() {
       <RegistrationContent />
     </Suspense>
   );
-}
-
-// This ensures Next.js treats this as a server component that's rendered at request time
-export const dynamic = 'force-dynamic';
-export const runtime = 'nodejs'; 
+} 

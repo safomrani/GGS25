@@ -1,16 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Basic configuration
-  trailingSlash: false,
+  // No basePath so URLs are direct
   images: {
     unoptimized: true,
   },
-  // Experimental features for optimization
+  // Change from 'standalone' to 'export' for static site generation
+  output: 'export',
+  // Add trailingSlash true to ensure consistent URL handling
+  trailingSlash: true,
+  // Remove excludeFiles as it might be causing issues
   experimental: {
     optimizePackageImports: ['@headlessui/react', 'framer-motion'],
-    serverActions: true,
   },
-  // Redirect root to summit
   async redirects() {
     return [
       {
