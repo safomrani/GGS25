@@ -1,15 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: '',
+  // No basePath so URLs are direct
   images: {
     unoptimized: true,
   },
-  // Disable static generation for the problematic routes using useSearchParams
+  // Use appropriate setting for route generation
+  output: 'standalone',
+  // Remove excludeFiles as it might be causing issues
   experimental: {
     optimizePackageImports: ['@headlessui/react', 'framer-motion'],
   },
-  // Ensure these routes are generated on-demand at runtime
-  unstable_excludeFiles: ['**/summit/registration/page.tsx', '**/summit/speaker-registration/page.tsx', '**/summit25/registration/page.tsx', '**/summit25/speaker-registration/page.tsx'],
   async redirects() {
     return [
       {

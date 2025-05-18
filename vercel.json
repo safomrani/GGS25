@@ -2,5 +2,8 @@
   "buildCommand": "cd green-growth && npm run build",
   "outputDirectory": "green-growth/.next",
   "devCommand": "cd green-growth && npm run dev",
-  "installCommand": "cd green-growth && npm install"
+  "installCommand": "cd green-growth && npm install",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
 } 
