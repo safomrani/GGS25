@@ -332,6 +332,45 @@ export default function Home() {
       </div> */}
       {/**Event Supporters */}
 
+      {/* Registration Section */}
+      <div className="bg-green-200 px-10 sm:px-20 py-10">
+        <div className="text-xl md:text-2xl lg:text-3xl py-3"> 
+            <span className={`${RobotoCondensed.className} text-green-300`}>Summit</span>
+            <span className={`${RobotoCondensed.className} text-red-300`}> Registration</span>
+        </div>
+        <div className="pt-5 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div className="bg-green-300 text-white p-4">
+              <h3 className={`${RobotoCondensed.className} text-xl`}>General Registration</h3>
+            </div>
+            <div className="p-6">
+              <p className="mb-4">Register to attend the Green Growth Summit 2025 as a general participant. Join us for a day of inspiration, networking, and action.</p>
+              <a 
+                href="/summit25/registration" 
+                className={`${RobotoCondensed.className} inline-block bg-green-300 hover:bg-green-400 text-white px-6 py-3 rounded-md transition-colors duration-200`}
+              >
+                Register Now
+              </a>
+            </div>
+          </div>
+          
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div className="bg-red-300 text-white p-4">
+              <h3 className={`${RobotoCondensed.className} text-xl`}>Speaker Registration</h3>
+            </div>
+            <div className="p-6">
+              <p className="mb-4">If you've been invited as a speaker, please complete your registration here to confirm your participation and provide your details.</p>
+              <a 
+                href="/summit25/speaker-registration" 
+                className={`${RobotoCondensed.className} inline-block bg-red-300 hover:bg-red-400 text-white px-6 py-3 rounded-md transition-colors duration-200`}
+              >
+                Speaker Registration
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
       <div className=" px-10 sm:px-20 py-10 ">
         <div className="text-xl md:text-2xl lg:text-3xl py-3"> 
             <span className={`${RobotoCondensed.className} text-green-300`}>Event</span>

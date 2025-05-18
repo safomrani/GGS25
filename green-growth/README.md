@@ -20,6 +20,23 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Environment Variables for Registration Forms
+
+To use the registration forms in this project, create a `.env.local` file in the root of the project with the following variables:
+
+```
+# API Configuration
+NEXT_PUBLIC_TENANT_ID=your_tenant_id
+NEXT_PUBLIC_VENUE_ID=your_venue_id
+NEXT_PUBLIC_TICKET_TIER_ID=your_ticket_tier_id
+```
+
+These variables are used in the following registration forms:
+- Free Ticket Registration: `/summit25/registration`
+- Speaker Registration: `/summit25/speaker-registration`
+
+Both forms support pre-filling email via URL query parameters: `?email=example@example.com&tenant_id=your_tenant_id`
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

@@ -8,9 +8,10 @@ import { motion, AnimatePresence } from "framer-motion";
 type SummitNavbarProps = {
   activeSummit: "summit24" | "summit25";
   onToggle: (summit: "summit24" | "summit25") => void;
+  hideToggle?: boolean;
 };
 
-export default function SummitNavbar({ activeSummit, onToggle }: SummitNavbarProps) {
+export default function SummitNavbar({ activeSummit, onToggle, hideToggle }: SummitNavbarProps) {
   // Track scroll position for navbar transparency effect
   const [scrollY, setScrollY] = useState(0);
   
@@ -138,47 +139,49 @@ export default function SummitNavbar({ activeSummit, onToggle }: SummitNavbarPro
         </motion.div>
 
         {/* Toggle Button for Desktop */}
-        <motion.div 
-          className="relative flex items-center gap-2 bg-gray-100 p-1.5 rounded-full shadow-sm"
-          variants={buttonContainerVariants}
-          initial="initial"
-          animate="animate"
-        >
-          {/* Sliding background effect */}
-          <motion.div
-            className="absolute h-full top-0 bottom-0 w-[calc(50%-2px)] bg-green-300 rounded-full z-0"
-            variants={sliderVariants}
-            initial={false}
-            animate={activeSummit}
-          />
-          
-          <motion.button
-            custom={activeSummit === "summit24"}
-            variants={buttonVariants}
+        {!hideToggle && (
+          <motion.div 
+            className="relative flex items-center gap-2 bg-gray-100 p-1.5 rounded-full shadow-sm"
+            variants={buttonContainerVariants}
             initial="initial"
             animate="animate"
-            whileHover="hover"
-            whileTap="tap"
-            onClick={() => onToggle("summit24")}
-            className={`rounded-full py-2 px-6 font-medium flex items-center justify-center z-10 relative
-                      transition-colors duration-300 ${activeSummit === "summit24" ? "text-white" : "text-gray-700"}`}
           >
-            <span className={karlaBold.className}>2024</span>
-          </motion.button>
-          <motion.button
-            custom={activeSummit === "summit25"}
-            variants={buttonVariants}
-            initial="initial"
-            animate="animate"
-            whileHover="hover"
-            whileTap="tap"
-            onClick={() => onToggle("summit25")}
-            className={`rounded-full py-2 px-6 font-medium flex items-center justify-center z-10 relative
-                      transition-colors duration-300 ${activeSummit === "summit25" ? "text-white" : "text-gray-700"}`}
-          >
-            <span className={karlaBold.className}>2025</span>
-          </motion.button>
-        </motion.div>
+            {/* Sliding background effect */}
+            <motion.div
+              className="absolute h-full top-0 bottom-0 w-[calc(50%-2px)] bg-green-300 rounded-full z-0"
+              variants={sliderVariants}
+              initial={false}
+              animate={activeSummit}
+            />
+            
+            <motion.button
+              custom={activeSummit === "summit24"}
+              variants={buttonVariants}
+              initial="initial"
+              animate="animate"
+              whileHover="hover"
+              whileTap="tap"
+              onClick={() => onToggle("summit24")}
+              className={`rounded-full py-2 px-6 font-medium flex items-center justify-center z-10 relative
+                        transition-colors duration-300 ${activeSummit === "summit24" ? "text-white" : "text-gray-700"}`}
+            >
+              <span className={karlaBold.className}>2024</span>
+            </motion.button>
+            <motion.button
+              custom={activeSummit === "summit25"}
+              variants={buttonVariants}
+              initial="initial"
+              animate="animate"
+              whileHover="hover"
+              whileTap="tap"
+              onClick={() => onToggle("summit25")}
+              className={`rounded-full py-2 px-6 font-medium flex items-center justify-center z-10 relative
+                        transition-colors duration-300 ${activeSummit === "summit25" ? "text-white" : "text-gray-700"}`}
+            >
+              <span className={karlaBold.className}>2025</span>
+            </motion.button>
+          </motion.div>
+        )}
         
         <motion.a 
           href="https://hivos.org/" 
@@ -218,47 +221,49 @@ export default function SummitNavbar({ activeSummit, onToggle }: SummitNavbarPro
         </motion.a>
         
         {/* Toggle Button for Mobile */}
-        <motion.div 
-          className="relative flex items-center gap-1 bg-gray-100 p-1 rounded-full shadow-sm"
-          variants={buttonContainerVariants}
-          initial="initial"
-          animate="animate"
-        >
-          {/* Sliding background effect */}
-          <motion.div
-            className="absolute h-full top-0 bottom-0 w-[calc(50%-2px)] bg-green-300 rounded-full z-0"
-            variants={sliderVariants}
-            initial={false}
-            animate={activeSummit}
-          />
-          
-          <motion.button
-            custom={activeSummit === "summit24"}
-            variants={buttonVariants}
+        {!hideToggle && (
+          <motion.div 
+            className="relative flex items-center gap-1 bg-gray-100 p-1 rounded-full shadow-sm"
+            variants={buttonContainerVariants}
             initial="initial"
             animate="animate"
-            whileHover="hover"
-            whileTap="tap"
-            onClick={() => onToggle("summit24")}
-            className={`rounded-full py-1 px-4 font-medium text-sm flex items-center justify-center z-10 relative
-                      transition-colors duration-300 ${activeSummit === "summit24" ? "text-white" : "text-gray-700"}`}
           >
-            <span className={karlaBold.className}>2024</span>
-          </motion.button>
-          <motion.button
-            custom={activeSummit === "summit25"}
-            variants={buttonVariants}
-            initial="initial"
-            animate="animate"
-            whileHover="hover"
-            whileTap="tap"
-            onClick={() => onToggle("summit25")}
-            className={`rounded-full py-1 px-4 font-medium text-sm flex items-center justify-center z-10 relative
-                      transition-colors duration-300 ${activeSummit === "summit25" ? "text-white" : "text-gray-700"}`}
-          >
-            <span className={karlaBold.className}>2025</span>
-          </motion.button>
-        </motion.div>
+            {/* Sliding background effect */}
+            <motion.div
+              className="absolute h-full top-0 bottom-0 w-[calc(50%-2px)] bg-green-300 rounded-full z-0"
+              variants={sliderVariants}
+              initial={false}
+              animate={activeSummit}
+            />
+            
+            <motion.button
+              custom={activeSummit === "summit24"}
+              variants={buttonVariants}
+              initial="initial"
+              animate="animate"
+              whileHover="hover"
+              whileTap="tap"
+              onClick={() => onToggle("summit24")}
+              className={`rounded-full py-1 px-4 font-medium text-sm flex items-center justify-center z-10 relative
+                        transition-colors duration-300 ${activeSummit === "summit24" ? "text-white" : "text-gray-700"}`}
+            >
+              <span className={karlaBold.className}>2024</span>
+            </motion.button>
+            <motion.button
+              custom={activeSummit === "summit25"}
+              variants={buttonVariants}
+              initial="initial"
+              animate="animate"
+              whileHover="hover"
+              whileTap="tap"
+              onClick={() => onToggle("summit25")}
+              className={`rounded-full py-1 px-4 font-medium text-sm flex items-center justify-center z-10 relative
+                        transition-colors duration-300 ${activeSummit === "summit25" ? "text-white" : "text-gray-700"}`}
+            >
+              <span className={karlaBold.className}>2025</span>
+            </motion.button>
+          </motion.div>
+        )}
         
         <motion.a 
           href="https://hivos.org/" 
