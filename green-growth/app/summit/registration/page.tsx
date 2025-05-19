@@ -222,7 +222,7 @@ function RegistrationContent() {
             <p className="mb-4">Greetings,</p>
             
             <p className="mb-4">
-              You're invited to the second edition of the <span className="underline"><a href="https://ggsummit.me/" target="_blank" style={{ color: 'inherit' }}>Green Growth Summit</a></span>, taking place on <strong>June 16, 2025</strong> at the <strong className="underline"><a href="https://www.sofitel-cairo-nile-elgezirah.com/" target="_blank" style={{ color: 'inherit' }}>Sofitel Cairo Downtown Nile</a></strong>.
+              You're invited to the second edition of the <span className="underline"><a href="https://ggsummit.me/" target="_blank" style={{ color: 'inherit' }}>Green Growth Summit</a></span>, taking place on <strong>June 16, 2025</strong> at the <strong className="underline"><a href="https://sofitel.accor.com/en/hotels/C3J2.html" target="_blank" style={{ color: 'inherit' }}>Sofitel Cairo Downtown Nile</a></strong>.
             </p>
             
             <p className="mb-4">

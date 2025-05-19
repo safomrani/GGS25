@@ -237,7 +237,7 @@ function SpeakerRegistrationContent() {
             <p className="mb-4">Greetings,</p>
             
             <p className="mb-4">
-              We're excited to welcome you as a speaker at the second edition of the <strong><a href="https://ggsummit.me/" target="_blank" style={{ color: 'inherit' }}>Green Growth Summit</a></strong>, taking place on <strong>June 16, 2025</strong>, at the <strong className="underline"><a href="https://www.sofitel-cairo-nile-elgezirah.com/" target="_blank" style={{ color: 'inherit' }}>Sofitel Cairo Downtown Nile</a></strong>.
+              We're excited to welcome you as a speaker at the second edition of the <strong><a href="https://ggsummit.me/" target="_blank" style={{ color: 'inherit' }}>Green Growth Summit</a></strong>, taking place on <strong>June 16, 2025</strong>, at the <strong className="underline"><a href="https://sofitel.accor.com/en/hotels/C3J2.html" target="_blank" style={{ color: 'inherit' }}>Sofitel Cairo Downtown Nile</a></strong>.
             </p>
             
             <p className="mb-4">
