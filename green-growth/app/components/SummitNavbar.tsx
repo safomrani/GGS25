@@ -202,7 +202,7 @@ export default function SummitNavbar({ activeSummit, onToggle, hideToggle }: Sum
 
       {/* Mobile Navbar */}
       <div 
-        className={`flex md:hidden items-center justify-between py-3 px-3 transition-all duration-300 ${
+        className={`flex md:hidden items-center justify-between py-2 px-3 transition-all duration-300 ${
           scrollY > 50 ? "bg-white/95 backdrop-blur-sm shadow-md" : "bg-white"
         }`}
       >
@@ -211,19 +211,21 @@ export default function SummitNavbar({ activeSummit, onToggle, hideToggle }: Sum
           initial={{ opacity: 0, x: -10 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
+          className="flex-shrink-0"
         >
           <Image 
-            width={150}
-            height={100}
+            width={100}
+            height={70}
             alt="GGS Logo"
             src={logoPath}
+            className="w-auto h-10"
           />
         </motion.a>
         
         {/* Toggle Button for Mobile */}
         {!hideToggle && (
           <motion.div 
-            className="relative flex items-center gap-1 bg-gray-100 p-1 rounded-full shadow-sm"
+            className="relative flex items-center gap-1 bg-gray-100 p-1 rounded-full shadow-sm mx-2"
             variants={buttonContainerVariants}
             initial="initial"
             animate="animate"
@@ -244,7 +246,7 @@ export default function SummitNavbar({ activeSummit, onToggle, hideToggle }: Sum
               whileHover="hover"
               whileTap="tap"
               onClick={() => onToggle("summit24")}
-              className={`rounded-full py-1 px-4 font-medium text-sm flex items-center justify-center z-10 relative
+              className={`rounded-full py-1.5 px-4 font-medium text-sm flex items-center justify-center z-10 relative
                         transition-colors duration-300 ${activeSummit === "summit24" ? "text-white" : "text-gray-700"}`}
             >
               <span className={karlaBold.className}>2024</span>
@@ -257,7 +259,7 @@ export default function SummitNavbar({ activeSummit, onToggle, hideToggle }: Sum
               whileHover="hover"
               whileTap="tap"
               onClick={() => onToggle("summit25")}
-              className={`rounded-full py-1 px-4 font-medium text-sm flex items-center justify-center z-10 relative
+              className={`rounded-full py-1.5 px-4 font-medium text-sm flex items-center justify-center z-10 relative
                         transition-colors duration-300 ${activeSummit === "summit25" ? "text-white" : "text-gray-700"}`}
             >
               <span className={karlaBold.className}>2025</span>
@@ -271,13 +273,14 @@ export default function SummitNavbar({ activeSummit, onToggle, hideToggle }: Sum
           initial={{ opacity: 0, x: 10 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
+          className="flex-shrink-0"
         >
           <Image 
-            width={80}
-            height={28}
+            width={100}
+            height={36}
             alt="Hivos Logo"
             src="/logos/Hivos.png"
-            style={{ height: 'auto' }}
+            className="w-auto h-10"
           />
         </motion.a>
       </div>
