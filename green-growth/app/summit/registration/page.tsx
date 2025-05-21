@@ -80,13 +80,13 @@ function RegistrationContent() {
         setVerificationData(result);
         
         // Update venue and ticket tier IDs if they're provided
-        if (result.venue_id && result.ticket_tier_id) {
-          setFormData(prev => ({
-            ...prev,
-            venueId: result.venue_id,
-            ticketTierId: result.ticket_tier_id
-          }));
-        }
+        // if (result.venue_id && result.ticket_tier_id) {
+        //   setFormData(prev => ({
+        //     ...prev,
+        //     venueId: result.venue_id,
+        //     ticketTierId: result.ticket_tier_id
+        //   }));
+        // }
       } else {
         setIsEmailVerified(false);
         setError(result.message || "Email address is not eligible for registration.");
