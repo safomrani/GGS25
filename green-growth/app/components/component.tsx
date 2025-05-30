@@ -76,24 +76,24 @@ export const HeroFigma = (): JSX.Element => {
         </div>
       </div>
 
-      {/* Logos Section */}
+      {/* Logos Section - Only minimal fix for mid-size screen collapsing */}
       <div className="w-full bg-white py-8 md:py-10 border-t border-gray-100">
         <div className="max-w-screen-2xl mx-auto px-4 md:px-8">
           <div className="flex flex-col lg:flex-row items-start justify-between">
             {/* Sponsored By */}
             <div className="w-full lg:w-[38%] mb-10 lg:mb-0 lg:pr-6">
               <div className={`${karla.className} text-black font-medium text-base lg:text-lg mb-4 lg:mb-6 text-center lg:text-left`}> In Partnership With</div>
-              <div className="flex items-center justify-center lg:justify-start gap-1 sm:gap-3 lg:gap-4 overflow-visible">
-                <div className="h-6 sm:h-8 lg:h-9 flex-shrink-0">
+              <div className="flex items-center justify-center lg:justify-start gap-1 sm:gap-2 md:gap-3 lg:gap-1 xl:gap-3 overflow-visible">
+                <div className="h-6 sm:h-7 md:h-8 lg:h-6 xl:h-8 flex-shrink-0">
                   <img src="/logos/Spark.png" alt="Spark" className="h-full object-contain" />
                 </div>
-                <div className="h-6 sm:h-8 lg:h-9 flex-shrink-0">
+                <div className="h-6 sm:h-7 md:h-8 lg:h-6 xl:h-8 flex-shrink-0">
                   <img src="/logos/euNew.png" alt="European Union" className="h-full object-contain" />
                 </div>
-                <div className="h-6 sm:h-8 lg:h-9 flex-shrink-0">
+                <div className="h-6 sm:h-7 md:h-8 lg:h-6 xl:h-8 flex-shrink-0">
                   <img src="/icons/GGF_LONG.jpg" alt="Green for Growth Fund" className="h-full object-contain" />
                 </div>
-                <div className="h-6 sm:h-8 lg:h-9 flex-shrink-0">
+                <div className="h-6 sm:h-7 md:h-8 lg:h-6 xl:h-8 flex-shrink-0">
                   <img src="/icons/Green Academy.png" alt="Green Academy" className="h-full object-contain" />
                 </div>
               </div>
@@ -102,11 +102,11 @@ export const HeroFigma = (): JSX.Element => {
             {/* Supported By */}
             <div className="w-full lg:w-[31%] mb-10 lg:mb-0 lg:px-6">
               <div className={`${karla.className} text-black font-medium text-lg mb-6 text-center`}>With Support From</div>
-              <div className="flex items-center justify-center gap-4 overflow-visible">
-                <div className="h-8 sm:h-9 lg:h-12 flex-shrink-0">
+              <div className="flex items-center justify-center gap-3 md:gap-4 lg:gap-2 xl:gap-4 overflow-visible">
+                <div className="h-8 sm:h-9 md:h-10 lg:h-8 xl:h-10 flex-shrink-0">
                   <img src="/logos/CFFYE.png" alt="Challenge Fund" className="h-full object-contain" />
                 </div>
-                <div className="h-8 sm:h-9 lg:h-12 flex-shrink-0">
+                <div className="h-8 sm:h-9 md:h-10 lg:h-8 xl:h-10 flex-shrink-0">
                   <img src="/logos/MFAN.png" alt="Ministry of Foreign Affairs of the Netherlands" className="h-full object-contain" />
                 </div>
               </div>
@@ -116,7 +116,7 @@ export const HeroFigma = (): JSX.Element => {
             <div className="w-full lg:w-[28%] lg:pl-4">
               <div className={`${karla.className} text-black font-medium text-lg mb-4 text-center`}>Implementation Partner</div>
               <div className="flex items-center justify-center">
-                <div className="h-8 sm:h-9 lg:h-12 flex-shrink-0">
+                <div className="h-8 sm:h-9 md:h-10 lg:h-8 xl:h-10 flex-shrink-0">
                   <img src="/logos/NewSilkRoad.png" alt="New Silk Road" className="h-full object-contain" />
                 </div>
               </div>

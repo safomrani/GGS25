@@ -19,7 +19,7 @@ const TrackItem = ({
   panel,
 }: Props) => {
   return (
-    <div className="flex flex-col h-[380px] w-full p-4 sm:p-6 bg-[#FFFFFF] rounded-2xl shadow-lg">
+    <div className="flex flex-col min-h-[380px] w-full p-4 sm:p-6 bg-[#FFFFFF] rounded-2xl shadow-lg">
       <div className="pb-2">
         <p className={`${RobotoCondensed.className} text-[18px] sm:text-xl md:text-2xl mb-1`}
             style={{
@@ -33,7 +33,7 @@ const TrackItem = ({
           {title}
         </h1>
       </div>
-      <div className="h-full overflow-y-auto custom-scrollbar">
+      <div className="flex-1">
         <div className="mb-4 pr-1">
           {keynotes && (
             <div className={`${karla.className} text-[15px] sm:text-[16px] lg:text-[18px] mb-2 leading-snug`} 
