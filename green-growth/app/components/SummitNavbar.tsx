@@ -103,7 +103,7 @@ export default function SummitNavbar({ activeSummit, onToggle, hideToggle }: Sum
         }`}
       >
         <motion.a 
-          href="https://www.ggsummit.me"
+          href="https://ggsummit.me"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
