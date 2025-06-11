@@ -8,10 +8,27 @@ const nextConfig = {
   output: 'export',
   // Add trailingSlash true to ensure consistent URL handling
   trailingSlash: true,
-  // Remove excludeFiles as it might be causing issues
+  
+  // Experimental features
   experimental: {
     optimizePackageImports: ['@headlessui/react', 'framer-motion'],
   },
+  
+  // Font optimization
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
+  
+  // Development-specific settings
+  ...(process.env.NODE_ENV === 'development' && {
+    typescript: {
+      ignoreBuildErrors: false,
+    },
+    eslint: {
+      ignoreDuringBuilds: false,
+    },
+  }),
+  
   async redirects() {
     return [
       {

@@ -4,6 +4,7 @@ import React, { useState, useEffect, useCallback, useRef } from "react";
 import SpeakerCard from './speakerCard';
 import clsx from 'clsx';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -11,7 +12,7 @@ import 'swiper/css/scrollbar';
 import Image from 'next/image';
 import { karla, karlaBold,karlaExtraBold,RobotoCondensed } from "./fonts";
 import { speakersEgypt } from '../data/speakersEgypt';
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link";
 
 {/**Pagination imports */}
@@ -51,14 +52,26 @@ const imgs = {
     }
 }
 
-export default function SpeakersEgypt(){
+// Define the speaker type for better type safety
+interface Speaker {
+    image: string;
+    name: string;
+    company: string;
+    link: string;
+}
+
+interface SpeakersEgyptProps {
+    data?: Speaker[];
+}
+
+export default function SpeakersEgypt({ data }: SpeakersEgyptProps){
     const [isClient, setIsClient] = useState(false);
     
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage, setPostsPerPage] = useState(8);
 
-    //fake content
-    const [data, setData] = useState<{ image: string }[]>([]);
+    // Use provided data or fallback to imported speakersEgypt data
+    const speakersData = data || speakersEgypt;
     
     const swiperRef = useRef({} as any);
     const [next, setNext] = useState(false);
@@ -67,12 +80,15 @@ export default function SpeakersEgypt(){
     const sliderSettings = {
         300: {
           slidesPerView: 1.4,
+          spaceBetween: 15,
         },
         680: {
           slidesPerView: 1.8,
+          spaceBetween: 20,
         },
         1200: {
           slidesPerView: 3,
+          spaceBetween: 25,
         },
     };
       
@@ -80,37 +96,42 @@ export default function SpeakersEgypt(){
     //determine lastiem index
     const lastPostIndex = currentPage * postsPerPage;
     const firstPostIndex = lastPostIndex - postsPerPage;
-    const currentPosts = speakersEgypt.slice(firstPostIndex, lastPostIndex);
+    const currentPosts = speakersData.slice(firstPostIndex, lastPostIndex);
 
 
 
     return (
         <>
             <div className="hidden sm:block">
-                <motion.div 
-                    variants={variants}
-                    initial="hidden"
-                    animate="show"
-                    className="mx-auto grid xs: grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 w-full md:w-[82%] lg:w-[90%] px-10 py-10">
-                    {currentPosts.map((item,idx) =>{
-                        return(
-                            <motion.div
-                                variants={imgs}
-                                key={idx}
-                            >
-                                <SpeakerCard
-                                    key={idx}
-                                    image_file={item.image}
-                                    name = {item.name}
-                                    company={item.company}
-                                    link={item.link}
-                                />
-                            </motion.div>
+                <AnimatePresence mode="wait">
+                    <motion.div 
+                        key={currentPage}
+                        variants={variants}
+                        initial="hidden"
+                        animate="show"
+                        exit="hidden"
+                        transition={{ duration: 0.3 }}
+                        className="mx-auto grid xs: grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 w-full md:w-[82%] lg:w-[90%] px-10 py-10">
+                        {currentPosts.map((item,idx) =>{
+                            return(
+                                <motion.div
+                                    variants={imgs}
+                                    key={`${currentPage}-${idx}`}
+                                >
+                                    <SpeakerCard
+                                        key={idx}
+                                        image_file={item.image}
+                                        name = {item.name}
+                                        company={item.company}
+                                        link={item.link}
+                                    />
+                                </motion.div>
+                            )}
                         )}
-                    )}
-                </motion.div>
+                    </motion.div>
+                </AnimatePresence>
                 <PaginationSection
-                    totalPosts={speakersEgypt.length}
+                    totalPosts={speakersData.length}
                     postsPerPage={postsPerPage}
                     currentPage={currentPage}
                     setCurrentPage={setCurrentPage}
@@ -120,15 +141,28 @@ export default function SpeakersEgypt(){
             {/**Mobile view */}
             <div className="sm:hidden py-5">
                 <Swiper
+                modules={[Navigation, Scrollbar, A11y]}
                 slidesPerView={'auto'}
+                spaceBetween={20}
+                speed={600}
+                allowTouchMove={true}
+                grabCursor={true}
+                touchRatio={1}
+                touchAngle={45}
+                touchMoveStopPropagation={false}
                 onBeforeInit={(swiper) => {
                     swiperRef.current = swiper;
                 }}
                 breakpoints={sliderSettings}
                 onReachEnd={() => setNext(true)}
                 onReachBeginning={() => setNext(false)}
+                onSlideChange={(swiper) => {
+                    const isAtBeginning = swiper.isBeginning;
+                    const isAtEnd = swiper.isEnd;
+                    setNext(isAtEnd);
+                }}
                 >
-                {speakersEgypt?.map((speaker: any, idx: number) => (
+                {speakersData?.map((speaker: any, idx: number) => (
                     <SwiperSlide key={idx}>
                         <SpeakerCard
                             key={idx}
@@ -151,9 +185,7 @@ export default function SpeakersEgypt(){
                     )}
                     onClick={() => {
                         setNext(false);
-                        swiperRef.current?.slidePrev();
-                        swiperRef.current?.slidePrev();
-                        swiperRef.current?.slidePrev();
+                        swiperRef.current?.slideTo(0, 600);
                     }}
                     />
                     <div
@@ -166,9 +198,9 @@ export default function SpeakersEgypt(){
                     )}
                     onClick={() => {
                         setNext(true);
-                        swiperRef.current?.slideNext();
-                        swiperRef.current?.slideNext();
-                        swiperRef.current?.slideNext();
+                        const totalSlides = swiperRef.current?.slides?.length || 0;
+                        const lastSlideIndex = Math.max(0, totalSlides - 1);
+                        swiperRef.current?.slideTo(lastSlideIndex, 600);
                     }}
                     />
                 </div>

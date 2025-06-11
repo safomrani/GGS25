@@ -10,14 +10,23 @@ import { SupportedBy25 } from '../data/supportersNew';
 import Image from "next/image";
 import { Navigation, Pagination, Scrollbar, A11y, Grid } from 'swiper/modules';
 
+// Enhanced slider settings - keeping original desktop, improving mobile
 const sliderSettings = {
-  220: {
-    slidesPerView: 1.5,
-    spaceBetween: 30,
+  240: {
+    slidesPerView: 1.2,
+    spaceBetween: 15,
   },
   320: {
+    slidesPerView: 1.8,
+    spaceBetween: 20,
+  },
+  480: {
+    slidesPerView: 2.5,
+    spaceBetween: 20,
+  },
+  640: {
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 25,
   },
   768: {
     slidesPerView: 5,
@@ -30,121 +39,76 @@ const sliderSettings = {
 };
   
 
-const NewsSection = () => {
+const SupportersSection = () => {
     const swiperRef = useRef({} as any);
-    const [next, setNext] = useState(false);
-    const [first, setFirst] = useState(true);
-    const [mid, setMid] = useState(false);
+    const [activeIndex, setActiveIndex] = useState(0);
     
-    // Calculate if we need navigation dots based on number of items
+    // Calculate total slides needed for different screen sizes
     const totalItems = SupportedBy25.length;
-    const needsNavigation = totalItems > 6; // For desktop view (6 items per view)
-    const needsMobileNavigation = totalItems > 3; // For mobile view (3 items per view)
-    const needsSmallNavigation = totalItems > 1.5; // For small mobile view (1.5 items per view)
+    
+    // Mobile navigation logic
+    const getMobileSlides = () => {
+      // For mobile (< 640px), we show about 1.8 items per view
+      return Math.ceil(totalItems / 1.8);
+    };
   
     return (
       <div className="py-10">
-        <div>
-          <div className="flex items-center justify-between">
-            <Swiper
-              onBeforeInit={(swiper) => {
-                swiperRef.current = swiper;
-              }}
-              modules={[Navigation]}
-              breakpoints={sliderSettings}
-              onReachEnd={() => setNext(true)}
-              onReachBeginning={() => setNext(false)}
-              spaceBetween={10}
-            >
+        <div className="relative">
+          <Swiper
+            onBeforeInit={(swiper) => {
+              swiperRef.current = swiper;
+            }}
+            modules={[Navigation, Pagination]}
+            breakpoints={sliderSettings}
+            onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+            spaceBetween={10}
+            className="supporters-swiper"
+          >
             {SupportedBy25?.map((company, idx) => (
               <SwiperSlide key={idx}>
-                  <div className="py-3 min-h-[60px] w-full md:w-[80%]" key={idx}>
-                      <div className="shadow-md shadow-gray p-3 lg:p-5 rounded-2xl flex items-center justify-center h-full w-full">
-                          <div className="md:w-[220px] h-[80px]">
-                              <Image
-                                  src={company.image}
-                                  alt={company.name}
-                                  height={120}
-                                  width={120}
-                                  className="w-full h-full object-contain"
-                              />
-                          </div>
-                      </div>
+                <div className="py-3 min-h-[60px] w-full md:w-[80%]">
+                  <div className="shadow-md shadow-gray p-3 md:p-3 lg:p-5 rounded-xl md:rounded-2xl flex items-center justify-center h-full w-full">
+                    <div className="w-full h-16 md:w-[220px] md:h-[80px] flex items-center justify-center">
+                      <Image
+                        src={company.image}
+                        alt={company.name}
+                        height={120}
+                        width={120}
+                        className="w-full h-full object-contain"
+                        priority={idx < 4}
+                      />
+                    </div>
                   </div>
+                </div>
               </SwiperSlide>
             ))}
-            </Swiper>
-            
-            {/* Only show navigation dots on mobile if needed */}
-            {needsMobileNavigation && (
-              <div className='hidden min-[320px]:flex items-baseline justify-center gap-1 pt-5 md:hidden'>
-                <div
+          </Swiper>
+          
+          {/* Enhanced navigation dots for mobile only */}
+          {totalItems > 2 && (
+            <div className="flex items-center justify-center gap-2 mt-4 md:hidden">
+              {Array.from({ length: getMobileSlides() }).map((_, index) => (
+                <button
+                  key={index}
                   className={clsx(
-                    'h-[5px] rounded-full cursor-pointer duration-500',
+                    'h-2 rounded-full transition-all duration-300 cursor-pointer',
                     {
-                      'w-3 bg-offwhite': !first,
-                      'w-7 bg-green-400': first,
+                      'w-6 bg-green-400': Math.floor(activeIndex / 2) === index,
+                      'w-2 bg-gray-300 hover:bg-gray-400': Math.floor(activeIndex / 2) !== index,
                     }
                   )}
                   onClick={() => {
-                    setFirst(true);
-                    setMid(false);
-                    swiperRef.current?.slideTo(0)
+                    swiperRef.current?.slideTo(index * 2);
                   }}
                 />
-                <div
-                  className={clsx(
-                    'h-[5px] rounded-full cursor-pointer duration-500',
-                    {
-                      'w-3 bg-offwhite': !mid,
-                      'w-7 bg-green-400': mid,
-                    }
-                  )}
-                  onClick={() => {
-                    setFirst(false);
-                    setMid(true);
-                    swiperRef.current?.slideTo(3)
-                  }}
-                />
-              </div>
-            )}
-            
-            {/* Only show small device navigation if needed */}
-            {needsSmallNavigation && (
-              <div className="max-[320px]:flex items-baseline justify-center gap-1 hidden">
-                <div
-                  className={clsx(
-                    'h-[5px] rounded-full cursor-pointer duration-500',
-                    {
-                      'w-3 bg-offwhite': next,
-                      'w-7 bg-green-400': !next,
-                    }
-                  )}
-                  onClick={() => {
-                    setNext(false);
-                    swiperRef.current?.slidePrev();
-                  }}
-                />
-                <div
-                  className={clsx(
-                    'h-[5px] rounded-full cursor-pointer duration-500',
-                    {
-                      'w-3 bg-offwhite': !next,
-                      'w-7 bg-green-400': next,
-                    }
-                  )}
-                  onClick={() => {
-                    setNext(true);
-                    swiperRef.current?.slideNext();
-                  }}
-                />
-              </div>
-            )}
-          </div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     );
   };
   
-export default NewsSection;
+export default SupportersSection;
   

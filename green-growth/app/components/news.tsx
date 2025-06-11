@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import clsx from 'clsx';
-import { newsArticles } from '../data/newsArticles';
+import { newsArticles25 } from '../data/newsArticles25';
 
 
 const sliderSettings = {
@@ -21,9 +21,25 @@ const sliderSettings = {
     },
   };
   
-const NewsSection = () => {
+interface NewsArticle {
+  id: number;
+  title: string;
+  description: string;
+  date: string;
+  link: string;
+  image: string;
+}
+
+interface NewsSectionProps {
+  newsArticles?: NewsArticle[];
+}
+
+const NewsSection = ({ newsArticles }: NewsSectionProps = {}) => {
     const swiperRef = useRef({} as any);
     const [next, setNext] = useState(false);
+    
+    // Use prop if provided, otherwise use default newsArticles25
+    const articles = newsArticles || newsArticles25;
   
     return (
       <div className="py-10">
@@ -39,7 +55,7 @@ const NewsSection = () => {
               onReachBeginning={() => setNext(false)}
               spaceBetween={20}
             >
-              {newsArticles?.map((article: any, idx: number) => (
+              {articles?.map((article: any, idx: number) => (
                 <SwiperSlide key={idx}>
                   <NewsCard
                     image_file={article.image}
