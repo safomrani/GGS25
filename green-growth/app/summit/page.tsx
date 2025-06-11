@@ -654,7 +654,7 @@ export default function SummitPage() {
 
             <div className="py-3 md:py-4 lg:py-6 xl:py-8 relative">
               <div className="px-2 md:px-4 lg:px-10 xl:px-20">
-                <Agenda25 />
+                <Agenda25V2 />
               </div>
 
               {/* Bottom left branding image with responsive sizing */}
