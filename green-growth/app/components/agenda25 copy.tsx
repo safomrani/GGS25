@@ -366,40 +366,62 @@ export const Agenda25V2 = (): JSX.Element => {
                   </AgendaCardContent>
                 </AgendaCard>
               ) : event.type === "afternoon-sessions" ? (
-                <AgendaCard className="w-full bg-[#dbf2ee] rounded-lg shadow-sm relative overflow-hidden mb-2">
-                  <AgendaCardContent className="py-2.5 px-3 relative z-10">
-                    <h2 className={`font-bold text-[#0ca590] text-sm mb-2 text-center ${interBold.className}`}>
-                      {event.title}
-                    </h2>
+                <AgendaCard className="w-full lg:flex-1 bg-[#dbf2ee] rounded-[10px] md:rounded-[12px] shadow-lg lg:shadow-lg relative overflow-hidden">
+                  <AgendaCardContent className="pt-4 md:pt-5 lg:pt-3 xl:pt-4 2xl:pt-5 pb-4 md:pb-5 lg:pb-3 xl:pb-4 2xl:pb-5 pr-4 md:pr-5 lg:pr-3 xl:pr-4 2xl:pr-5 pl-4 md:pl-8 lg:pl-6 xl:pl-8 2xl:pl-10 relative z-10">
+                    <div className="flex flex-col lg:flex-row items-center lg:items-end gap-1 lg:gap-3 mb-3 md:mb-4 lg:mb-2 xl:mb-3 2xl:mb-4">
+                      <h2 className={`font-bold text-[#0ca590] text-[18px] md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl text-center lg:text-left pl-0 lg:pl-2 xl:pl-3 2xl:pl-4 ${interBold.className}`}>
+                        {event.title}
+                      </h2>
+                      <span className={`
+                        text-[#f0783c] 
+                        text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-[15px] 
+                        font-medium 
+                        ${inter.className} 
+                        bg-white/80 
+                        backdrop-blur-sm 
+                        px-3 py-1 
+                        rounded-full 
+                        border border-[#f0783c]/20
+                        shadow-sm
+                        transition-all
+                        duration-300
+                        hover:bg-white
+                        hover:shadow-md
+                        flex items-center gap-1
+                      `}>
+                        <span className="text-[#f0783c] font-bold">*</span>
+                        Invitation-Only Sessions
+                      </span>
+                    </div>
 
-                    <div className="space-y-1.5">
+                    <div className="space-y-3 md:space-y-3 lg:space-y-2 xl:space-y-2 2xl:space-y-4">
                       {event.sessions?.map((session, sessionIndex) => (
                         <div key={sessionIndex} className="relative">
                           {sessionIndex > 0 && (
-                            <div className="mb-1.5">
+                            <div className="mb-3 md:mb-3 lg:mb-2 xl:mb-2 2xl:mb-4">
                               <AgendaSeparator className="bg-[#0ca590] opacity-100" />
                             </div>
                           )}
 
                           <div className="flex items-start relative">
-                            <div className="mr-1.5 mt-0.5 relative z-10 flex-shrink-0">
+                            <div className="mr-2.5 md:mr-2.5 lg:mr-2 xl:mr-2 2xl:mr-3 mt-1 relative z-10 flex-shrink-0 ml-0 lg:ml-2 xl:ml-2 2xl:ml-4">
                               {renderDots(session.dots)}
                             </div>
 
                             <div className="flex-1 relative z-10">
-                              <h3 className={`font-black text-[#255345] text-xs leading-tight mb-1 ${interBlack.className}`}>
+                              <h3 className={`font-black text-[#255345] text-[17px] md:text-[16.5px] lg:text-[16px] xl:text-[16px] 2xl:text-[20px] leading-tight mb-1.5 md:mb-1.5 lg:mb-0 xl:mb-0 2xl:mb-3 ${interBlack.className}`}>
                                 {session.title}
                               </h3>
 
-                              <div className="space-y-0.5">
-                                <p className={`text-[10px] text-[#0ca590] ${inter.className}`}>
-                                  <span className="font-medium">Room:</span>
-                                  <span className="font-bold ml-1">{session.room}</span>
+                              <div className="space-y-1 md:space-y-1 lg:space-y-0 lg:flex lg:flex-wrap lg:gap-2 xl:gap-2 2xl:gap-4 mt-1 lg:mt-1 xl:mt-1 2xl:mt-2">
+                                <p className={`text-[13px] md:text-[12.5px] lg:text-[13px] xl:text-[13px] 2xl:text-[15px] text-[#0ca590] ${inter.className}`}>
+                                  <span className="font-medium inline-block w-12 md:w-12 lg:inline">Room:</span>
+                                  <span className="font-bold lg:ml-1"> {session.room}</span>
                                 </p>
 
-                                <p className={`text-[10px] text-[#F0783C] ${inter.className}`}>
-                                  <span className="font-medium">Hosted By:</span>
-                                  <span className="ml-1">{renderHostName(session.hostedBy)}</span>
+                                <p className={`text-[13px] md:text-[12.5px] lg:text-[13px] xl:text-[13px] 2xl:text-[15px] text-[#F0783C] ${inter.className}`}>
+                                  <span className="font-medium inline-block w-12 md:w-12 lg:inline">Hosted By:</span>
+                                  <span className="lg:ml-1">{renderHostName(session.hostedBy)}</span>
                                 </p>
                               </div>
                             </div>
@@ -618,9 +640,31 @@ export const Agenda25V2 = (): JSX.Element => {
                 ) : event.type === "afternoon-sessions" ? (
                   <AgendaCard className="w-full lg:flex-1 bg-[#dbf2ee] rounded-[10px] md:rounded-[12px] shadow-lg lg:shadow-lg relative overflow-hidden">
                     <AgendaCardContent className="pt-4 md:pt-5 lg:pt-3 xl:pt-4 2xl:pt-5 pb-4 md:pb-5 lg:pb-3 xl:pb-4 2xl:pb-5 pr-4 md:pr-5 lg:pr-3 xl:pr-4 2xl:pr-5 pl-4 md:pl-8 lg:pl-6 xl:pl-8 2xl:pl-10 relative z-10">
-                      <h2 className={`font-bold text-[#0ca590] text-[18px] md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl mb-3 md:mb-4 lg:mb-2 xl:mb-3 2xl:mb-4 text-center lg:text-left pl-0 lg:pl-2 xl:pl-3 2xl:pl-4 ${interBold.className}`}>
-                        {event.title}
-                      </h2>
+                      <div className="flex flex-col lg:flex-row items-center lg:items-end gap-1 lg:gap-3 mb-3 md:mb-4 lg:mb-2 xl:mb-3 2xl:mb-4">
+                        <h2 className={`font-bold text-[#0ca590] text-[18px] md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl text-center lg:text-left pl-0 lg:pl-2 xl:pl-3 2xl:pl-4 ${interBold.className}`}>
+                          {event.title}
+                        </h2>
+                        <span className={`
+                          text-[#f0783c] 
+                          text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-[15px] 
+                          font-medium 
+                          ${inter.className} 
+                          bg-white/80 
+                          backdrop-blur-sm 
+                          px-3 py-1 
+                          rounded-full 
+                          border border-[#f0783c]/20
+                          shadow-sm
+                          transition-all
+                          duration-300
+                          hover:bg-white
+                          hover:shadow-md
+                          flex items-center gap-1
+                        `}>
+                          <span className="text-[#f0783c] font-bold">*</span>
+                          Invitation-Only Sessions
+                        </span>
+                      </div>
 
                       <div className="space-y-3 md:space-y-3 lg:space-y-2 xl:space-y-2 2xl:space-y-4">
                         {event.sessions?.map((session, sessionIndex) => (
