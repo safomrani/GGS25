@@ -117,5 +117,40 @@ export const speakersEgypt25 = [
         image: '/images/speakers/2025/Dalia-Ashour.jpg',
         company: 'IFC',
         link: 'https://www.linkedin.com/in/ashourd/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    },
+    {
+        id: 18, 
+        name: 'Mostafa Gaber', 
+        image: '/images/speakers/2025/Mostafa-Gaber.jpg',
+        company: 'Chemonics Egypt',
+        link: 'https://www.linkedin.com/in/mostafa-gaber-mba-94224a2a/',
+    },
+    {
+        id: 19, 
+        name: 'Amira Moussa', 
+        image: '/images/speakers/2025/Amira-Moussa.jpg',
+        company: 'B Lab Africa',
+        link: 'https://www.linkedin.com/in/amira-mousa/',
+    },
+    {
+        id: 20, 
+        name: 'Mmdouh El-Emary', 
+        image: '/images/speakers/2025/Mmdouh El-Emary.jpg',
+        company: 'Arzaq Masr',
+        link: 'https://www.linkedin.com/in/mmdouh-el-emary-988301119/',
+    },
+    {
+        id: 21, 
+        name: 'Jackie Kameel', 
+        image: '/images/speakers/2025/Jackie.jpg',
+        company: 'Nahdet El Mahrousa',
+        link: 'https://www.linkedin.com/in/jackie-kameel-71b17526/',
+    },
+    {
+        id: 22, 
+        name: 'Ahmed Mokhtar', 
+        image: '/images/speakers/2025/Ahmed-Mokhtar.jpg',
+        company: 'SODIC',
+        link: 'https://www.linkedin.com/in/aymjoe/',
     }
 ];
