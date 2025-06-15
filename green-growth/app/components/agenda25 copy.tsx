@@ -110,7 +110,7 @@ const morningEvents = [
                 ],
       },
       {
-        title: "Healthcare Resilience in a Changing Climate: Pioneering SAHA, the First Co-Designed Green Climate Fund Regional Program",
+        title: "Healthcare Resilience in a Changing Climate: Pioneering SAHA, the First Co-Designed Green Climate Fund Program in the MENA Region",
         room: "Isis",
         hostedBy: "Pathfinder International",
         dots: [
