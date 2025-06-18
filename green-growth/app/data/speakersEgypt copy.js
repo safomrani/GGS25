@@ -152,5 +152,19 @@ export const speakersEgypt25 = [
         image: '/images/speakers/2025/Ahmed-Mokhtar.jpg',
         company: 'SODIC',
         link: 'https://www.linkedin.com/in/aymjoe/',
+    },
+    {
+        id: 23, 
+        name: 'Rannia Elsayed', 
+        image: '/images/speakers/2025/Rania-Essayed.jpg',
+        company: 'Pathfinder International',
+        link: 'https://www.linkedin.com/in/rannia-elsayed-b0b67031/',
+    },
+    {
+        id: 24, 
+        name: 'Mahitab El Ramal', 
+        image: '/images/speakers/2025/Mahitab.jpg',
+        company: 'Ministry of Environment',
+        link: '',
     }
 ];
